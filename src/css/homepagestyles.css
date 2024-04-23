@@ -1,0 +1,62 @@
+
+  /* style.css */
+  body{
+    background-image: url('./assets/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.homepage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .homepage * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Define other styles, prefixing with .homepage where needed */
+  .homepage .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @keyframes ring {
+    0% { transform: translateX(-5px) rotate(-15deg); }
+    25% { transform: translateX(5px) rotate(5deg); }
+    50% { transform: translateX(-5px) rotate(-10deg); }
+    75% { transform: translateX(5px) rotate(10deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+  }
+  .homepage .telephone {
+    height: auto;
+    animation: ring 0.3s ease-in-out infinite;
+    margin-bottom: 0;
+  }
+  
+  .homepage .chat-button {
+    padding: 15px 30px;
+    margin-top: 20px; 
+    margin-left: 35px;
+    font-size: 28px;
+    color: rgba(77, 77, 77, 1);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: auto;
+    font-family: 'ZCOOL XiaoWei', serif;
+    align-self: center;
+  }
+  
+  .homepage .chat-button:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  
