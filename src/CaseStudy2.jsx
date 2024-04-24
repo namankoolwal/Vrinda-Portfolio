@@ -19,38 +19,47 @@ function CaseStudy2() {
         <div className="eventify">
           <b>EVENTIFY APP DESIGN</b>
         </div>
-        <div className="main-text">
-          <img src={eventifyImage} alt="image" className="image1"/>
-          <div className="main-text1">
-            Discover, Connect, Attend. Effortlessly explore and engage with
-            local events.
+        <div className="main-text flex gap-14 flex-row-reverse items-start">
+          <div className="w-full ">
+            <img src={eventifyImage} alt="image" className="image1" />
           </div>
-          {/* <div className="main-text2">Effortlessly explore and engage</div>
+          <div className=" w-full">
+            <div className="main-text1 ">
+              Discover, Connect, Attend. Effortlessly explore and engage with
+              local events.
+            </div>
+            {/* <div className="main-text2">Effortlessly explore and engage</div>
           <div>with local events.</div> */}
 
-          <div className="labels">
-            <p className="label1">Visual Design</p>
-            <p className="label2">UX/UI</p>
-            <p className="label3">Product Design</p>
+            <div className="labels">
+              <p className="label1">Visual Design</p>
+              <p className="label2">UX/UI</p>
+              <p className="label3">Product Design</p>
+            </div>
+            <div className="time mt-4">
+              <span>8 min read</span>
+            </div>
+
+            <div className="details">
+              <div className="timeline ">
+                <span className="text1">TIMELINE</span>
+                <p className="text2">Dec-Jan 2023(2weeks)</p>
+              </div>
+              <div className="sector">
+                <span className="text1">SECTOR</span>
+                <p className="text2">Entertainment, Social Networking</p>
+              </div>
+            </div>
+            <div className="design-role">
+              <span className="text1">DESIGN ROLE</span>
+              <p className="text2">
+                Design thinking , UX/UI , Problem Solving
+              </p>
+            <p className="text-sm italic underline mt-6">
+                Figma File
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="time">
-          <span>8 min read</span>
-        </div>
-        <div className="details">
-          <div className="timeline">
-            <span className="text1">TIMELINE</span>
-            <p className="text2">Dec-Jan 2023(2weeks)</p>
-          </div>
-          <div className="sector">
-            <span className="text1">SECTOR</span>
-            <p className="text2">Entertainment, Social Networking</p>
-          </div>
-        </div>
-        <div className="design-role">
-          <span className="role">
-            Design thinking , UX/UI , Problem Solving
-          </span>
         </div>
       </div>
 
@@ -87,7 +96,7 @@ function CaseStudy2() {
 
       <div className="container3">
         <div className="lists">
-        <b className="flex items-center gap-4">
+          <b className="flex items-center gap-4">
             <img src={ellipse}></img> Problem Statements
           </b>
         </div>
@@ -126,14 +135,17 @@ function CaseStudy2() {
             <img src={ellipse}></img> Solutions
           </b>
         </div>
-        <div className="layers1">
+        <div className="flex gap-16 flex-row-reverse items-start">
+
+        <div className="layers1 w-full">
           <img src={singleMobile} alt="image" className="image2"></img>
         </div>
+
+        <div className="w-full">
+
         <div className="text7">
-          <b>
             Make reaching people easily and quick within your range engage with
             local events tailored to your interests with
-          </b>
         </div>
 
         <div className="text8">
@@ -141,13 +153,15 @@ function CaseStudy2() {
         </div>
 
         <div className="text9">
-          <span>
+          <span className="leading-7">
             Eventify aims to revolutionize the way
             <b className="boldit"> people discover, connect, and engage</b> with
             events in their local communities.Eventify strives to facilitate
             seamless connections between event organizers and attendees, foster
             community engagement, and create memorable experiences for users.
           </span>
+        </div>
+        </div>
         </div>
       </div>
 
@@ -157,8 +171,26 @@ function CaseStudy2() {
         </div>
       </div>
 
-      <div className="container7">
+      <div className="container6">
+      <div className="lists">
+          <b className="flex items-center gap-4">
+            <img src={ellipse}></img> Research
+          </b>
+        </div>
+        <div className="flex items-center justify-evenly my-20">
+          <div className="text-gray-500 text-lg font-semibold underline">1.Secondary Research</div>
+          <div className="text-gray-500 text-lg font-semibold underline">2.Users Research</div>
+          <div className="text-gray-500 text-lg font-semibold underline">3.Competitive Research</div>
+        </div>
+        <div><span className="font-semibold">Method: </span>Interview</div>
+        
+        <p className="my-10 font-[500]">There were few things of primary interest that I addressed through short conversations with few people I wanted to know the need for app WHY?</p>
         <img src={Primarychallenges} className="image4" />
+      </div>
+
+      <div className="container7">
+      <img src={findings} className="image4" />
+
       </div>
 
       <div className="container8">
@@ -192,11 +224,15 @@ function CaseStudy2() {
         <div className="container10-text">
           How would <b>Eventify</b> compare?
         </div>
-        <div className="layers10">
+        <div className="flex gap-16 flex-row-reverse items-start">
+
+        <div className=" w-full bg-red-300">
           <img src={compare} alt="image" className="image10"></img>
         </div>
+
+        <div className="w-full ">
         <div className="text12">
-          A combination of its competitors, Eventify would offers a broader
+          A combination of its competitors, Eventify would offers&nbsp; a broader
           range of features for both casual and professional event planning.
           It's like the Swiss Army knife of event apps, with tons of
           customization options, advanced management tools, and collaboration
@@ -204,10 +240,8 @@ function CaseStudy2() {
         </div>
 
         <div className="text13">
-          <b>
             Professionals can effortlessly organize events while keeping up with
             their hectic schedules.
-          </b>
         </div>
 
         <div className="text14">
@@ -218,11 +252,14 @@ function CaseStudy2() {
             park!
           </span>
         </div>
+        </div>
+        </div>
+
       </div>
 
       <div className="container11">
         <div className="container11-heading">
-          <b>MAPPING & SORTING</b>
+            MAPPING & SORTING
         </div>
 
         <div className="text15">
@@ -271,7 +308,7 @@ function CaseStudy2() {
 
       <div className="container15">
         <div className="lists">
-        <b className="flex items-center gap-4">
+          <b className="flex items-center gap-4">
             <img src={ellipse}></img> Design
           </b>
         </div>
@@ -283,7 +320,7 @@ function CaseStudy2() {
           </span>
         </div>
         <div className="container15-image">
-        <img src={useflow} className="image8" />
+          <img src={useflow} className="image8" />
         </div>
       </div>
     </div>

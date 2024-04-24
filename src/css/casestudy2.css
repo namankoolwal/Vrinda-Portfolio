@@ -1,6 +1,6 @@
 
 .container1 {
-  padding: 40px 200px ;
+  padding: 40px 80px ;
   font-family: "Urbanist", sans-serif;
 }
 
@@ -16,13 +16,14 @@
   padding-left: 2px;
 }
 
-.main-text {
-  font-size: 48px;
+.main-text1 {
+  font-size: 35px;
+  font-weight:600 ;
   font-family: "Urbanist", sans-serif;
   padding-top: 20px;
 }
-.image1 {
-  width: 720px;
+.image1 , .image2 {
+  width:auto;
   float: right;
 }
 .labels {
@@ -43,33 +44,34 @@
 }
 
 .time {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Urbanist", sans-serif;
 }
 .details {
   display: flex;
-  padding-top: 50px;
+  padding-top: 30px;
+  gap: 25px;
 }
 
-.timeline,
-.sector {
-  flex: 1;
+.design-role{
+  padding-top: 15px;
+  
 }
+
 .text1 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Urbanist", sans-serif;
 }
 
-.text2,
-.design-role {
-  font-size: 20px;
+.text2 {
+  font-size: 16px;
   font-family: "Urbanist", sans-serif;
 }
 
 .container2 {
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
   font-family: "Urbanist", sans-serif;
   .intro {
     font-size: 24px;
@@ -90,20 +92,20 @@
   font-family: "Urbanist", sans-serif;
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
 
   .lists {
     font-size: 24px;
   }
   .text4 {
     font-size: 20px;
-    padding-top: 24px;
+    padding-top: 32px;
   }
   .text5,
   .text6 {
     font-size: 16px;
-    line-height: 20px;
-    padding-top: 20px;
+    line-height: 24px;
+    padding-top: 24px;
   }
 }
 
@@ -111,14 +113,15 @@
   font-family: "Urbanist", sans-serif;
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
   .lists {
     font-size: 24px;
   }
   .text7 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 32px;
     padding-top: 32px;
+    font-weight: 500;
   }
 
   .text8 {
@@ -135,7 +138,7 @@
     color: rgba(66, 109, 221, 1);
   }
   .layers1{
-    /* width: 50%;  */
+    /* width: 100%;  */
     background-color:rgba(1, 1, 1, 1);
     /* padding: 30px; */
     box-sizing: border-box;
@@ -143,7 +146,7 @@
   }
   .image2 {
       float: right;
-      height: 420px;
+      height: 400px;
     }
 }
 
@@ -158,10 +161,22 @@
   }
 }
 
+.container6{
+  font-family: "Urbanist", sans-serif;
+  padding-right: 200px;
+  padding-left: 200px;
+  margin-top: 120px;
+
+  .lists {
+    font-size: 24px;
+  }
+  
+}
+
 .container7,.container9{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
 }
 
 .image4,.image5{
@@ -171,17 +186,17 @@
 .container8{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
   font-family: "Urbanist", sans-serif;
 }
 
 .container8-heading{
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Urbanist", sans-serif;
 }
 
 .text10{
-  font-size: 36px;
+  font-size: 25px;
   padding-top: 32px;
 }
 .text11{
@@ -193,37 +208,40 @@
 .container10{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
   font-family: "Urbanist", sans-serif;
 }
 
 .container10-text{
-  font-size: 24px;
+  font-size: 22px;
 }
 .text12{
-  font-size:20px;
+  font-size:16px;
   padding-top: 32px;
 }
 .text13{
-  font-size:36px;
+  font-size:25px;
   padding-top: 32px;
+  font-weight: 500;
 }
 .text14{
-  font-size:20px;
+  font-size:16px;
   padding-top: 32px;
 }
 .image10 {
   float: right;
-height:420px;
+  width: 100%;
+/* height:420px; */
 }
 .container11{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
   font-family: "Urbanist", sans-serif;
 }
 
 .container11-heading{
+  font-weight: 600;
   font-size: 30px;
   font-family: "Urbanist", sans-serif;
 }
@@ -237,7 +255,7 @@ height:420px;
 .container12{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
 }
 
 .image6{
@@ -253,7 +271,7 @@ height:420px;
 .container13{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
 }
 .container13-heading{
   font-size: 30px;
@@ -277,7 +295,7 @@ height:420px;
 .container14{
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
 }
 
 .image7{
@@ -288,7 +306,7 @@ height:420px;
   font-family: "Urbanist", sans-serif;
   padding-right: 200px;
   padding-left: 200px;
-  padding-top: 100px;
+  margin-top: 120px;
   .lists {
     font-size: 24px;
   }
