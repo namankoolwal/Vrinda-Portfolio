@@ -1,17 +1,27 @@
 import React from "react";
 import Header from "./Header";
-import "./css/casestudy2.css";
-import eventifyImage from "./assets/images/eventify-app-design.png";
-import ellipse from "./assets/images/Ellipse.png";
-import mobile from "./assets/images/mobile-images.png";
-import singleMobile from "./assets/images/single-mobile.png";
-import Primarychallenges from "./assets/images/primaryChallenges.png";
-import goal from "./assets/images/goals.png";
-import compare from "./assets/images/compare.png";
-import mapping from "./assets/images/mapping.png";
-import findings from "./assets/images/findings.png";
-import findingsOne from "./assets/images/findingsOne.png"
-import useflow from "./assets/images/DemoUser.png";
+import "../css/casestudy2.css";
+import eventifyImage from "../assets/images/eventify-app-design.png";
+import ellipse from "../assets/images/Ellipse.png";
+import mobile from "../assets/images/mobile-images.png";
+import singleMobile from "../assets/images/single-mobile.png";
+import Primarychallenges from "../assets/images/primaryChallenges.png";
+import goal from "../assets/images/goals.png";
+import compare from "../assets/images/compare.png";
+import mapping from "../assets/images/mapping.png";
+import findings from "../assets/images/findings.png";
+import findingsOne from "../assets/images/findingsOne.png"
+import useflow from "../assets/images/DemoUser.png";
+import userTestingOne from "../assets/images/userTestingOne.png"
+import userTestingTwo from "../assets/images/userTestingTwo.png"
+import takeawayOne from "../assets/images/takeawayOne.png"
+import takeawayTwo from "../assets/images/takeawayTwo.png"
+import gettingStarted from "../assets/images/gettingStarted.png"
+import gettingStartedInnerImg from "../assets/images/gettingStartedInnerImg.png"
+import navbarImg from "../assets/images/navbarImg.png"
+import FinalScreen from "./FinalScreen";
+
+
 function CaseStudy2() {
   return (
     <div>
@@ -20,9 +30,9 @@ function CaseStudy2() {
         <div className="eventify">
           <b>EVENTIFY APP DESIGN</b>
         </div>
-        <div className="main-text flex gap-14 flex-row-reverse items-start">
-          <div className="w-full ">
-            <img src={eventifyImage} alt="image" className="image1" />
+        <div className="main-text flex gap-14 flex-col md:flex-row-reverse items-start">
+          <div className="w-full pt-5 lg:pt-0">
+            <img loading="lazy" src={eventifyImage} alt="image" className="image1" />
           </div>
           <div className=" w-full">
             <div className="main-text1 ">
@@ -56,7 +66,7 @@ function CaseStudy2() {
               <p className="text2">
                 Design thinking , UX/UI , Problem Solving
               </p>
-            <p className="text-sm italic underline mt-6">
+              <p className="text-sm italic underline mt-6">
                 Figma File
               </p>
             </div>
@@ -98,7 +108,7 @@ function CaseStudy2() {
       <div className="container3">
         <div className="lists">
           <b className="flex items-center gap-4">
-            <img src={ellipse}></img> Problem Statements
+            <img loading="lazy" src={ellipse}></img> Problem Statements
           </b>
         </div>
 
@@ -133,49 +143,49 @@ function CaseStudy2() {
       <div className="container4">
         <div className="lists">
           <b className="flex items-center gap-4">
-            <img src={ellipse}></img> Solutions
+            <img loading="lazy" src={ellipse}></img> Solutions
           </b>
         </div>
-        <div className="flex gap-16 flex-row-reverse items-start">
+        <div className="flex gap-16 flex-col md:flex-row-reverse items-start">
 
-        <div className="layers1 w-full">
-          <img src={singleMobile} alt="image" className="image2"></img>
-        </div>
+          <div className="layers1 w-full pt-5 lg:pt-0">
+            <img loading="lazy" src={singleMobile} alt="image" className="image2"></img>
+          </div>
 
-        <div className="w-full">
+          <div className="w-full">
 
-        <div className="text7">
-            Make reaching people easily and quick within your range engage with
-            local events tailored to your interests with
-        </div>
+            <div className="text7">
+              Make reaching people easily and quick within your range engage with
+              local events tailored to your interests with
+            </div>
 
-        <div className="text8">
-          <b>What is Eventify aiming to do?</b>
-        </div>
+            <div className="text8">
+              <b>What is Eventify aiming to do?</b>
+            </div>
 
-        <div className="text9">
-          <span className="leading-7">
-            Eventify aims to revolutionize the way
-            <b className="boldit"> people discover, connect, and engage</b> with
-            events in their local communities.Eventify strives to facilitate
-            seamless connections between event organizers and attendees, foster
-            community engagement, and create memorable experiences for users.
-          </span>
-        </div>
-        </div>
+            <div className="text9">
+              <span className="leading-7">
+                Eventify aims to revolutionize the way
+                <b className="boldit"> people discover, connect, and engage</b> with
+                events in their local communities.Eventify strives to facilitate
+                seamless connections between event organizers and attendees, foster
+                community engagement, and create memorable experiences for users.
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="container5">
         <div className="layers2">
-          <img src={mobile} className="image3" />
+          <img loading="lazy" src={mobile} className="image3" />
         </div>
       </div>
 
       <div className="container6">
-      <div className="lists">
+        <div className="lists">
           <b className="flex items-center gap-4">
-            <img src={ellipse}></img> Research
+            <img loading="lazy" src={ellipse}></img> Research
           </b>
         </div>
         <div className="flex items-center justify-evenly my-20">
@@ -184,13 +194,13 @@ function CaseStudy2() {
           <div className="text-gray-500 text-lg font-semibold underline">3.Competitive Research</div>
         </div>
         <div><span className="font-semibold">Method: </span>Interview</div>
-        
+
         <p className="my-10 font-[500]">There were few things of primary interest that I addressed through short conversations with few people I wanted to know the need for app WHY?</p>
-        <img src={Primarychallenges} className="image4" />
+        <img loading="lazy" src={Primarychallenges} className="image4" />
       </div>
 
       <div className="container7">
-      <img src={findingsOne} className="image4" />
+        <img loading="lazy" src={findingsOne} className="image4" />
 
       </div>
 
@@ -200,10 +210,10 @@ function CaseStudy2() {
         </div>
 
         <div className="text10">
-          
-            The demand for event planning apps has due to the need for efficient
-            organization in today's busy world.
-          
+
+          The demand for event planning apps has due to the need for efficient
+          organization in today's busy world.
+
         </div>
 
         <div className="text11">
@@ -218,49 +228,49 @@ function CaseStudy2() {
       </div>
 
       <div className="container9">
-        <img src={goal} className="image5" />
+        <img loading="lazy" src={goal} className="image5" />
       </div>
 
       <div className="container10">
         <div className="container10-text">
           How would <b>Eventify</b> compare?
         </div>
-        <div className="flex gap-16 flex-row-reverse items-start">
+        <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
 
-        <div className=" w-full bg-red-300">
-          <img src={compare} alt="image" className="image10"></img>
-        </div>
+          <div className=" w-full pt-5 lg:pt-0">
+            <img loading="lazy" src={compare} alt="image" className="image10"></img>
+          </div>
 
-        <div className="w-full ">
-        <div className="text12">
-          A combination of its competitors, Eventify would offers&nbsp; a broader
-          range of features for both casual and professional event planning.
-          It's like the Swiss Army knife of event apps, with tons of
-          customization options, advanced management tools, and collaboration
-          features.
-        </div>
+          <div className="w-full ">
+            <div className="text12">
+              A combination of its competitors, Eventify would offers&nbsp; a broader
+              range of features for both casual and professional event planning.
+              It's like the Swiss Army knife of event apps, with tons of
+              customization options, advanced management tools, and collaboration
+              features.
+            </div>
 
-        <div className="text13">
-            Professionals can effortlessly organize events while keeping up with
-            their hectic schedules.
-        </div>
+            <div className="text13">
+              Professionals can effortlessly organize events while keeping up with
+              their hectic schedules.
+            </div>
 
-        <div className="text14">
-          <span>
-            Eventify is like having a trusty sidekick for busy professionals,
-            planning a conference or a company retreat, Eventify is there to
-            lend a helping hand, making event planning feel like a walk in the
-            park!
-          </span>
-        </div>
-        </div>
+            <div className="text14">
+              <span>
+                Eventify is like having a trusty sidekick for busy professionals,
+                planning a conference or a company retreat, Eventify is there to
+                lend a helping hand, making event planning feel like a walk in the
+                park!
+              </span>
+            </div>
+          </div>
         </div>
 
       </div>
 
       <div className="container11">
         <div className="container11-heading">
-            MAPPING & SORTING
+          MAPPING & SORTING
         </div>
 
         <div className="text15">
@@ -274,9 +284,9 @@ function CaseStudy2() {
       </div>
 
       <div className="container12">
-        <img src={mapping} className="image6" />
+        <img loading="lazy" src={mapping} className="image6" />
+        <div className="text16"><span className="italic">Takeaways from the understanding of users</span></div>
       </div>
-      <div className="text16">Takeaways from the understanding of users</div>
 
       <div className="container13">
         <div className="container13-heading">
@@ -304,13 +314,13 @@ function CaseStudy2() {
       </div>
 
       <div className="container14">
-        <img src={findings} className="image7" />
+        <img loading="lazy" src={findings} className="image7" />
       </div>
 
       <div className="container15">
         <div className="lists">
           <b className="flex items-center gap-4">
-            <img src={ellipse}></img> Design
+            <img loading="lazy" src={ellipse}></img> Design
           </b>
         </div>
         <div className="text21">
@@ -321,9 +331,78 @@ function CaseStudy2() {
           </span>
         </div>
         <div className="container15-image">
-          <img src={useflow} className="image8" />
+          <img loading="lazy" src={useflow} className="image8" />
         </div>
       </div>
+      {/* *********************** */}
+      <div className="container8">
+        <div className="container8-heading">
+          USER TESTING (WIREFRAME)
+        </div>
+        <div className="bg-[#d9d9d9] w-full flex gap-10 py-14 justify-center mt-10">
+          <img loading="lazy" src={userTestingOne} width={270} height={150} />
+          <img loading="lazy" src={userTestingTwo} width={400} height={250} />
+
+        </div>
+        <div className="text11">
+          <span>
+            I focused mainly on the homepage and its navigation at this stage and wanted to get external opinions early on.I asked 3 people to navigate the prototype without guidance and wanted to see...
+          </span>
+          <ul className="leading-7 list-disc ml-5 mt-5 mb-10">
+            <li>If the navigation was intuitive</li>
+            <li>If there were features/information missing they would have found useful</li>
+            <li>How they felt during the process</li>
+          </ul>
+        </div>
+      </div>
+      {/* ******************************************* */}
+      <div className="container8">
+        <div className="container8-heading">
+          TAKEAWAYS
+        </div>
+        <div className=" w-full flex flex-col gap-8 pt-10 justify-center">
+          <img loading="lazy" src={takeawayOne} />
+          <img loading="lazy" src={takeawayTwo} />
+        </div>
+      </div>
+      {/* ******************************************** */}
+
+      <div className="container10">
+        <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
+          <div className=" w-full pt-5 lg:pt-0">
+            <img loading="lazy" src={gettingStarted} alt="image" className="image10"></img>
+          </div>
+          <div className="w-full ">
+            <div className="text12 w-4/5 flex flex-col gap-10">
+              <img loading="lazy" src={gettingStartedInnerImg} alt="image" width={300} />
+              <p>
+                Based on feedback from testing, I added a "Sign In" button alongside "Get Started" which is friendly update that caters to both new and returning users. It offers convenience and personalization, like welcoming newcomers to a party while also greeting familiar faces with a warm hello.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ************************************************** */}
+      <div className="container10">
+        <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
+          <div className=" w-full pt-5 lg:pt-0">
+            <img loading="lazy" src={navbarImg} alt="image" className="image10"></img>
+          </div>
+          <div className="w-full ">
+            <div className="text12 w-4/5 flex flex-col gap-10">
+              <span className="font-bold">THE NAV BAR</span>
+              <p>
+              I incorrectly assumed that most users would eventually learn the purpose of each page through experience. By accompanying the icons with text, it becomes much easier to navigate for new users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ===================================================== */}
+      <div className="container10">
+        <FinalScreen/>
+      </div>
+
     </div>
   );
 }

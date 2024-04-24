@@ -1,10 +1,10 @@
 
 import './App.css'
 import React from 'react';
-import Homepage from './Homepage'
-import Aboutme from './Aboutme'
+import Homepage from './components/Homepage'
+import Aboutme from './components/Aboutme'
 import {  Route, Routes } from "react-router-dom";
-import CaseStudy2 from './CaseStudy2';
+import CaseStudy2 from './components/CaseStudy2';
 function App() {
 
 

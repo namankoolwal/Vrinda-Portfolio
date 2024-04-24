@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Aboutme from "./Aboutme";
-import StartButton from './assets/images/StartButton.png';
+import StartButton from '../assets/images/StartButton.png';
 import Header from "./Header";
 
 function Homepage() {

@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import ProfilePhoto from "./assets/images/profilephoto.png";
+import ProfilePhoto from "../assets/images/profilephoto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./css/aboutme.css";
+import "../css/aboutme.css";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import Behands from "./assets/images/Social.png"
-import Dribble from "./assets/images/Dribble.png"
-import layer1 from "./assets/images/Layer_1.png"
+import Behands from "../assets/images/Social.png"
+import Dribble from "../assets/images/Dribble.png"
+import layer1 from "../assets/images/Layer_1.png"
 
 const hola = ["H", "☻", "l", "a"];
 function Aboutme() {

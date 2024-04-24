@@ -83,7 +83,7 @@
   }
 
   .ultimate {
-    font-size: 25px;
+    font-size: 24px;
     padding-top: 24px;
     font-weight: 500;
 
@@ -120,7 +120,7 @@
     font-size: 24px;
   }
   .text7 {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 32px;
     padding-top: 32px;
     font-weight: 500;
@@ -194,13 +194,13 @@
 }
 
 .container8-heading{
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
 }
 
 .text10{
-  font-size: 25px;
+  font-size: 24px;
   padding-top: 32px;
   font-weight: 500;
 }
@@ -247,7 +247,7 @@
 
 .container11-heading{
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Urbanist", sans-serif;
 }
 
@@ -281,7 +281,7 @@
 }
 .container13-heading{
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Urbanist", sans-serif;
 }
 .text17{
@@ -314,7 +314,7 @@
   padding-left: 200px;
   margin-top: 120px;
   .lists {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
@@ -330,7 +330,7 @@
   max-width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .image1 {
     width: 100%; /* Make the image take up the full width */
     float: none; /* Remove float */
@@ -339,9 +339,10 @@
   .image10{
     width:100%
   }
+  .container1,
   .container2,
   .container3,
-  .container4,.container5,.container7,.container8,.container9,.container10,.container11,.container12,.container13,.container14,.container15{
+  .container4,.container5,.container6,.container7,.container8,.container9,.container10,.container11,.container12,.container13,.container14,.container15{
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 48px;
