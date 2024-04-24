@@ -87,7 +87,7 @@ function CaseStudy2() {
 
       <div className="container3">
         <div className="lists">
-          <b>
+        <b className="flex items-center gap-4">
             <img src={ellipse}></img> Problem Statements
           </b>
         </div>
@@ -122,7 +122,7 @@ function CaseStudy2() {
 
       <div className="container4">
         <div className="lists">
-          <b>
+          <b className="flex items-center gap-4">
             <img src={ellipse}></img> Solutions
           </b>
         </div>
@@ -271,7 +271,7 @@ function CaseStudy2() {
 
       <div className="container15">
         <div className="lists">
-          <b>
+        <b className="flex items-center gap-4">
             <img src={ellipse}></img> Design
           </b>
         </div>

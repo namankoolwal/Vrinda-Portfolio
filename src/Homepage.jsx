@@ -17,7 +17,7 @@ function Homepage() {
       <div className="flex flex-col items-center justify-center">
         <img src={StartButton} alt="Telephone" className="h-auto animate-ring mb-0" />
         <button
-          className="px-[30px] py-7 ml-10 mt-[20px] text-5xl text-gray-600 font-normal bg-transparent rounded-full hover:text-white hover:bg-black transition-colors duration-500 outline outline-1"
+          className="px-[30px] py-4 ml-10 mt-[20px] text-[28px] text-gray-600 font-normal bg-transparent rounded-full hover:text-white hover:bg-black transition-colors duration-500 outline outline-1"
           onClick={redirectToAboutMe}
         >
           Wanna Chat?
