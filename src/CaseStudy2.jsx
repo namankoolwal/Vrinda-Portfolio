@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import "./css/casestudy2.css";
-import eventifyImage from "./assets/images/images//eventify-app-design.png";
+import eventifyImage from "./assets/images/eventify-app-design.png";
 import ellipse from "./assets/images/Ellipse.png";
 import mobile from "./assets/images/mobile-images.png";
 import singleMobile from "./assets/images/single-mobile.png";
