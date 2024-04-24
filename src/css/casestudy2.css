@@ -274,6 +274,7 @@
   margin-top: 120px;
 }
 .container13-heading{
+  font-weight: 600;
   font-size: 30px;
   font-family: "Urbanist", sans-serif;
 }
@@ -288,7 +289,6 @@
 
 .text20{
   font-size: 20px;
-  padding-top: 32px;
   font-family: "Urbanist", sans-serif;
 }
 

@@ -279,14 +279,14 @@ function CaseStudy2() {
 
       <div className="container13">
         <div className="container13-heading">
-          <b>Sorting the features in terms of importance and order</b>
+          Sorting the features in terms of importance and order
         </div>
         <div className="text17">
           <span className="text18">
             Given the following six features (a mix of features I sampled from
             researching competitors)...
           </span>
-          <ul className="text19">
+          <ul className="text19 list-disc ml-10 mb-12">
             <li>online registartion</li>
             <li> locationg Distance from your location</li>
             <li>different categories of events</li>
