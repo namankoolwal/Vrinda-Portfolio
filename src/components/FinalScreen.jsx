@@ -67,10 +67,8 @@ const FinalScreen = () => {
 
           <div className="bg-black w-full">
             <img
-              loading="lazy"
               src={displayImg}
               alt="image"
-              className="image10"
             ></img>
           </div>
         </div>
