@@ -64,7 +64,7 @@
 }
 
 .text2 {
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Urbanist", sans-serif;
 }
 
@@ -77,14 +77,16 @@
     font-size: 24px;
   }
   .text3 {
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 32px;
     line-height: 20px;
   }
 
   .ultimate {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 24px;
+    font-weight: 500;
+
   }
 }
 
@@ -103,7 +105,7 @@
   }
   .text5,
   .text6 {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     padding-top: 24px;
   }
@@ -129,7 +131,7 @@
     padding-top: 32px;
   }
   .text9 {
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 32px;
     line-height: 20px;
   }
@@ -177,7 +179,7 @@
 .container7,.container9{
   padding-right: 200px;
   padding-left: 200px;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .image4,.image5{
@@ -192,16 +194,18 @@
 }
 
 .container8-heading{
-  font-size: 26px;
+  font-size: 25px;
   font-family: "Urbanist", sans-serif;
+  font-weight: 600;
 }
 
 .text10{
   font-size: 25px;
   padding-top: 32px;
+  font-weight: 500;
 }
 .text11{
-  font-size: 16px;
+  font-size: 17px;
   padding-top: 32px;
   line-height: 20px;
 }
@@ -217,7 +221,7 @@
   font-size: 22px;
 }
 .text12{
-  font-size:16px;
+  font-size:17px;
   padding-top: 32px;
 }
 .text13{
@@ -226,7 +230,7 @@
   font-weight: 500;
 }
 .text14{
-  font-size:16px;
+  font-size:17px;
   padding-top: 32px;
 }
 .image10 {
@@ -243,12 +247,12 @@
 
 .container11-heading{
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Urbanist", sans-serif;
 }
 
 .text15{
-  font-size: 16px;
+  font-size: 17px;
   padding-top: 32px;
   line-height: 20px;
 }
@@ -264,7 +268,7 @@
 }
 
 .text16{
-  font-size: 24px;
+  font-size: 17px;
   line-height: 36px;
   margin-top: 24px;
   text-align: center;
@@ -277,27 +281,27 @@
 }
 .container13-heading{
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Urbanist", sans-serif;
 }
 .text17{
   padding-top: 32px;
 }
 .text18,.text19{
-    font-size: 20px;
+    font-size: 17px;
     line-height: 40px;
     font-family: "Urbanist", sans-serif;
 }
 
 .text20{
-  font-size: 20px;
+  font-size: 17px;
   font-family: "Urbanist", sans-serif;
 }
 
 .container14{
   padding-right: 200px;
   padding-left: 200px;
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 .image7{
@@ -310,12 +314,12 @@
   padding-left: 200px;
   margin-top: 120px;
   .lists {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
 
 .text21{
-  font-size: 20px;
+  font-size: 17px;
   padding-top: 32px;
   font-family: "Urbanist", sans-serif;
 }

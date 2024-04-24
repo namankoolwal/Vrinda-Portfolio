@@ -10,6 +10,7 @@ import goal from "./assets/images/goals.png";
 import compare from "./assets/images/compare.png";
 import mapping from "./assets/images/mapping.png";
 import findings from "./assets/images/findings.png";
+import findingsOne from "./assets/images/findingsOne.png"
 import useflow from "./assets/images/DemoUser.png";
 function CaseStudy2() {
   return (
@@ -189,20 +190,20 @@ function CaseStudy2() {
       </div>
 
       <div className="container7">
-      <img src={findings} className="image4" />
+      <img src={findingsOne} className="image4" />
 
       </div>
 
       <div className="container8">
         <div className="container8-heading">
-          <b>COMPETITIVE ANALYSIS</b>
+          COMPETITIVE ANALYSIS
         </div>
 
         <div className="text10">
-          <b>
+          
             The demand for event planning apps has due to the need for efficient
             organization in today's busy world.
-          </b>
+          
         </div>
 
         <div className="text11">
