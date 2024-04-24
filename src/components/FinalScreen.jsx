@@ -8,10 +8,11 @@ import { useState } from "react";
 
 const FinalScreen = () => {
   const [displayImg, setDisplayImg] = useState(eventDiscovery);
+  const [activeButton, setActiveButton] = useState(1);
 
-  // // Function to handle button click and update display text
-  const handleButtonClick = (id) => {
-    setDisplayImg(id);
+  const handleButtonClick = (item) => {
+    setDisplayImg(item.img);
+    setActiveButton(item.id);
   };
 
   const buttonDetails = [
@@ -52,8 +53,9 @@ const FinalScreen = () => {
             {buttonDetails.map((item) => (
               <button
                 key={item.id}
-                className="hover:bg-[#626262c4] pl-2 text-left flex items-center w-2/3 p-2 justify-center rounded-md border border-[#929292c4] cursor-pointer"
-                onClick={() => handleButtonClick(item.img)}
+                className= {`hover:bg-[#626262c4] pl-2 text-left flex items-center w-2/3 p-2 justify-center rounded-md border border-[#929292c4] cursor-pointer ${activeButton === item.id ? 'bg-[#626262c4]' : ''}`}
+                
+                onClick={() => handleButtonClick(item)}
               >
                 <div className="flex flex-col gap-2 justify-center w-3/4 text-white">
                   <span className="font-semibold">{item.main}</span>
