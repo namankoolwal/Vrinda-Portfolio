@@ -44,16 +44,16 @@ const FinalScreen = () => {
   return (
     <>
       <div className="bg-[#211c1c] mb-16">
-        <span className="flex items-center gap-2 px-5 py-8">
+        <span className="flex items-center gap-2 px-6 py-8">
           <img loading="lazy" src={ellipse}></img>{" "}
           <span className="font-semibold text-white">Final Screens</span>
         </span>
         <div className="section1 flex items-stretch justify-between p-12">
-          <div className="button w-full flex flex-col py-5 gap-5 pl-5">
+          <div className="button w-full flex flex-col justify-center gap-5 pl-5">
             {buttonDetails.map((item) => (
               <button
                 key={item.id}
-                className= {`hover:bg-[#626262c4] pl-2 text-left flex items-center w-2/3 p-2 justify-center rounded-md border border-[#929292c4] cursor-pointer ${activeButton === item.id ? 'bg-[#626262c4]' : ''}`}
+                className= {`hover:bg-[#626262c4] pl-2 text-left flex items-center w-2/3 p-3 justify-center rounded-md border border-[#929292c4] cursor-pointer ${activeButton === item.id ? 'bg-[#626262c4]' : ''}`}
                 
                 onClick={() => handleButtonClick(item)}
               >
