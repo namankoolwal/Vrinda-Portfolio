@@ -16,7 +16,7 @@ export default {
         }
       },
       animation : {
-        ring : 'ring 0.4s ease-in-out infinite'
+        ring : 'ring 0.4s ease-in-out infinite alternate'
       }
     },
   },
