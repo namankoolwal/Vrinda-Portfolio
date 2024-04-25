@@ -10,17 +10,16 @@ import goal from "../assets/images/goals.png";
 import compare from "../assets/images/compare.png";
 import mapping from "../assets/images/mapping.png";
 import findings from "../assets/images/findings.png";
-import findingsOne from "../assets/images/findingsOne.png"
+import findingsOne from "../assets/images/findingsOne.png";
 import useflow from "../assets/images/DemoUser.png";
-import userTestingOne from "../assets/images/userTestingOne.png"
-import userTestingTwo from "../assets/images/userTestingTwo.png"
-import takeawayOne from "../assets/images/takeawayOne.png"
-import takeawayTwo from "../assets/images/takeawayTwo.png"
-import gettingStarted from "../assets/images/gettingStarted.png"
-import gettingStartedInnerImg from "../assets/images/gettingStartedInnerImg.png"
-import navbarImg from "../assets/images/navbarImg.png"
+import userTestingOne from "../assets/images/userTestingOne.png";
+import userTestingTwo from "../assets/images/userTestingTwo.png";
+import takeawayOne from "../assets/images/takeawayOne.png";
+import takeawayTwo from "../assets/images/takeawayTwo.png";
+import gettingStarted from "../assets/images/gettingStarted.png";
+import gettingStartedInnerImg from "../assets/images/gettingStartedInnerImg.png";
+import navbarImg from "../assets/images/navbarImg.png";
 import FinalScreen from "./FinalScreen";
-
 
 function CaseStudy2() {
   return (
@@ -32,7 +31,12 @@ function CaseStudy2() {
         </div>
         <div className="main-text flex gap-14 flex-col md:flex-row-reverse items-start">
           <div className="w-full pt-5 lg:pt-0">
-            <img loading="lazy" src={eventifyImage} alt="image" className="image1" />
+            <img
+              loading="lazy"
+              src={eventifyImage}
+              alt="image"
+              className="image1"
+            />
           </div>
           <div className=" w-full">
             <div className="main-text1 ">
@@ -63,12 +67,8 @@ function CaseStudy2() {
             </div>
             <div className="design-role">
               <span className="text1">DESIGN ROLE</span>
-              <p className="text2">
-                Design thinking , UX/UI , Problem Solving
-              </p>
-              <p className="text-sm italic underline mt-6">
-                Figma File
-              </p>
+              <p className="text2">Design thinking , UX/UI , Problem Solving</p>
+              <p className="text-sm italic underline mt-6">Figma File</p>
             </div>
           </div>
         </div>
@@ -146,17 +146,20 @@ function CaseStudy2() {
             <img loading="lazy" src={ellipse}></img> Solutions
           </b>
         </div>
-        <div className="flex gap-16 flex-col md:flex-row-reverse items-start">
-
+        <div className="flex gap-16 flex-col mt-5 md:mt-0 md:flex-row-reverse items-start">
           <div className="layers1 w-full pt-5 lg:pt-0">
-            <img loading="lazy" src={singleMobile} alt="image" className="image2"></img>
+            <img
+              loading="lazy"
+              src={singleMobile}
+              alt="image"
+              className="image2"
+            ></img>
           </div>
 
           <div className="w-full">
-
             <div className="text7">
-              Make reaching people easily and quick within your range engage with
-              local events tailored to your interests with
+              Make reaching people easily and quick within your range engage
+              with local events tailored to your interests with
             </div>
 
             <div className="text8">
@@ -166,10 +169,14 @@ function CaseStudy2() {
             <div className="text9">
               <span className="leading-7">
                 Eventify aims to revolutionize the way
-                <b className="boldit"> people discover, connect, and engage</b> with
-                events in their local communities.Eventify strives to facilitate
-                seamless connections between event organizers and attendees, foster
-                community engagement, and create memorable experiences for users.
+                <b className="boldit">
+                  {" "}
+                  people discover, connect, and engage
+                </b>{" "}
+                with events in their local communities.Eventify strives to
+                facilitate seamless connections between event organizers and
+                attendees, foster community engagement, and create memorable
+                experiences for users.
               </span>
             </div>
           </div>
@@ -188,32 +195,39 @@ function CaseStudy2() {
             <img loading="lazy" src={ellipse}></img> Research
           </b>
         </div>
-        <div className="flex items-center justify-evenly my-20">
-          <div className="text-gray-500 text-lg font-semibold underline">1.Secondary Research</div>
-          <div className="text-gray-500 text-lg font-semibold underline">2.Users Research</div>
-          <div className="text-gray-500 text-lg font-semibold underline">3.Competitive Research</div>
+        <div className="flex items-center justify-evenly my-10 md:my-20">
+          <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
+            1.Secondary Research
+          </div>
+          <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
+            2.Users Research
+          </div>
+          <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
+            3.Competitive Research
+          </div>
         </div>
-        <div><span className="font-semibold">Method: </span>Interview</div>
+        <div>
+          <span className="font-semibold">Method: </span>Interview
+        </div>
 
-        <p className="my-10 font-[500]">There were few things of primary interest that I addressed through short conversations with few people I wanted to know the need for app WHY?</p>
+        <p className="my-10 font-[500]">
+          There were few things of primary interest that I addressed through
+          short conversations with few people I wanted to know the need for app
+          WHY?
+        </p>
         <img loading="lazy" src={Primarychallenges} className="image4" />
       </div>
 
       <div className="container7">
         <img loading="lazy" src={findingsOne} className="image4" />
-
       </div>
 
       <div className="container8">
-        <div className="container8-heading">
-          COMPETITIVE ANALYSIS
-        </div>
+        <div className="container8-heading">COMPETITIVE ANALYSIS</div>
 
         <div className="text10">
-
           The demand for event planning apps has due to the need for efficient
           organization in today's busy world.
-
         </div>
 
         <div className="text11">
@@ -236,42 +250,43 @@ function CaseStudy2() {
           How would <b>Eventify</b> compare?
         </div>
         <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
-
           <div className=" w-full pt-5 lg:pt-0">
-            <img loading="lazy" src={compare} alt="image" className="image10"></img>
+            <img
+              loading="lazy"
+              src={compare}
+              alt="image"
+              className="image10"
+            ></img>
           </div>
 
           <div className="w-full ">
             <div className="text12">
-              A combination of its competitors, Eventify would offers&nbsp; a broader
-              range of features for both casual and professional event planning.
-              It's like the Swiss Army knife of event apps, with tons of
-              customization options, advanced management tools, and collaboration
-              features.
+              A combination of its competitors, Eventify would offers&nbsp; a
+              broader range of features for both casual and professional event
+              planning. It's like the Swiss Army knife of event apps, with tons
+              of customization options, advanced management tools, and
+              collaboration features.
             </div>
 
             <div className="text13">
-              Professionals can effortlessly organize events while keeping up with
-              their hectic schedules.
+              Professionals can effortlessly organize events while keeping up
+              with their hectic schedules.
             </div>
 
             <div className="text14">
               <span>
-                Eventify is like having a trusty sidekick for busy professionals,
-                planning a conference or a company retreat, Eventify is there to
-                lend a helping hand, making event planning feel like a walk in the
-                park!
+                Eventify is like having a trusty sidekick for busy
+                professionals, planning a conference or a company retreat,
+                Eventify is there to lend a helping hand, making event planning
+                feel like a walk in the park!
               </span>
             </div>
           </div>
         </div>
-
       </div>
 
       <div className="container11">
-        <div className="container11-heading">
-          MAPPING & SORTING
-        </div>
+        <div className="container11-heading">MAPPING & SORTING</div>
 
         <div className="text15">
           <span>
@@ -285,7 +300,11 @@ function CaseStudy2() {
 
       <div className="container12">
         <img loading="lazy" src={mapping} className="image6" />
-        <div className="text16"><span className="italic">Takeaways from the understanding of users</span></div>
+        <div className="text16">
+          <span className="italic">
+            Takeaways from the understanding of users
+          </span>
+        </div>
       </div>
 
       <div className="container13">
@@ -336,30 +355,38 @@ function CaseStudy2() {
       </div>
       {/* *********************** */}
       <div className="container8">
-        <div className="container8-heading">
-          USER TESTING (WIREFRAME)
-        </div>
+        <div className="container8-heading">USER TESTING (WIREFRAME)</div>
         <div className="bg-[#d9d9d9] w-full flex gap-10 py-14 justify-center mt-10">
-          <img loading="lazy" src={userTestingOne} width={270} height={150} />
-          <img loading="lazy" src={userTestingTwo} width={400} height={250} />
-
+          <img
+            loading="lazy"
+            src={userTestingOne}
+            className="w-[130px] h-[170px] md:h-[450px] md:w-[230px] lg:w-[320px]"
+          />
+          <img
+            loading="lazy"
+            src={userTestingTwo}
+            className="w-[180px] h-[170px] md:h-[450px] md:w-[370px] lg:w-[470px]"
+          />
         </div>
         <div className="text11">
           <span>
-            I focused mainly on the homepage and its navigation at this stage and wanted to get external opinions early on.I asked 3 people to navigate the prototype without guidance and wanted to see...
+            I focused mainly on the homepage and its navigation at this stage
+            and wanted to get external opinions early on.I asked 3 people to
+            navigate the prototype without guidance and wanted to see...
           </span>
           <ul className="leading-7 list-disc ml-5 mt-5 mb-10">
             <li>If the navigation was intuitive</li>
-            <li>If there were features/information missing they would have found useful</li>
+            <li>
+              If there were features/information missing they would have found
+              useful
+            </li>
             <li>How they felt during the process</li>
           </ul>
         </div>
       </div>
       {/* ******************************************* */}
       <div className="container8">
-        <div className="container8-heading">
-          TAKEAWAYS
-        </div>
+        <div className="container8-heading">TAKEAWAYS</div>
         <div className=" w-full flex flex-col gap-8 pt-10 justify-center">
           <img loading="lazy" src={takeawayOne} />
           <img loading="lazy" src={takeawayTwo} />
@@ -370,13 +397,27 @@ function CaseStudy2() {
       <div className="container10">
         <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
           <div className=" w-full pt-5 lg:pt-0">
-            <img loading="lazy" src={gettingStarted} alt="image" className="image10"></img>
+            <img
+              loading="lazy"
+              src={gettingStarted}
+              alt="image"
+              className="image10"
+            ></img>
           </div>
           <div className="w-full ">
             <div className="text12 w-4/5 flex flex-col gap-10">
-              <img loading="lazy" src={gettingStartedInnerImg} alt="image" width={300} />
+              <img
+                loading="lazy"
+                src={gettingStartedInnerImg}
+                alt="image"
+                width={300}
+              />
               <p>
-                Based on feedback from testing, I added a "Sign In" button alongside "Get Started" which is friendly update that caters to both new and returning users. It offers convenience and personalization, like welcoming newcomers to a party while also greeting familiar faces with a warm hello.
+                Based on feedback from testing, I added a "Sign In" button
+                alongside "Get Started" which is friendly update that caters to
+                both new and returning users. It offers convenience and
+                personalization, like welcoming newcomers to a party while also
+                greeting familiar faces with a warm hello.
               </p>
             </div>
           </div>
@@ -386,13 +427,21 @@ function CaseStudy2() {
       <div className="container10">
         <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
           <div className=" w-full pt-5 lg:pt-0">
-            <img loading="lazy" src={navbarImg} alt="image" className="image10"></img>
+            <img
+              loading="lazy"
+              src={navbarImg}
+              alt="image"
+              className="image10"
+            ></img>
           </div>
           <div className="w-full ">
             <div className="text12 w-4/5 flex flex-col gap-10">
               <span className="font-bold">THE NAV BAR</span>
               <p>
-              I incorrectly assumed that most users would eventually learn the purpose of each page through experience. By accompanying the icons with text, it becomes much easier to navigate for new users.
+                I incorrectly assumed that most users would eventually learn the
+                purpose of each page through experience. By accompanying the
+                icons with text, it becomes much easier to navigate for new
+                users.
               </p>
             </div>
           </div>
@@ -400,11 +449,32 @@ function CaseStudy2() {
       </div>
       {/* ===================================================== */}
       <div className="container10">
-        <FinalScreen/>
+        <FinalScreen />
       </div>
+      {/* ===================================================== */}
+      <div className="container15">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+            <img loading="lazy" src={ellipse}></img> Design
+          </b>
+        </div>
+        <div className=" bg-[#d9d9d9] mb-10 overflow-hidden m-auto h-[650px] flex mt-10 ">
+          <iframe
+            height="700"
+            className="m-auto w-full"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwDIwkImF372Q3iq7S2uUcq%2FWEBSITE%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1625-1506%26viewport%3D389%252C2648%252C0.25%26t%3DPAeDSLBcF8RBsatQ-1%26scaling%3Dscale-down%26starting-point-node-id%3D1625%253A1506%26mode%3Ddesign&hotspot-hints=0&hide-ui=1"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      {/* ===================================================== */}
+      
+
+
 
     </div>
   );
 }
 
 export default CaseStudy2;
+
