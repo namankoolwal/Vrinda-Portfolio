@@ -458,11 +458,11 @@ function CaseStudy2() {
             <img loading="lazy" src={ellipse}></img> Design
           </b>
         </div>
-        <div className=" bg-[#d9d9d9] mb-10 overflow-hidden m-auto h-[650px] flex mt-10 ">
+        <div className=" bg-[#d9d9d9] mb-10 overflow-hidden m-auto h-[670px] flex mt-10 ">
           <iframe
-            height="700"
+            height={700}
             className="m-auto w-full"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwDIwkImF372Q3iq7S2uUcq%2FWEBSITE%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1625-1506%26viewport%3D389%252C2648%252C0.25%26t%3DPAeDSLBcF8RBsatQ-1%26scaling%3Dscale-down%26starting-point-node-id%3D1625%253A1506%26mode%3Ddesign&hotspot-hints=0&hide-ui=1"
+            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/wDIwkImF372Q3iq7S2uUcq/WEBSITE?page-id=0%3A1&type=design&node-id=1625-1506&viewport=389%2C2648%2C0.25&t=Xn9OfrLo2Uvj81hi-8&scaling=scale-down&starting-point-node-id=1625%3A1506&hotspot-hints=0&hide-ui=1"
             allowfullscreen
           ></iframe>
         </div>
