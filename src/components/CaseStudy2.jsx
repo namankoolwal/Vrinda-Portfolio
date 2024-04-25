@@ -20,6 +20,11 @@ import gettingStarted from "../assets/images/gettingStarted.png";
 import gettingStartedInnerImg from "../assets/images/gettingStartedInnerImg.png";
 import navbarImg from "../assets/images/navbarImg.png";
 import FinalScreen from "./FinalScreen";
+import styleGuide from "../assets/images/styleGuide.png";
+import thankYou from "../assets/images/thankYou.png";
+import greenLightning from "../assets/images/greenLightning.png";
+import fitverx from "../assets/images/fitverx.png";
+import pinterestImg from "../assets/images/pinterestImg.png";
 
 function CaseStudy2() {
   return (
@@ -365,7 +370,7 @@ function CaseStudy2() {
           <img
             loading="lazy"
             src={userTestingTwo}
-            className="w-[180px] h-[170px] md:h-[450px] md:w-[370px] lg:w-[470px]"
+            className="w-[180px] h-[170px] md:h-[455px] md:w-[370px] lg:w-[470px]"
           />
         </div>
         <div className="text11">
@@ -454,27 +459,200 @@ function CaseStudy2() {
       {/* ===================================================== */}
       <div className="container15">
         <div className="lists">
-          <b className="flex items-center gap-4">
-            <img loading="lazy" src={ellipse}></img> Design
-          </b>
+          <b className="flex items-center gap-4">Prototype</b>
         </div>
         <div className=" bg-[#d9d9d9] mb-10 overflow-hidden m-auto h-[670px] flex mt-10 ">
           <iframe
+            width="800"
             height={700}
             className="m-auto w-full"
-            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/wDIwkImF372Q3iq7S2uUcq/WEBSITE?page-id=0%3A1&type=design&node-id=1625-1506&viewport=389%2C2648%2C0.25&t=Xn9OfrLo2Uvj81hi-8&scaling=scale-down&starting-point-node-id=1625%3A1506&hotspot-hints=0&hide-ui=1"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fs4SP9jdVvEIQCBIMMQK27w%2Feventify%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D505-350%26viewport%3D2994%252C7326%252C0.5%26t%3DLZF0W1aA7ZadTabp-1%26scaling%3Dscale-down%26starting-point-node-id%3D505%253A350%26mode%3Ddesign&hotspot-hints=0&hide-ui=1"
             allowfullscreen
           ></iframe>
         </div>
       </div>
       {/* ===================================================== */}
-      
+      <div className="container10">
+        <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
+          <div className=" w-full pt-5 lg:pt-0">
+            <img
+              loading="lazy"
+              src={styleGuide}
+              alt="image"
+              className="image10"
+            ></img>
+          </div>
+          <div className="w-full ">
+            <div className="text12 w-4/5 flex flex-col gap-10 ">
+              <span className="font-semibold">STYLE GUIDE</span>
+              <p>
+                I wanted to convey the app as one that's fun and accessible,
+                making users excited to start their new journey with Eventify.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ****************************************************************** */}
+      <div className="px-[200px] my-[120px] font-Urbanist box-border">
+        <div className="flex justify-between">
+          <div className="w-full">
+            <div className="grid grid-cols-2 p-5 lg:px-28">
+              <div className="bg-black w-full h-11"></div>
+              <div className="bg-[#717171] w-full h-11"></div>
+              <div className="bg-[#F0F2F9] w-full h-11"></div>
+              <div className="bg-[#595E5A] w-full h-11"></div>
+              <div className="bg-[#426DDD] w-full h-11"></div>
+              <div className="bg-[#B6BDFF] w-full h-11"></div>
+              <div className="bg-[#EF7739] w-full h-11"></div>
+              <div className="bg-[#0ABCA7] w-full h-11"></div>
+              <div className="bg-[#FFE8C8] w-full h-11"></div>
+              <div className="bg-[#EEFBF2] w-full h-11"></div>
+            </div>
+          </div>
 
+          <div className="w-full">
+            <div className="flex flex-col gap-5 justify-center pr-5 h-full">
+              <div className="flex flex-col gap-2">
+                <span className="font-semibold text-[#426DDD]">Typography</span>
+                <span className="text-[#717171]">Poppins</span>
+                <span className="flex items-center gap-6 text-[#717171]">
+                  <span className="font-[500]">Medium</span>
+                  <span className="font-semibold">Semi-Medium</span>
+                  <span className="font-bold">Bold</span>
+                </span>
+              </div>
 
-
+              <div className="flex flex-col gap-2 text-[#717171]">
+                <span>Montserrat</span>
+                <span className="flex items-center gap-6">
+                  <span>Regular</span>
+                  <span className="font-[500]">Medium</span>
+                  <span className="font-semibold">Semi-Medium</span>
+                  <span className="font-bold">Bold</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ****************************************************************** */}
+      <div className="px-[200px] mt-[120px] font-Urbanist box-border pb-10">
+        <div className="text-2xl">
+          <b className="flex items-center gap-4">
+            <img loading="lazy" src={ellipse}></img> Conclusion
+          </b>
+        </div>
+        <div className="flex pt-8">
+          <div className="w-2/3 ">
+            <div className="flex flex-col gap-4">
+              <span className="text-[17px]">Not Really</span>
+              <span className="text-xl font-semibold">The End</span>
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="flex flex-col gap-5 mr-5 pr-16">
+              <div className="text-[17px] leading-5">
+                The long process of researching, testing, and repeatedly honing
+                my designs has led to a project I’m proud of, but still, I
+                believe there’s a lot of room for improvement.
+              </div>
+              <div className="text-xl font-semibold">WHAT I LEARNED</div>
+              <div className="text-[17px]">
+                It's good to ask for lots of help! Having a fresh pair of eyes
+                helped a lot with nitpicking details I glazed over
+                <br /> Settling on a good word choice can be harder than
+                settling on a design choice...
+                <br /> Brand identity is formed through every decision in tone,
+                color, shapes, and more!
+              </div>
+              <div className="text-xl font-semibold">
+                SOMETHING I WANT TO IMPROVE ON
+              </div>
+              <div className="text-[17px] leading-5">
+                I'd like to work more on my research method. The sample for my
+                initial interview research was quite small and biased given that
+                they were my friends. While they gave me incredible insights, it
+                definitely would have been better if I reached out to a larger
+                audience for more diversity!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ***************************************************************** */}
+      <div className="px-[200px] my-[120px] font-Urbanist box-border">
+        <div className="flex flex-col gap-6 items-center justify-center">
+          <img
+            src={greenLightning}
+            alt="greenLightning"
+            className="w-[200px]"
+            loading="lazy"
+          />
+          <img
+            src={thankYou}
+            alt="thankYou"
+            className="w-[150px]"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      {/* ***************************************************************** */}
+      <div className="px-[200px] my-[150px] font-Urbanist box-border">
+        <div>
+          <div className="flex flex-col gap-10">
+            <div className="">
+              <p
+                className="text-3xl font-[500] text-center"
+                style={{ wordSpacing: "" }}
+              >
+                You've reached the end...why not take a look at my other
+                projects?
+              </p>
+            </div>
+            <div className="flex gap-9 items-center justify-center">
+              <div className=" w-full flex p-5 pr-0 mr-0 justify-end">
+                <div className="flex flex-col gap-3 w-3/4 items-end">
+                  <img
+                    loading="lazy"
+                    src={fitverx}
+                    alt="image"
+                    className="w-full"
+                  ></img>
+                  <div className="flex flex-col gap-2 items-start text-left w-full ">
+                    <span className="text-[17px] font-semibold">
+                      FITVERX:Virtual Try ON Feature
+                    </span>
+                    <span className="text-[#8C8C8C] text-sm">
+                      Problem Solving
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="  w-full p-5 pl-0">
+                <div className="flex gap-3 flex-col">
+                  <img
+                    loading="lazy"
+                    src={pinterestImg}
+                    alt="image"
+                    className="w-3/4"
+                  ></img>
+                  <div className="flex gap-2 flex-col">
+                    <span className="text-[17px] font-semibold">
+                      Pinterest:Redesigning Pinterest
+                    </span>
+                    <span className="text-[#8C8C8C] text-sm">
+                      User Research, User Experience
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default CaseStudy2;
-

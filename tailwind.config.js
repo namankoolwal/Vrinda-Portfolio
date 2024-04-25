@@ -19,6 +19,9 @@ export default {
         ring : 'ring 0.4s ease-in-out infinite alternate'
       }
     },
+    fontFamily: {
+      Urbanist: ['Urbanist', 'sans-serif'],
+    },
   },
   plugins: [],
 }

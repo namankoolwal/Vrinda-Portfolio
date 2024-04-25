@@ -58,8 +58,8 @@ const FinalScreen = () => {
                 onClick={() => handleButtonClick(item)}
               >
                 <div className="flex flex-col gap-2 justify-center w-3/4 text-white">
-                  <span className="font-semibold">{item.main}</span>
-                  <span className="text-[12px]">{item.sub}</span>
+                  <span className="font-semibold text-lg">{item.main}</span>
+                  <span className="text-[14px]">{item.sub}</span>
                 </div>
               </button>
             ))}
