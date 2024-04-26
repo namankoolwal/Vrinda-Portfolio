@@ -29,6 +29,7 @@ import pinterestImg from "../assets/images/pinterestImg.png";
 function CaseStudy2() {
   return (
     <div>
+      <Header/>
       <div className="container1">
         <div className="first-text">Featured Project</div>
         <div className="eventify">
