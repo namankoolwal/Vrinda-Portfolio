@@ -54,7 +54,7 @@ function Header() {
   return (
     <>
       <nav
-        className={`bg-gray-100 px-4 py-2 md:py-4 md:px-10 sticky top-0 z-50 transition-all duration-500 ${
+        className={`bg-gray-100 px-4 py-2 md:py-4 md:px-10 sticky z-50 transition-all duration-500 ${
           visible ? "top-0" : "-top-28"
         }`}
       >
