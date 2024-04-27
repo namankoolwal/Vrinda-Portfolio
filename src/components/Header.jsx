@@ -42,7 +42,7 @@ function Header() {
     {
       id: 4,
       name: "Resume",
-      link: "/Resume",
+      link: "/resume",
     },
   ];
 
