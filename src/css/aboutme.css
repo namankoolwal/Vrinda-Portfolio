@@ -118,7 +118,7 @@
 
 .drop-letter:hover {
   transform: rotate(20deg); /* Scale letter up on hover */
-  transition: transform 0.9s ease; /* Smooth transition for scaling */
+  transition: all 0.9s ease; /* Smooth transition for scaling */
 
 
 }
