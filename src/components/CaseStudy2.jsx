@@ -25,11 +25,13 @@ import thankYou from "../assets/images/thankYou.png";
 import greenLightning from "../assets/images/greenLightning.png";
 import fitverx from "../assets/images/fitverx.png";
 import pinterestImg from "../assets/images/pinterestImg.png";
+import ScrollToTop from "./ScrollToTop";
 
 function CaseStudy2() {
   return (
     <div>
       <Header/>
+      <ScrollToTop/>
       <div className="container1">
         <div className="first-text">Featured Project</div>
         <div className="eventify">

@@ -41,11 +41,6 @@ function Header() {
     },
     {
       id: 4,
-      name: "Linkedin",
-      link: "/Linkedin",
-    },
-    {
-      id: 5,
       name: "Resume",
       link: "/Resume",
     },
@@ -78,7 +73,7 @@ function Header() {
             <NavLink
               key={item.id}
               to={item.link}
-              className="nav-item"
+              className="nav-item text-lg"
               style={({ isActive }) => ({
                 textDecoration: isActive ? "underline" : null,
               })}
@@ -87,9 +82,21 @@ function Header() {
             </NavLink>
           ))}
 
+          <NavLink
+            to="https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/"
+            target="_blank"
+            className="nav-item text-lg"
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "underline" : null,
+            })}
+          >
+            LinkedIn
+          </NavLink>
+
+
           {/* <NavLink
             to="/Resume"
-            className="nav-item"
+            className="nav-item text-lg"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : null,
             })}
@@ -101,5 +108,5 @@ function Header() {
     </>
   );
 }
-
+// https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/
 export default Header;

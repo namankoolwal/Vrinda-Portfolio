@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   align-items: flex-start; /* Align items at the top */
   padding-left: 48px;
+  margin-top: 30px;
 }
 
 .text-content, .content {
@@ -13,9 +14,10 @@
 .profile-photo {
   /* Adjust the float property for better responsiveness */
   float: right;
-  margin-left: 20px; /* Add some space between the text and the image */
-  width: 350px; /* Adjust based on your preference */
+  margin-right: 15px; /* Add some space between the text and the image */
+  width: 400px; /* Adjust based on your preference */
   height: auto;
+  padding-top: 80px;
 }
 
 .heading-hola {
@@ -39,13 +41,13 @@
 
 .footer, .know-me, .designing {
   font-size: 24px;
-  color: rgba(0, 83, 35, 1);
+  color: black;
   padding-top: 48px;
   font-family: "Bree Serif", serif;
 }
 
 .behands, .layer1, .dribble {
-  width: 32px;
+  width: 60px;
   padding-right: 24px;
 }
 
@@ -93,24 +95,30 @@
 @keyframes drop {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-100px) rotate(0deg);
+
   }
   80% {
     opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(10px), rotate(0deg) ;
+
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0), rotate(0deg);
+
   }
 }
 
 .drop-letter {
   display: inline-block;
-  animation: drop 0.5s ease forwards;
-  transition: transform 0.2s ease; /* Smooth transition for scaling */
-  cursor: progress; /* Indicates interactivity */
+  animation: drop 0.1s ease forwards;
+  transition: all 0.9s ease-in; /* Smooth transition for scaling */
+  /* cursor: progress; Indicates interactivity */
 }
 
 .drop-letter:hover {
-  transform: scale(1.5); /* Scale letter up on hover */
+  transform: rotate(20deg); /* Scale letter up on hover */
+  transition: transform 0.9s ease; /* Smooth transition for scaling */
+
+
 }
