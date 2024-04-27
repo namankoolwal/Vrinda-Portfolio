@@ -50,7 +50,7 @@ function Header() {
     <>
       <nav
         className={`bg-gray-100 px-4 py-2 md:py-4 md:px-10 sticky z-50 transition-all duration-500 ${
-          visible ? "top-0" : "-top-28"
+          visible ? "top-0" : "md:-top-28 top-0"
         }`}
       >
         <button
@@ -61,7 +61,7 @@ function Header() {
           {isMenuOpen ? (
             <span className="font-semibold">&#10005;</span>
           ) : (
-            <span className="text-2xl">&#9776;</span>
+            <span className="text-2xl font-semibold">&#9776;</span>
           )}
         </button>
         <div
