@@ -69,13 +69,13 @@ function Header() {
     <>
        <button
           id="hamburger"
-          className="md:hidden sticky top-0 peer/toggle bg-gray-100 p-2 w-full px-4 text-left"
+          className="md:hidden sticky top-0 peer/toggle bg-gray-100 p-2 w-full px-4 text-left z-10"
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
-            <span className="font-semibold">&#10005;</span>
+            <span className="text-2xl font-bold">&#10005;</span>
           ) : (
-            <span className="text-2xl font-semibold">&#9776;</span>
+            <span className="text-2xl font-bold ">&#9776;</span>
           )}
         </button>
       <nav

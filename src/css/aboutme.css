@@ -1,6 +1,7 @@
 .aboutme-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   align-items: flex-start; /* Align items at the top */
   padding-left: 48px;
   margin-top: 30px;
@@ -73,8 +74,7 @@
   }
 
   .heading-hola {
-    font-size: 36px; /* Smaller font size for headings */
-    
+    font-size: 36px; /* Smaller font size for headings */    
   }
 
   .texts, .footer, .know-me, .designing {
@@ -87,7 +87,8 @@
   }
 
   .behands, .layer1, .dribble {
-    padding-right: 12px; /* Less spacing between icons */
+    padding-right: 15px; /* Less spacing between icons */
+    width: 45px;
   }
 }
 

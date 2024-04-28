@@ -17,7 +17,7 @@ function Aboutme() {
       <div className="aboutme-container">
         <div className="row">
           <div className="text-content">
-            <h1 className="heading-hola">
+            <h1 className="heading-hola -z-20">
               {hola.map((letter, index) => (
                 <span
                   className="drop-letter"
@@ -44,13 +44,15 @@ function Aboutme() {
             </p>
           </div>
         </div>
-        <div className="content">
-          <div className="hobbies">
+        <div className="content w-full">
+          <div className="hobbies w-full flex flex-col justify-between items-center md:flex-row-reverse">
             <img
               src={ProfilePhoto}
               alt="Profile Photo"
               className="profile-photo"
             />
+            <div className="flex-1 w-full">
+
             <h2 className="designing mb-4">
               Besides designing you can find me ⬇️
             </h2>
@@ -64,6 +66,7 @@ function Aboutme() {
                 🌱 Probably Collecting Way Too Many Notebooks
               </p>
               <p className="find-me">✨ Eating Ramen </p>
+            </div>
             </div>
           </div>
           <div className="contact">
