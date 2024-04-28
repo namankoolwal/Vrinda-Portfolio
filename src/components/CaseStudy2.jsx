@@ -66,7 +66,7 @@ function CaseStudy2() {
             <div className="details">
               <div className="timeline ">
                 <span className="text1">TIMELINE</span>
-                <p className="text2">Dec-Jan 2023(2weeks)</p>
+                <p className="text2">Dec-Jan 2024</p>
               </div>
               <div className="sector">
                 <span className="text1">SECTOR</span>
@@ -308,7 +308,7 @@ function CaseStudy2() {
 
       <div className="container12">
         <img loading="lazy" src={mapping} className="image6" />
-        <div className="text16">
+        <div className="text16 md:mt-[24px] md:text-[17px]">
           <span className="italic">
             Takeaways from the understanding of users
           </span>
@@ -518,7 +518,7 @@ function CaseStudy2() {
               <div className="flex flex-col gap-2">
                 <span className="font-semibold text-[#426DDD]">Typography</span>
                 <span className="text-[#717171]">Poppins</span>
-                <span className="flex items-center gap-6 text-[#717171]">
+                <span className="flex items-center gap-3 md:gap-6 text-[#717171]">
                   <span className="font-[500]">Medium</span>
                   <span className="font-semibold">Semi-Medium</span>
                   <span className="font-bold">Bold</span>
@@ -527,7 +527,7 @@ function CaseStudy2() {
 
               <div className="flex flex-col gap-2 text-[#717171]">
                 <span>Montserrat</span>
-                <span className="flex items-center gap-6">
+                <span className="flex items-center gap-3 md:gap-6">
                   <span>Regular</span>
                   <span className="font-[500]">Medium</span>
                   <span className="font-semibold">Semi-Medium</span>

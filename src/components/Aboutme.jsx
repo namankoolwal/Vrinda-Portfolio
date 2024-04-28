@@ -31,15 +31,15 @@ function Aboutme() {
             <p className="texts">
               My name is Vrinda. I'm an Interaction Design student{" "}
             </p>
-            <p className="texts text-balance">
+            <p className="texts md:text-balance">
               My passion for design emerged as the world turned digital. I began
-              with <span className="font-semibold">graphic designing</span> and I find myself <span className="font-semibold">crafting experiences</span> that
+              with <span className="font-semibold"> graphic designing </span> and I find myself <span className="font-semibold"> crafting experiences </span> that
               strengthens connection and creates a sense of community for
-              others. Since then, I have shifted my career focus to UX design.
+              others. Since then, I have shifted my carrer focus to UX design.
             </p>
-            <p className="texts  text-balance">
-              Designing for <span className="font-semibold">inclusivity, equitability, and universal</span>
-              accessibility are my core values when it comes to designing
+            <p className="texts md:text-balance">
+              Designing for <span className="font-semibold"> inclusivity, equitability, and universal </span>
+               accessibility are my core values when it comes to designing
               positive experiences with people in mind.
             </p>
           </div>
@@ -56,16 +56,14 @@ function Aboutme() {
             <h2 className="designing mb-4">
               Besides designing you can find me ⬇️
             </h2>
-            <div>
-              <p className="find-me">👋 Writing Notes To Myself</p>
-              <p className="find-me">☕ Having Coffee Hours</p>
-              <p className="find-me">🍄 Cooking Food lorem250</p>
-              <p className="find-me">🌈 Watching Anime</p>
-              <p className="find-me">🎨 Drawing in my Sketchbook</p>
-              <p className="find-me">
-                🌱 Probably Collecting Way Too Many Notebooks
-              </p>
-              <p className="find-me">✨ Eating Ramen </p>
+            <div className="w-full ">
+              <p className="find-me text-[14px] md:text-[18px]">👋 Writing Notes To Myself</p>
+              <p className="find-me text-[14px] md:text-[18px]">☕ Having Coffee Hours</p>
+              <p className="find-me text-[14px] md:text-[18px]">🍄 Cooking Food</p>
+              <p className="find-me text-[14px] md:text-[18px]">🌈 Watching Anime</p>
+              <p className="find-me text-[14px] md:text-[18px]">🎨 Drawing in my Sketchbook</p>
+              <p className="find-me text-[14px] md:text-[18px]">🌱 <span className="">Probably Collecting Way Too Many Notebooks</span></p>
+              <p className="find-me text-[14px] md:text-[18px]">✨ Eating Ramen </p>
             </div>
             </div>
           </div>

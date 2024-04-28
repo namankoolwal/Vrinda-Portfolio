@@ -35,7 +35,6 @@
 }
 
 .find-me {
-  font-size: 18px;
   margin-bottom: 16px;
   font-family: "Urbanist", sans-serif;
 }
@@ -78,8 +77,12 @@
   }
 
   .texts, .footer, .know-me, .designing {
-    font-size: 20px; /* Slightly smaller font size for better readability */
+    font-size: 18px; /* Slightly smaller font size for better readability */
    
+  }
+  .texts{
+  line-height: 160%;
+
   }
 
   .find-me {
