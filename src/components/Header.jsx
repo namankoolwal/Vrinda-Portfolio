@@ -1,13 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const navRef = useRef(null);
 
-  const toggleMenu = () => {
+  const toggleMenu = () => { 
     setIsMenuOpen(!isMenuOpen);
+    console.log("hii")
+    if(navRef.current.classList.contains("bg-gray-100")){
+      console.log(navRef.current.classList.contains("bg-gray-100"))
+      navRef.current.classList.remove("bg-gray-100")
+    }
+    else{
+      navRef.current.classList.add("bg-gray-100")
+
+    }
   };
 
   useEffect(() => {
@@ -21,6 +31,15 @@ function Header() {
     const currentScrollPos = window.scrollY;
     setVisible(currentScrollPos < prevScrollPos);
     setPrevScrollPos(currentScrollPos);
+
+    if(visible){
+      navRef.current.classList.add("md:top-0")
+      navRef.current.classList.remove("md:-top-28")
+    }
+    else{
+      navRef.current.classList.remove("md:top-0")
+      navRef.current.classList.add("md:-top-28")
+    }
   };
 
   const menuItems = [
@@ -48,14 +67,9 @@ function Header() {
 
   return (
     <>
-      <nav
-        className={`bg-gray-100 px-4 py-2 md:py-4 md:px-10 sticky z-50 transition-all duration-500 ${
-          visible ? "top-0" : "md:-top-28 top-0"
-        }`}
-      >
-        <button
+       <button
           id="hamburger"
-          className="md:hidden block peer/toggle"
+          className="md:hidden sticky top-0 peer/toggle bg-gray-100 p-2 w-full px-4 text-left"
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
@@ -64,10 +78,15 @@ function Header() {
             <span className="text-2xl font-semibold">&#9776;</span>
           )}
         </button>
+      <nav
+        className={` md:bg-gray-100 px-4 py-2 md:py-4 md:px-10 w-1/2 h-full md:w-full fixed md:sticky z-50 transition-all duration-500 `}
+        ref={navRef}
+      >
+     
         <div
           className={` ${
-            isMenuOpen ? "peer-[#hamburger]/toggle:flex " : "hidden"
-          } pt-2 md:mt-0 hidden md:flex flex-col md:flex-row md:justify-end md:items-center gap-6 `}
+            isMenuOpen ? "flex " : "hidden"
+          } pt-10 md:pt-2 pl-10 md:mt-0 flex md:flex flex-col md:flex-row md:justify-end md:items-center gap-12 md:gap-6 `}
         >
           {menuItems.map((item) => (
             <NavLink

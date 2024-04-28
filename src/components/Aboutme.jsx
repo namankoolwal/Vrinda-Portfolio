@@ -31,15 +31,15 @@ function Aboutme() {
             <p className="texts">
               My name is Vrinda. I'm an Interaction Design student{" "}
             </p>
-            <p className="texts">
+            <p className="texts text-balance">
               My passion for design emerged as the world turned digital. I began
-              with <span className="font-semibold">graphic designing</span> and I find<br/> myself <span className="font-semibold">crafting experiences</span> that
+              with <span className="font-semibold">graphic designing</span> and I find myself <span className="font-semibold">crafting experiences</span> that
               strengthens connection and creates a sense of community for
-              others.<br/> Since then, I have shifted my career focus to UX design.
+              others. Since then, I have shifted my career focus to UX design.
             </p>
-            <p className="texts">
+            <p className="texts  text-balance">
               Designing for <span className="font-semibold">inclusivity, equitability, and universal</span>
-              accessibility are my core<br/> values when it comes to designing
+              accessibility are my core values when it comes to designing
               positive experiences with people in mind.
             </p>
           </div>
