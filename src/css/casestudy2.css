@@ -16,10 +16,10 @@
 }
 
 .main-text1 {
-  font-size: 35px;
+  /* font-size: 35px; */
   font-weight: 600;
   font-family: "Urbanist", sans-serif;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 .image1,
 .image2 {
@@ -28,6 +28,8 @@
 }
 .labels {
   padding-top: 20px;
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .label1,
@@ -139,13 +141,13 @@
   }
   .layers1 {
     /* width: 100%;  */
-    background-color: rgba(1, 1, 1, 1);
+    /* background-color: rgba(1, 1, 1, 1); */
     /* padding: 30px; */
     box-sizing: border-box;
   }
   .image2 {
-    float: right;
-    height: 400px;
+    /* float: right; */
+    /* height: 400px; */
   }
 }
 
@@ -337,7 +339,12 @@
   .image10 {
     width: 100%;
   }
-  .container1,
+  .container1{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    /* margin-top: 40px; */
+  }
   .container2,
   .container3,
   .container4,
@@ -354,6 +361,12 @@
   .container15 {
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 48px;
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+  .container5{
+    margin-top: 60px;
+    margin-bottom: 60px;
+
   }
 }

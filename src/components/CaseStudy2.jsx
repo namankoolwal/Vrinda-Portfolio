@@ -37,7 +37,7 @@ function CaseStudy2() {
         <div className="eventify">
           <b>EVENTIFY APP DESIGN</b>
         </div>
-        <div className="main-text flex gap-14 flex-col md:flex-row-reverse items-start">
+        <div className="main-text flex gap-14 flex-col lg:flex-row-reverse items-start">
           <div className="w-full pt-5 lg:pt-0">
             <img
               loading="lazy"
@@ -47,7 +47,7 @@ function CaseStudy2() {
             />
           </div>
           <div className=" w-full">
-            <div className="main-text1 ">
+            <div className="main-text1 text-[20px] md:text-[35px] md:pt-5">
               Discover, Connect, Attend. Effortlessly explore and engage with
               local events.
             </div>
@@ -154,13 +154,13 @@ function CaseStudy2() {
             <img loading="lazy" src={ellipse}></img> Solutions
           </b>
         </div>
-        <div className="flex gap-16 flex-col mt-5 md:mt-0 md:flex-row-reverse items-start">
-          <div className="layers1 w-full pt-5 lg:pt-0">
+        <div className="flex gap-16 flex-col mt-5 md:mt-0 lg:flex-row-reverse items-start">
+          <div className="layers1 w-full pt-5 flex items-center justify-center lg:pt-0">
             <img
               loading="lazy"
               src={singleMobile}
               alt="image"
-              className="image2"
+              className="image2 mx-auto"
             ></img>
           </div>
 
@@ -364,16 +364,16 @@ function CaseStudy2() {
       {/* *********************** */}
       <div className="container8">
         <div className="container8-heading">USER TESTING (WIREFRAME)</div>
-        <div className="bg-[#d9d9d9] w-full flex gap-10 py-14 justify-center mt-10">
+        <div className="bg-[#d9d9d9] w-full flex gap-5 md:gap-10 py-14 justify-center mt-10">
           <img
             loading="lazy"
             src={userTestingOne}
-            className="w-[130px] h-[170px] md:h-[450px] md:w-[230px] lg:w-[320px]"
+            className="w-[110px] h-[170px] md:h-[450px] md:w-[230px] lg:w-[320px]"
           />
           <img
             loading="lazy"
             src={userTestingTwo}
-            className="w-[180px] h-[170px] md:h-[455px] md:w-[370px] lg:w-[470px]"
+            className="w-[140px] h-[170px] md:h-[455px] md:w-[370px] lg:w-[470px]"
           />
         </div>
         <div className="text11">
@@ -433,13 +433,12 @@ function CaseStudy2() {
       </div>
       {/* ************************************************** */}
       <div className="container10">
-        <div className="flex gap-16 flex-col lg:flex-row-reverse items-center">
-          <div className=" w-full pt-5 lg:pt-0">
+        <div className="flex gap-8 md:gap-16 flex-col-reverse lg:flex-row-reverse items-center">
+          <div className=" w-full pb-5 lg:pb-0">
             <img
               loading="lazy"
               src={navbarImg}
               alt="image"
-              className="image10"
             ></img>
           </div>
           <div className="w-full ">
@@ -497,8 +496,8 @@ function CaseStudy2() {
         </div>
       </div>
       {/* ****************************************************************** */}
-      <div className="px-[200px] my-[120px] font-Urbanist box-border">
-        <div className="flex justify-between">
+      <div className="px-5 lg:px-[200px] my-[40px] md:my-[120px] font-Urbanist box-border">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="w-full">
             <div className="grid grid-cols-2 p-5 lg:px-28">
               <div className="bg-black w-full h-11"></div>
@@ -515,7 +514,7 @@ function CaseStudy2() {
           </div>
 
           <div className="w-full">
-            <div className="flex flex-col gap-5 justify-center pr-5 h-full">
+            <div className="flex flex-col gap-5 justify-center pl-5 md:px-0 md:pr-10 h-full">
               <div className="flex flex-col gap-2">
                 <span className="font-semibold text-[#426DDD]">Typography</span>
                 <span className="text-[#717171]">Poppins</span>
@@ -540,21 +539,21 @@ function CaseStudy2() {
         </div>
       </div>
       {/* ****************************************************************** */}
-      <div className="px-[200px] mt-[120px] font-Urbanist box-border pb-10">
+      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border pb-10">
         <div className="text-2xl">
           <b className="flex items-center gap-4">
             <img loading="lazy" src={ellipse}></img> Conclusion
           </b>
         </div>
-        <div className="flex pt-8">
-          <div className="w-2/3 ">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0 pt-8">
+          <div className=" md:w-2/3 ">
             <div className="flex flex-col gap-4">
               <span className="text-[17px]">Not Really</span>
               <span className="text-xl font-semibold">The End</span>
             </div>
           </div>
           <div className="w-full">
-            <div className="flex flex-col gap-5 mr-5 pr-16">
+            <div className="flex flex-col gap-5 mr-5 text-balance md:pr-10">
               <div className="text-[17px] leading-5">
                 The long process of researching, testing, and repeatedly honing
                 my designs has led to a project I’m proud of, but still, I
@@ -584,7 +583,7 @@ function CaseStudy2() {
         </div>
       </div>
       {/* ***************************************************************** */}
-      <div className="px-[200px] my-[120px] font-Urbanist box-border">
+      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border">
         <div className="flex flex-col gap-6 items-center justify-center">
           <img
             src={greenLightning}
@@ -601,21 +600,21 @@ function CaseStudy2() {
         </div>
       </div>
       {/* ***************************************************************** */}
-      <div className="px-[200px] my-[150px] font-Urbanist box-border">
+      <div className="px-5 lg:px-[200px] my-[80px] md:my-[150px] font-Urbanist box-border">
         <div>
           <div className="flex flex-col gap-10">
             <div className="">
               <p
-                className="text-3xl font-[500] text-center"
-                style={{ wordSpacing: "" }}
+                className="md:text-3xl font-[500] text-center"
+               
               >
                 You've reached the end...why not take a look at my other
                 projects?
               </p>
             </div>
-            <div className="flex gap-9 items-center justify-center">
-              <div className=" w-full flex p-5 pr-0 mr-0 justify-end">
-                <div className="flex flex-col gap-3 w-3/4 items-end">
+            <div className="flex gap-9 items-start justify-center">
+              {/* <div className=" w-full flex p-5 pr-0 mr-0 justify-end"> */}
+                <div className="flex flex-col gap-3 w-full">
                   <img
                     loading="lazy"
                     src={fitverx}
@@ -623,33 +622,33 @@ function CaseStudy2() {
                     className="w-full"
                   ></img>
                   <div className="flex flex-col gap-2 items-start text-left w-full ">
-                    <span className="text-[17px] font-semibold">
+                    <span className="text-[12px] md:text-[20px] font-semibold">
                       FITVERX:Virtual Try ON Feature
                     </span>
-                    <span className="text-[#8C8C8C] text-sm">
+                    <span className="text-[#8C8C8C] text-[12px] md:text-sm">
                       Problem Solving
                     </span>
                   </div>
                 </div>
-              </div>
-              <div className="  w-full p-5 pl-0">
-                <div className="flex gap-3 flex-col">
+              {/* </div> */}
+              {/* <div className="  w-full p-5 pl-0"> */}
+                <div className="flex gap-3 flex-col w-full">
                   <img
                     loading="lazy"
                     src={pinterestImg}
                     alt="image"
-                    className="w-3/4"
+                    className="w-full"
                   ></img>
                   <div className="flex gap-2 flex-col">
-                    <span className="text-[17px] font-semibold">
+                    <span className="text-[12px] md:text-[20px] font-semibold">
                       Pinterest:Redesigning Pinterest
                     </span>
-                    <span className="text-[#8C8C8C] text-sm">
+                    <span className="text-[#8C8C8C] text-[12px] md:text-sm">
                       User Research, User Experience
                     </span>
                   </div>
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
