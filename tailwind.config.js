@@ -15,19 +15,49 @@ export default {
           '100%' : { transform: 'translateX(0) rotate(0deg)' }
         },
         phone:{
-          '0%' : { transform: 'translateY(-5px) rotate(-15deg)' },
-          '25%' : { transform: 'translateY(5px) rotate(5deg)' },
-          '50%': { transform: 'translateY(-5px) rotate(-10deg)' },
-          '75%' : { transform: 'translateY(5px) rotate(10deg)' },
-          '100%' : { transform: 'translateY(0) rotate(0deg)' }
+          '0%' : {
+            transform: 'translateY(0)',
+          },
+          '25%' : {
+            transform: 'translateY(-11%)',
+          },
+          '50%' : {
+            transform: 'translateY(0)',
+          },
+          '75%' : {
+            transform: 'translateY(-6%)',
+          },
+         
+          '100%' : {
+            transform: 'translateY(0)',
+          }
+        },
+        phoneTwo:{
+          '0%' : {
+            transform: 'translateY(0)',
+          },
+          '25%' : {
+            transform: 'translateY(-11%)',
+          },
+          '50%' : {
+            transform: 'translateY(0)',
+          },
+          '75%' : {
+            transform: 'translateY(-6%)',
+          },
+         
+          '100%' : {
+            transform: 'translateY(0)',
+          }
         }
       },
       animation : {
         ring : 'ring 0.4s ease-in-out infinite alternate',
-        phone : 'phone 0.4s ease-in-out infinite alternate'
+        phone : 'phone 5s ease-in-out alternate ',
+        phoneTwo : 'phoneTwo 5s ease-in-out alternate'
       },
       cursor: {
-        'fancy': 'url(./src/assets/Imp/curserIcon.png), wait',
+        'fancy': 'url(./src/assets/Imp/curserIcon.svg), wait',
       }
     },
     fontFamily: {

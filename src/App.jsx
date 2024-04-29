@@ -17,7 +17,7 @@ function App() {
 
      <Routes>
        <Route exact path="/" element ={<Homepage/>}/>
-       <Route exact path='/landing-page' element={<LandingPage/>}/>
+       <Route exact path='/landingPage' element={<LandingPage/>}/>
        <Route exact path="/about-me" element={<Aboutme/>}/>
        <Route exact path="/case-study2" element={<CaseStudy2/>}/>
        <Route exact path="/resume" element={<Resume/>}/>

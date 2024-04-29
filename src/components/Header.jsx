@@ -51,7 +51,7 @@ function Header() {
     {
       id: 2,
       name: "Projects",
-      link: "/projects",
+      link: "/landingPage",
     },
     {
       id: 3,

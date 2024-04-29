@@ -9,7 +9,7 @@ function Homepage() {
 
   // Function to handle click event
   const redirectToAboutMe = () => {
-    navigate('/landing-page'); // Redirect to About Me page
+    navigate('/landingPage'); // Redirect to About Me page
   };
 
   return (
