@@ -43,7 +43,7 @@ const LandingPage = () => {
           {/* ********************************************************************* */}
           <div className='container mx-auto md:my-[50px] cursor-pointer '>
             <div className='eventi flex items-center m-0 flex-col md:flex-row'>
-                <div className='image flex-1 '>
+                <div className='image flex-1'>
                     <img src={Eventify} alt="" className='w-auto '/>
                     {/* hover:-translate-y-5 transition-all duration-700 */}
                 </div>
@@ -70,7 +70,7 @@ const LandingPage = () => {
                 </div>
                 <div className='flex-1'>
                 <div className='details flex flex-col px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
-                    <div className='font-semibold text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#000000] to-[#666666] font-Bree '>Fitverx</div>
+                    <div className='font-semibold text-[44px] text-transparent bg-clip-text bg-gradient-to-b from-[#000000] to-[#666666] font-Bree '>Fitverx</div>
                     <div>
 
                     <div className='font-semibold text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree'>Get a Virtual trial before you buy</div>
