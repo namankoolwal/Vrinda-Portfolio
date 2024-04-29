@@ -19,13 +19,13 @@ export default {
             transform: 'translateY(0)',
           },
           '25%' : {
-            transform: 'translateY(-11%)',
+            transform: 'translateY(-8%)',
           },
           '50%' : {
             transform: 'translateY(0)',
           },
           '75%' : {
-            transform: 'translateY(-6%)',
+            transform: 'translateY(-4%)',
           },
          
           '100%' : {
@@ -37,13 +37,13 @@ export default {
             transform: 'translateY(0)',
           },
           '25%' : {
-            transform: 'translateY(-11%)',
+            transform: 'translateY(-8%)',
           },
           '50%' : {
             transform: 'translateY(0)',
           },
           '75%' : {
-            transform: 'translateY(-6%)',
+            transform: 'translateY(-4%)',
           },
          
           '100%' : {
@@ -53,8 +53,8 @@ export default {
       },
       animation : {
         ring : 'ring 0.4s ease-in-out infinite alternate',
-        phone : 'phone 5s ease-in-out alternate ',
-        phoneTwo : 'phoneTwo 5s ease-in-out alternate'
+        phone : 'phone 3.5s ease-in-out alternate ',
+        phoneTwo : 'phoneTwo 3.5s ease-in-out alternate'
       },
       cursor: {
         'fancy': 'url(./src/assets/Imp/curserIcon.svg), wait',
