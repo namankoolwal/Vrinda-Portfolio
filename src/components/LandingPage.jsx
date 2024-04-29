@@ -103,7 +103,7 @@ const LandingPage = () => {
             </div>
           </div>
           {/* ******************************************************************************************* */}
-            <div className='container mx-auto my-[120px] px-5 md:px-24'>
+            <div className=' mx-auto my-[120px] px-4 md:px-24'>
                 <div className='text-3xl font-Bree  text-[#005323]'>Made with lots of love and caffeine.</div>
                 <div className="images flex ">
               <a href="https://www.behance.net/vrindakhandel1">
