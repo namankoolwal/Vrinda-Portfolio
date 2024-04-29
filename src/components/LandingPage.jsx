@@ -40,7 +40,7 @@ const LandingPage = () => {
             <hr className='font-bold text-black h-[2px] bg-black' />
           </div>
           {/* ********************************************************************* */}
-          <div className='container mx-auto md:my-[120px]'>
+          <div className='container mx-auto md:my-[50px]'>
             <div className='eventify flex items-center flex-col md:flex-row'>
                 <div className='image flex-1 '>
                     <img src={Eventify} alt="" className='w-full '/>

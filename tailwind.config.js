@@ -19,7 +19,7 @@ export default {
         ring : 'ring 0.4s ease-in-out infinite alternate'
       },
       cursor: {
-        'fancy': 'url(./src/assets/Imp/curserIcon.cur), auto',
+        'fancy': 'url(./src/assets/Imp/curserIcon.png), wait',
       }
     },
     fontFamily: {
