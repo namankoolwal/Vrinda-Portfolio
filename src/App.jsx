@@ -1,5 +1,5 @@
 
-// import './App.css'
+import './App.css'
 import React from 'react';
 import Homepage from './components/Homepage'
 import Aboutme from './components/Aboutme'
