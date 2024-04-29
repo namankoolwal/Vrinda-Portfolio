@@ -14,7 +14,7 @@ function Aboutme() {
     <>
       <ScrollToTop />
       <Header />
-      <div className="aboutme-container">
+      <div className="aboutme-container bg-[url('./assets/images/Background.png')] bg-cover bg-center bg-no-repeat min-h-screen">
         <div className="row">
           <div className="text-content">
             <h1 className="heading-hola -z-20">
@@ -57,13 +57,13 @@ function Aboutme() {
               Besides designing you can find me ⬇️
             </h2>
             <div className="w-full ">
-              <p className="find-me text-[14px] md:text-[18px]">👋 Writing Notes To Myself</p>
-              <p className="find-me text-[14px] md:text-[18px]">☕ Having Coffee Hours</p>
-              <p className="find-me text-[14px] md:text-[18px]">🍄 Cooking Food</p>
-              <p className="find-me text-[14px] md:text-[18px]">🌈 Watching Anime</p>
-              <p className="find-me text-[14px] md:text-[18px]">🎨 Drawing in my Sketchbook</p>
-              <p className="find-me text-[14px] md:text-[18px]">🌱 <span className="">Probably Collecting Way Too Many Notebooks</span></p>
-              <p className="find-me text-[14px] md:text-[18px]">✨ Eating Ramen </p>
+              <p className="find-me text-[14px] md:text-[20px]">👋 Writing Notes To Myself</p>
+              <p className="find-me text-[14px] md:text-[20px]">☕ Having Coffee Hours</p>
+              <p className="find-me text-[14px] md:text-[20px]">🍄 Cooking Food</p>
+              <p className="find-me text-[14px] md:text-[20px]">🌈 Watching Anime</p>
+              <p className="find-me text-[14px] md:text-[20px]">🎨 Drawing in my Sketchbook</p>
+              <p className="find-me text-[14px] md:text-[20px]">🌱 <span className="">Probably Collecting Way Too Many Notebooks</span></p>
+              <p className="find-me text-[14px] md:text-[20px]">✨ Eating Ramen </p>
             </div>
             </div>
           </div>

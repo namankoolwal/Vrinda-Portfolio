@@ -17,10 +17,14 @@ export default {
       },
       animation : {
         ring : 'ring 0.4s ease-in-out infinite alternate'
+      },
+      cursor: {
+        'fancy': 'url(./src/assets/Imp/curserIcon.cur), auto',
       }
     },
     fontFamily: {
       Urbanist: ['Urbanist', 'sans-serif'],
+      Bree : ["Bree serif", 'serif']
     },
   },
   plugins: [],

@@ -14,6 +14,7 @@ import findingsOne from "../assets/images/findingsOne.png";
 import useflow from "../assets/images/DemoUser.png";
 import userTestingOne from "../assets/images/userTestingOne.png";
 import userTestingTwo from "../assets/images/userTestingTwo.png";
+import userTesting from "../assets/images/userTesting.png";
 import takeawayOne from "../assets/images/takeawayOne.png";
 import takeawayTwo from "../assets/images/takeawayTwo.png";
 import gettingStarted from "../assets/images/gettingStarted.png";
@@ -76,7 +77,8 @@ function CaseStudy2() {
             <div className="design-role">
               <span className="text1">DESIGN ROLE</span>
               <p className="text2">Design thinking , UX/UI , Problem Solving</p>
-              <p className="text-sm italic underline mt-6">Figma File</p>
+              <p className="text-sm italic underline mt-6"><a href="https://www.figma.com/file/s4SP9jdVvEIQCBIMMQK27w/eventify?type=design&node-id=0%3A1&mode=design&t=NcoO9INqaUQnkLFB-1">
+                Figma File</a></p>
             </div>
           </div>
         </div>
@@ -364,17 +366,17 @@ function CaseStudy2() {
       {/* *********************** */}
       <div className="container8">
         <div className="container8-heading">USER TESTING (WIREFRAME)</div>
-        <div className="bg-[#d9d9d9] w-full flex gap-5 md:gap-10 py-14 justify-center mt-10">
+        <div className=" w-full mt-10">
           <img
             loading="lazy"
-            src={userTestingOne}
-            className="w-[110px] h-[170px] md:h-[450px] md:w-[230px] lg:w-[320px]"
+            src={userTesting}
+            className="w-full"
           />
-          <img
+          {/* <img
             loading="lazy"
             src={userTestingTwo}
             className="w-[140px] h-[170px] md:h-[455px] md:w-[370px] lg:w-[470px]"
-          />
+          /> */}
         </div>
         <div className="text11">
           <span>
