@@ -16,9 +16,9 @@
   /* Adjust the float property for better responsiveness */
   float: right;
   margin-right: 15px; /* Add some space between the text and the image */
-  width: 400px; /* Adjust based on your preference */
+  width: 350px; /* Adjust based on your preference */
   height: auto;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .heading-hola {
