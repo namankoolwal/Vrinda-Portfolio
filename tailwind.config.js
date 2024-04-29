@@ -32,7 +32,7 @@ export default {
     },
     fontFamily: {
       Urbanist: ['Urbanist', 'sans-serif'],
-      Bree : ["Bree", 'serif']
+      Bree : ["Bree serif", 'serif']
     },
   },
   plugins: [],

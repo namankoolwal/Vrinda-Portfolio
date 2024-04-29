@@ -37,7 +37,7 @@ const LandingPage = () => {
           </div>
           {/* ********************************************************************* */}
           <div className='mx-auto mt-24 md:mt-0 md:pt-10 px-2 md:px-24'>
-            <p className='text-3xl font-Bree  font-semibold text-[#005323] pb-6'>Scroll to  have some UX Tea</p>
+            <p className='text-3xl font-Bree text-[#005323] pb-6'>Scroll to  have some UX Tea</p>
             <hr className='font-bold text-black h-[2px] bg-black' />
           </div>
           {/* ********************************************************************* */}
@@ -54,7 +54,7 @@ const LandingPage = () => {
                         </div>
                     <div>
 
-                    <div className='font-semibold text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree'>Finding & Hosting Events in your locality</div>
+                    <div className=' text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree'>Finding & Hosting Events in your locality</div>
                     <div className=' text-[#717171] pt-1'>Your go-to app for seamless event discovery and community connection in your nearby area.</div>
                     </div>
                     <div className='text-[#696062] text-sm font-semibold'> MOBILE DESIGN  //  UX DESIGN   //  FINDING EVENTS</div>
@@ -69,11 +69,11 @@ const LandingPage = () => {
                     <img src={fitverxImg} alt="" className='w-full '/>
                 </div>
                 <div className='flex-1'>
-                <div className='details flex flex-col px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
-                    <div className='font-semibold text-[44px] text-transparent bg-clip-text bg-gradient-to-b from-[#000000] to-[#666666] font-Bree '>Fitverx</div>
+                <div className='details flex flex-col md:gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
+                    <div className=' text-[44px] text-transparent bg-clip-text bg-gradient-to-b from-[#000000] to-[#666666] font-Bree '>Fitverx</div>
                     <div>
 
-                    <div className='font-semibold text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree'>Get a Virtual trial before you buy</div>
+                    <div className=' text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree'>Get a Virtual trial before you buy</div>
                     <div className=' text-[#717171] pt-1'>Our innovative virtual try-on technology, select the items you love, and with a click, see yourself wearing them in real-time.</div>
                     </div>
                     <div className='text-[#696062] text-sm font-semibold'> UI DESIGN  //  UX DESIGN   // VIRTUAL FASHION</div>
@@ -94,7 +94,7 @@ const LandingPage = () => {
                         </div>
                     
                     <div>
-                    <div className='font-semibold text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#BD081C] to-[#000000] font-Bree'>Redesigning Pinterest</div>
+                    <div className=' text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#BD081C] to-[#000000] font-Bree'>Redesigning Pinterest</div>
                     <div className=' text-[#717171] pt-1'>Delve into the intricacies of Pinterest's seeking opportunities for improvement and explore potential enhancements to the user experience."</div>
                     </div>
                     <div className='text-[#696062] text-sm font-semibold'> MOBILE DESIGN  //  UX RESEARCH  //  EXPERIENCE DESIGN  </div>
@@ -103,8 +103,8 @@ const LandingPage = () => {
             </div>
           </div>
           {/* ******************************************************************************************* */}
-            <div className='container mx-auto my-[120px] px-5 md:px-10'>
-                <div className='text-3xl font-Bree font-semibold text-[#005323]'>Made with lots of love and caffeine.</div>
+            <div className='container mx-auto my-[120px] px-5 md:px-24'>
+                <div className='text-3xl font-Bree  text-[#005323]'>Made with lots of love and caffeine.</div>
                 <div className="images flex ">
               <a href="https://www.behance.net/vrindakhandel1">
                 {" "}
