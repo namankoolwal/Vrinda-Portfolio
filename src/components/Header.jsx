@@ -1,15 +1,17 @@
 import React, { useState, useEffect ,useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , useNavigate } from "react-router-dom";
 
 function Header({setScrollTO}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const navRef = useRef(null);
+  const navigateTo = useNavigate();
 
+
+  
   const toggleMenu = () => { 
     setIsMenuOpen(!isMenuOpen);
-    console.log("hii")
     if(navRef.current.classList.contains("bg-gray-100")){
       console.log(navRef.current.classList.contains("bg-gray-100"))
       navRef.current.classList.remove("bg-gray-100")
@@ -86,7 +88,8 @@ function Header({setScrollTO}) {
               textDecoration: isActive ? "underline" : null,
 
             })}
-            onClick={(e)=> {setScrollTO(true)}}
+            onClick={(e)=> {e.preventDefault(); (typeof(setScrollTO)  === "function") ? setScrollTO(true) : navigateTo('/landingPage')}}
+            
           >
           Projects
           </NavLink>

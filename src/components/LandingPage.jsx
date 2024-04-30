@@ -14,11 +14,14 @@ import Dribble from "../assets/images/Dribble.png";
 import layer1 from "../assets/images/Layer_1.png";
 import vk from '../assets/images/landingPage/vk.gif'
 import eventifyBg from '../assets/images/landingPage/eventifyBg.png'
+import fitverxBg from '../assets/images/landingPage/fitverxBg.png'
+import pinterestBg from '../assets/images/landingPage/pinterestBg.png'
 
 const LandingPage = () => {
     const scrollToRef = useRef(null);
     const refOne = useRef(null);
     const refTwo = useRef(null);
+    const refThree = useRef(null);
     const navigate = useNavigate()
 
     const [scrollTo, setScrollTO] = useState(false)
@@ -28,12 +31,9 @@ const LandingPage = () => {
       };
 
       if(scrollTo){
-        console.log("scrool active" , scrollTo)
         scrollToSection()
         setScrollTO(false)
-        console.log("scrool" , scrollTo)
       }
-      console.log("scrool out" , scrollTo)
   
     const pageNavigate = (path) => {
       navigate(path)
@@ -41,15 +41,14 @@ const LandingPage = () => {
 
     
     const onMouseOver = async (e) => {
-    
-        if(refOne.current.classList.contains('animate-phone')){
-            refOne.current.classList.remove('animate-phone')
-            refOne.current.classList.add('animate-phoneTwo')
+        if(e.current.classList.contains('animate-phone')){
+          e.current.classList.remove('animate-phone')
+          e.current.classList.add('animate-phoneTwo')
             
         }
         else{
-            refOne.current.classList.add('animate-phone')
-            refOne.current.classList.remove('animate-phoneTwo')
+          e.current.classList.add('animate-phone')
+          e.current.classList.remove('animate-phoneTwo')
         }       
     }
   
@@ -75,15 +74,15 @@ const LandingPage = () => {
           </div>
           {/* ********************************************************************* */}
           <div className='mx-auto mt-24 md:mt-0 md:pt-10 px-2 md:px-24' ref={scrollToRef}>
-            <p className='text-3xl font-Bree text-[#005323] pb-6'>Scroll to  have some UX Tea</p>
+            <p className='text-2xl md:text-3xl font-Bree text-[#005323] pb-6'>Scroll to  have some UX Tea</p>
             <hr className='font-bold text-black h-[2px] bg-black' />
           </div>
           {/* ********************************************************************* */}
           <div  className='container mx-auto md:my-[50px] cursor-pointer ' onClick={()=>{pageNavigate('/case-study2')}}>
             <div className='eventi flex items-center m-0 flex-col md:flex-row'>
-                <div className='hoverEvent image flex-1 relative' ref={refOne} onMouseOver={onMouseOver} >
-                    <img src={Eventify} alt="" className='w-auto z-20 peer'/>
-                    <img src={eventifyBg} alt="" className='w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover:opacity-100'/>
+                <div className='hoverEvent image flex-1 relative' ref={refOne} onMouseOver={()=>onMouseOver(refOne)} >
+                    <img src={Eventify} alt="" className='w-auto z-20 peer/eventify'/>
+                    <img src={eventifyBg} alt="" className='w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/eventify:opacity-100'/>
                     {/* hover:-translate-y-5 transition-all duration-700 */}
                 </div>
                 <div className='flex-1'>
@@ -104,8 +103,9 @@ const LandingPage = () => {
           {/* ********************************************************************* */}
           <div className='container mx-auto my-[50px]'>
             <div className='fitverx flex items-center flex-col md:flex-row'>
-                <div className='image flex-1' ref={refTwo} >
-                    <img src={fitverxImg} alt="" className='w-full '/>
+                <div className='hoverEvent image flex-1 relative' ref={refTwo} onMouseOver={()=>onMouseOver(refTwo)}>
+                    <img src={fitverxImg} alt="" className='w-full z-20 peer/fitverx'/>
+                    <img src={fitverxBg} alt="" className='w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/fitverx:opacity-100'/>
                 </div>
                 <div className='flex-1'>
                 <div className='details flex flex-col md:gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
@@ -123,8 +123,9 @@ const LandingPage = () => {
           {/* ******************************************************************** */}
           <div className='container mx-auto my-[50px] '>
             <div className='pinterest flex items-center flex-col md:flex-row'>
-                <div className='image flex-1 '>
-                    <img src={Pinterest} alt="Pinterest" className='w-full '/>
+                <div className='hoverEvent image flex-1 relative' ref={refThree} onMouseOver={()=>onMouseOver(refThree)}>
+                <img src={Pinterest} alt="" className='w-full z-20 peer/pinterest'/>
+                    <img src={pinterestBg} alt="" className='w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/pinterest:opacity-100'/>
                 </div>
                 <div className='flex-1'>
                 <div className='details flex flex-col md:gap-1 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
@@ -143,7 +144,7 @@ const LandingPage = () => {
           </div>
           {/* ******************************************************************************************* */}
             <div className=' mx-auto my-[120px] px-4 md:px-24'>
-                <div className='text-3xl font-Bree  text-[#005323]'>Made with lots of love and caffeine.</div>
+                <div className='text-2xl md:text-3xl font-Bree  text-[#005323]'>Made with lots of love and caffeine.</div>
                 <div className="images flex ">
               <a href="https://www.behance.net/vrindakhandel1">
                 {" "}
