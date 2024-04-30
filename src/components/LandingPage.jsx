@@ -1,6 +1,6 @@
-import React , {useRef , useEffect} from 'react'
+import React , {useRef , useEffect, useState} from 'react'
+import { NavLink , useNavigate } from 'react-router-dom'
 import Header from './Header'
-import illustraterGif from '../assets/images/landingPage/illustraterGif.png'
 import Hi from '../assets/images/landingPage/Hi.png'
 import imVrinda from '../assets/images/landingPage/imVrinda.png'
 import Layer1 from '../assets/images/landingPage/Layer1.svg'
@@ -15,51 +15,47 @@ import layer1 from "../assets/images/Layer_1.png";
 import vk from '../assets/images/landingPage/vk.gif'
 import eventifyBg from '../assets/images/landingPage/eventifyBg.png'
 
-const LandingPage = ({ location = '/' }) => {
+const LandingPage = () => {
     const scrollToRef = useRef(null);
     const refOne = useRef(null);
     const refTwo = useRef(null);
+    const navigate = useNavigate()
+
+    const [scrollTo, setScrollTO] = useState(false)
+   
+    const scrollToSection = () => {
+        scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      if(scrollTo){
+        console.log("scrool active" , scrollTo)
+        scrollToSection()
+        setScrollTO(false)
+        console.log("scrool" , scrollTo)
+      }
+      console.log("scrool out" , scrollTo)
   
-    useEffect(() => {
-        // if (location.pathname === '/projects') {
-        //     scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
-        //   }
-        // onMouseOver()
-        
-        // window.addEventListener('mouseover' , onMouseOver)
-        // refOne.current.addEventListener('mouseover' , onMouseOver)
-        // refOne.current.addEventListener('mouseout' , onMouseOut)
-        
-        // refOne.current.removeEventListener('mouseover' , onMouseOver)
-        return () => {
-            // refOne.current.removeEventListener('mouseout' , onMouseOut)
-            console.log('removed')
-        };
-    });
+    const pageNavigate = (path) => {
+      navigate(path)
+    }
+
     
-    const onMouseOver = async () => {
-        // hover:animate-phone
+    const onMouseOver = async (e) => {
     
         if(refOne.current.classList.contains('animate-phone')){
             refOne.current.classList.remove('animate-phone')
             refOne.current.classList.add('animate-phoneTwo')
             
-            console.log("remove");
         }
         else{
             refOne.current.classList.add('animate-phone')
             refOne.current.classList.remove('animate-phoneTwo')
-            console.log("add");
         }       
     }
-    const onMouseOut = () => {
-        refOne.current.classList.remove('animate-phone')
-        refOne.current.classList.add('animate-phoneTwo')
-        console.log("remove");
-    }
+  
   return (
     <div >
-        <Header/>
+        <Header setScrollTO={setScrollTO}/>
         
           <div className=' mx-auto mt-10 md:mt-0 py-10 px-4 md:px-24 '>
             <div className="flex items-center flex-col-reverse gap-10 md:gap-0 md:flex-row justify-center">
@@ -69,7 +65,7 @@ const LandingPage = ({ location = '/' }) => {
                         <img src={imVrinda} alt="imVrinda" className='w-[60%] md:w-auto' />
                         <img src={Layer1} alt="Layer1" className='w-[20%] md:w-auto' />
                     </p>
-                    <p className='text-2xl text-justify md:text-left  text-balance '>
+                    <p className='text-2xl text-justify md:text-left  text-balance ' onClick={scrollToSection}>
                         Aspiring <span className='font-semibold'>UI/UX wizard</span>  who enjoys<span className='font-semibold'> seamlessly</span> bridging  the  gap  between  people and digital space by day, and a lofi loving artist by night.</p>
                 </div>
                 <div className=' w-[70%] md:w-auto'>
@@ -83,17 +79,17 @@ const LandingPage = ({ location = '/' }) => {
             <hr className='font-bold text-black h-[2px] bg-black' />
           </div>
           {/* ********************************************************************* */}
-          <div className='container mx-auto md:my-[50px] cursor-pointer '>
+          <div  className='container mx-auto md:my-[50px] cursor-pointer ' onClick={()=>{pageNavigate('/case-study2')}}>
             <div className='eventi flex items-center m-0 flex-col md:flex-row'>
                 <div className='hoverEvent image flex-1 relative' ref={refOne} onMouseOver={onMouseOver} >
                     <img src={Eventify} alt="" className='w-auto z-20 peer'/>
                     <img src={eventifyBg} alt="" className='w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover:opacity-100'/>
                     {/* hover:-translate-y-5 transition-all duration-700 */}
                 </div>
-                <div className='flex-1 '>
+                <div className='flex-1'>
                 <div className='details flex flex-col px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
                 <div className='w-2/5 '>
-                    <img src={eventifyLogo} alt="pinterestLogo" className='w-auto hover:drop-shadow-[0_35px_35px_rgba(150,170,150,0.25)]' />
+                    <img src={eventifyLogo} alt="pinterestLogo" className='w-auto ' />
                         </div>
                     <div>
 
@@ -108,7 +104,7 @@ const LandingPage = ({ location = '/' }) => {
           {/* ********************************************************************* */}
           <div className='container mx-auto my-[50px]'>
             <div className='fitverx flex items-center flex-col md:flex-row'>
-                <div className='image flex-1 ' ref={refTwo} >
+                <div className='image flex-1' ref={refTwo} >
                     <img src={fitverxImg} alt="" className='w-full '/>
                 </div>
                 <div className='flex-1'>
@@ -131,16 +127,16 @@ const LandingPage = ({ location = '/' }) => {
                     <img src={Pinterest} alt="Pinterest" className='w-full '/>
                 </div>
                 <div className='flex-1'>
-                <div className='details flex flex-col px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
-                    <div className='w-2/5 '>
-                    <img src={pinterestLogo} alt="pinterestLogo" className='w-auto hover:drop-shadow-[0_35px_35px_rgba(150,170,150,0.25)]' />
+                <div className='details flex flex-col md:gap-1 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0'>
+                    <div className='w-2/4 '>
+                    <img src={pinterestLogo} alt="pinterestLogo" className='w-auto ' />
                         </div>
                     
-                    <div>
+                    <div className=' mt-0'>
                     <div className=' text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#BD081C] to-[#000000] font-Bree'>Redesigning Pinterest</div>
                     <div className=' text-[#717171] pt-1'>Delve into the intricacies of Pinterest's seeking opportunities for improvement and explore potential enhancements to the user experience."</div>
                     </div>
-                    <div className='text-[#696062] text-sm font-semibold'> MOBILE DESIGN  //  UX RESEARCH  //  EXPERIENCE DESIGN  </div>
+                    <div className='text-[#696062] text-sm font-semibold pt-3'> MOBILE DESIGN  //  UX RESEARCH  //  EXPERIENCE DESIGN  </div>
                 </div>
                 </div>
             </div>

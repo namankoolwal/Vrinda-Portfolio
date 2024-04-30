@@ -1,7 +1,7 @@
 import React, { useState, useEffect ,useRef } from "react";
 import { NavLink } from "react-router-dom";
 
-function Header() {
+function Header({setScrollTO}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -45,21 +45,11 @@ function Header() {
   const menuItems = [
     {
       id: 1,
-      name: "Home",
-      link: "/case-study2",
-    },
-    {
-      id: 2,
-      name: "Projects",
-      link: "/landingPage",
-    },
-    {
-      id: 3,
       name: "About Me",
       link: "/about-me",
     },
     {
-      id: 4,
+      id: 2,
       name: "Resume",
       link: "/resume",
     },
@@ -88,6 +78,18 @@ function Header() {
             isMenuOpen ? "flex " : "hidden"
           } pt-10 md:pt-2 pl-10 md:mt-0 flex md:flex flex-col md:flex-row md:justify-end md:items-center gap-12 md:gap-6 `}
         >
+
+<NavLink
+            to="/landingPage"
+            className="nav-item text-lg"
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "underline" : null,
+
+            })}
+            onClick={(e)=> {setScrollTO(true)}}
+          >
+          Projects
+          </NavLink>
           {menuItems.map((item) => (
             <NavLink
               key={item.id}
@@ -113,15 +115,7 @@ function Header() {
           </NavLink>
 
 
-          {/* <NavLink
-            to="/Resume"
-            className="nav-item text-lg"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : null,
-            })}
-          >
-            Resume
-          </NavLink> */}
+         
         </div>
       </nav>
     </>
