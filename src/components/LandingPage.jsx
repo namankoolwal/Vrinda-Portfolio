@@ -16,6 +16,7 @@ import vk from '../assets/images/landingPage/vk.gif'
 import eventifyBg from '../assets/images/landingPage/eventifyBg.png'
 import fitverxBg from '../assets/images/landingPage/fitverxBg.png'
 import pinterestBg from '../assets/images/landingPage/pinterestBg.png'
+import dogImg from '../assets/images/landingPage/dogImg.png'
 
 const LandingPage = () => {
     const scrollToRef = useRef(null);
@@ -160,6 +161,15 @@ const LandingPage = () => {
               <img src={layer1} className="layer1" />
             </div>
             </div>
+            {/* ******************************************************************* */}
+          <div className='container mx-auto my-[50px] '>
+            <div className='flex flex-col items-center justify-center'>
+              <div className=' flex items-center justify-center'>
+                <img src={dogImg} alt="dogImg" className='w-3/4' />
+              </div>
+              <dir>Let's brew up some more tales later</dir>
+            </div>
+          </div>
 
         </div>
   )
