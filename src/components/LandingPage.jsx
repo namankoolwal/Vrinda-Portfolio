@@ -25,16 +25,8 @@ const LandingPage = () => {
     const refThree = useRef(null);
     const navigate = useNavigate()
 
-    const [scrollTo, setScrollTO] = useState(false)
    
-    const scrollToSection = () => {
-        scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
-      };
-
-      if(scrollTo){
-        scrollToSection()
-        setScrollTO(false)
-      }
+    
   
     const pageNavigate = (path) => {
       navigate(path)
@@ -55,7 +47,7 @@ const LandingPage = () => {
   
   return (
     <div >
-        <Header setScrollTO={setScrollTO}/>
+        <Header scrollToRef={scrollToRef} />
         
           <div className=' mx-auto mt-10 md:mt-0 py-10 px-4 md:px-24 '>
             <div className="flex items-center flex-col-reverse gap-10 md:gap-0 md:flex-row justify-center">
@@ -65,7 +57,7 @@ const LandingPage = () => {
                         <img src={imVrinda} alt="imVrinda" className='w-[60%] md:w-auto' />
                         <img src={Layer1} alt="Layer1" className='w-[20%] md:w-auto' />
                     </p>
-                    <p className='text-2xl text-justify md:text-left  text-balance ' onClick={scrollToSection}>
+                    <p className='text-2xl text-justify md:text-left  text-balance ' >
                         Aspiring <span className='font-semibold'>UI/UX wizard</span>  who enjoys<span className='font-semibold'> seamlessly</span> bridging  the  gap  between  people and digital space by day, and a lofi loving artist by night.</p>
                 </div>
                 <div className=' w-[70%] md:w-auto'>
