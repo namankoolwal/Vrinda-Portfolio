@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
-function Header({ scrollToRef }) {
+function Header({ scrollToRef, scrollDone, setscrollDone , scrollId}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef(null);
 
@@ -15,13 +15,10 @@ function Header({ scrollToRef }) {
   };
 
   const handleClick = () => {
-    if (scrollToRef && scrollToRef.current) {
-      scrollToRef.current.scrollIntoView({ behavior: "smooth" });
-      console.log("scrolling");
-    }
-    else{
-      console.log("not scrolling");
-    }
+    window.scrollTo({
+      top: 650, // Specify the y-coordinate value you want to scroll to
+      behavior: "smooth"
+  });
   };
 
   const menuItems = [

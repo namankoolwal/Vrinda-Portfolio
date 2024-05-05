@@ -18,14 +18,14 @@ import fitverxBg from '../assets/images/landingPage/fitverxBg.png'
 import pinterestBg from '../assets/images/landingPage/pinterestBg.png'
 import dogImg from '../assets/images/landingPage/dogImg.png'
 
-const LandingPage = () => {
-    const scrollToRef = useRef(null);
+const LandingPage = ({scrollToRef, setscrollDone, scrollDone}) => {
+    
     const refOne = useRef(null);
     const refTwo = useRef(null);
     const refThree = useRef(null);
     const navigate = useNavigate()
 
-   
+    const scrollId = document.getElementById("scrollId");
     
   
     const pageNavigate = (path) => {
@@ -47,7 +47,7 @@ const LandingPage = () => {
   
   return (
     <div >
-        <Header scrollToRef={scrollToRef} />
+        <Header scrollToRef={scrollToRef} setscrollDone={setscrollDone} scrollDone={scrollDone} scrollId={scrollId}/>
         
           <div className=' mx-auto mt-10 md:mt-0 py-10 px-4 md:px-24 '>
             <div className="flex items-center flex-col-reverse gap-10 md:gap-0 md:flex-row justify-center">
@@ -66,7 +66,7 @@ const LandingPage = () => {
             </div>
           </div>
           {/* ********************************************************************* */}
-          <div className='mx-auto mt-24 md:mt-0 md:pt-10 px-2 md:px-24' ref={scrollToRef}>
+          <div className='mx-auto mt-24 md:mt-0 md:pt-10 px-2 md:px-24' id='scrollId' ref={scrollToRef}>
             <p className='text-2xl md:text-3xl font-Bree text-[#005323] pb-6'>Scroll to  have some UX Tea</p>
             <hr className='font-bold text-black h-[2px] bg-black' />
           </div>
