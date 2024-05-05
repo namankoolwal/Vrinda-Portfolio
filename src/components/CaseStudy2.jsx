@@ -607,7 +607,7 @@ function CaseStudy2() {
           <div className="flex flex-col gap-10">
             <div className="">
               <p
-                className="md:text-3xl font-[500] text-center"
+                className="text-xs md:text-3xl font-[500] text-center"
                
               >
                 You've reached the end...why not take a look at my other
@@ -616,7 +616,7 @@ function CaseStudy2() {
             </div>
             <div className="flex gap-9 items-start justify-center">
               {/* <div className=" w-full flex p-5 pr-0 mr-0 justify-end"> */}
-                <div className="flex flex-col gap-3 w-full">
+                <div className="flex flex-col gap-3 md:w-2/6">
                   <img
                     loading="lazy"
                     src={fitverx}
@@ -634,7 +634,7 @@ function CaseStudy2() {
                 </div>
               {/* </div> */}
               {/* <div className="  w-full p-5 pl-0"> */}
-                <div className="flex gap-3 flex-col w-full">
+                <div className="flex gap-3 flex-col md:w-2/6">
                   <img
                     loading="lazy"
                     src={pinterestImg}
