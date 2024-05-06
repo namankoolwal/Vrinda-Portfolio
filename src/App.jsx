@@ -8,6 +8,7 @@ import CaseStudy2 from './components/CaseStudy2';
 import Resume from './components/Resume';
 import LandingPage from './components/LandingPage';
 import wholeBackground from './assets/images/Background.png';
+import CaseStudy1 from './components/CaseStudy1';
 // import curserIcon from './assets/Imp/curserIcon.cur';
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
        <Route exact path='/landingPage' element={<LandingPage />}/>
        <Route exact path="/about-me" element={<Aboutme />}/>
        <Route exact path="/case-study2" element={<CaseStudy2 />}/>
+       <Route exact path="/case-study1" element={<CaseStudy1 />}/>
        <Route exact path="/resume" element={<Resume/>}/>
          
        </Routes>

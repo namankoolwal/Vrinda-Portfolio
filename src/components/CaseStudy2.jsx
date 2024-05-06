@@ -12,8 +12,6 @@ import mapping from "../assets/images/mapping.png";
 import findings from "../assets/images/findings.png";
 import findingsOne from "../assets/images/findingsOne.png";
 import useflow from "../assets/images/DemoUser.png";
-import userTestingOne from "../assets/images/userTestingOne.png";
-import userTestingTwo from "../assets/images/userTestingTwo.png";
 import userTesting from "../assets/images/userTesting.png";
 import takeawayOne from "../assets/images/takeawayOne.png";
 import takeawayTwo from "../assets/images/takeawayTwo.png";

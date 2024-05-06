@@ -93,7 +93,7 @@ const LandingPage = ({scrollToRef}) => {
             </div>
           </div>
           {/* ********************************************************************* */}
-          <div className='container mx-auto my-[50px]'>
+          <div className='container mx-auto my-[50px]' onClick={()=>{pageNavigate('/case-study1')}}>
             <div className='fitverx flex items-center flex-col md:flex-row'>
                 <div className='hoverEvent image flex-1 relative' ref={refTwo} onMouseOver={()=>onMouseOver(refTwo)}>
                     <img src={fitverxImg} alt="" className='w-full z-20 peer/fitverx'/>
