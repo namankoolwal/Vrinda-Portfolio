@@ -29,6 +29,10 @@ const LandingPage = ({scrollToRef}) => {
   
     const pageNavigate = (path) => {
       navigate(path)
+      window.scrollTo({
+        top: 0, // Specify the y-coordinate value you want to scroll to
+        behavior: "smooth"
+    });
     }
 
     
