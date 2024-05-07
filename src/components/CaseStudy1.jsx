@@ -5,7 +5,18 @@ import ellipse from "../assets/images/Ellipse.png";
 import fitverxHeaderOne from "../assets/images/fitverx/fitverxHeaderOne.png";
 import fitverxHeaderTwo from "../assets/images/fitverx/fitverxHeaderTwo.png";
 import mobiles from "../assets/images/fitverx/mobiles.png";
-
+import researchPartOne from "../assets/images/fitverx/researchPartOne.png";
+import researchPartTwo from "../assets/images/fitverx/researchPartTwo.png";
+import findings from "../assets/images/fitverx/findings.png";
+import findingsTwo from "../assets/images/fitverx/findingsTwo.png";
+import myntraQuote from "../assets/images/fitverx/myntraQuote.png";
+import mapping from "../assets/images/fitverx/mapping.png";
+import persona from "../assets/images/fitverx/persona.png";
+import analysisOne from "../assets/images/fitverx/analysisOne.png";
+import analysisTwo from "../assets/images/fitverx/analysisTwo.png";
+import analysisThree from "../assets/images/fitverx/analysisThree.png";
+import effectBusiness from "../assets/images/fitverx/effectBusiness.png";
+import design from "../assets/images/fitverx/design.png";
 
 const CaseStudy1 = () => {
   return (
@@ -106,6 +117,214 @@ It added another layer of emotional stress when trying to choose between which c
           <img loading="lazy" src={mobiles} className="image3" />
         </div>
       </div>
+
+       {/* ************************************************************************************************* */}
+
+       <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+            <img loading="lazy" src={ellipse}></img> Research
+          </b>
+        </div>
+
+        <div className="text-sm pt-10 text-[#626262]">
+          <span>
+          PART 1
+          </span>
+        </div>
+        <div className="text-xl pt-2">
+          <span>
+          Identifying Problem
+          </span>
+        </div>
+        <div className="text-xl py-5">
+          <span>
+          <span className='font-semibold'>Method:</span> Interview
+          </span>
+        </div>  
+        <div className="text5 py-3">
+          <span>
+          To determine if other people shared similar concerns in trying outfits. I created a list of questions to better understand what exactly they feel while shopping online. I perpare few questions to ask that would give me the most insight into the problem space, and conducted 15-minute interviews with 2 people
+          </span>
+        </div>
+      </div>
+
+      {/* ************************************************************************************************* */}
+      <div className="container5">
+        <div className="layers2">
+          <img loading="lazy" src={researchPartOne} className="image3" />
+        </div>
+        <div className='pt-3'>
+          <p>*Admittedly, there's a lot of room for improvement for my research method here! I talk more about this in my conculsion.</p>
+        </div>
+      </div>
+      {/* ************************************************************************************************* */}
+      <div className="container5">
+        <div className="layers2">
+          <img loading="lazy" src={findings} className="image3" />
+        </div>       
+      </div>
+      {/* ************************************************************************************************* */}
+      <div className="container4">
+        <div className="text-sm text-[#626262]">
+          <span>
+          PART 2
+          </span>
+        </div>
+        <div className="text-xl pt-2">
+          <span>
+          Understanding Problem
+          </span>
+        </div>
+        <div className="text-xl py-5">
+          <span>
+          <span className='font-semibold'>Method:</span> Questionnaire, afinnity mapping, user persona
+          </span>
+        </div>  
+        <div className="text5 py-3">
+          <span>
+          I wanted to do further research through a survey with a <span className='font-semibold'>larger sample</span> size to determine if I was addressing a valid concern. I sampled their various thoughts, behaviors, and values towards their online shopping and purchasing habit, followed with another round of <span className='font-semibold'>interviews</span> to pinpoint their troubles. 22 people participated in the survey and I interviewed 3 of them.
+          </span>
+        </div>
+      </div>
+      {/* ********************************************************************************************** */}
+      <div className="container5">
+        <div className="layers2">
+          <img loading="lazy" src={researchPartTwo} className="image3" />
+        </div>    
+        <div className='py-6'>
+          <p className='text-2xl'>
+          I found <span className='text-[#2603FE] font-bold'>Myntra</span> is the most used online shopping apps.  <span className='text-[#2603FE] font-bold'>People sometimes returned</span> clothing items because they didn't meet their expectations in terms of appearance and appearance of the product influence their <span className='text-[#2603FE] font-bold'>high rate of returns</span>
+          </p>
+          </div>   
+          <div className="layers2">
+          <img loading="lazy" src={myntraQuote} className="image3" />
+        </div> 
+      </div>
+      {/* ********************************************************************************************* */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+             AFFINITY MAPPING
+          </b>
+        </div>               
+        <div className="text5 py-6">
+          <span>
+          I sorted the notes from the survey + interviews and categorized them to find commonalities.
+          </span>
+        </div>
+        <div className="px-5 pt-2">
+          <img loading="lazy" src={mapping} className="image3" />
+        </div>       
+      </div>
+      {/* ********************************************************************************************* */}
+      <div className="container5">
+        <div className="layers2">
+          <img loading="lazy" src={findingsTwo} className="image3" />
+        </div>       
+      </div>
+      {/* ********************************************************************************************* */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+          PERSONA
+          </b>
+        </div>               
+        
+        <div className="pt-5">
+          <img loading="lazy" src={persona} className="image3" />
+        </div>       
+      </div>
+      {/* ******************************************************************************************* */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+             COMPETITIVE ANALYSIS
+          </b>
+        </div>
+
+        <div className="text7">
+          <span className='text-2xl'>
+          None in the market has virtual try on experience for your favourite outfits of wishlist.
+          </span>
+        </div>
+
+        <div className="text5 py-3">
+          <span>
+          I conducted a competitive analysis of the apps which have AR feature and some other fashion apps Zara , Myntra, Ajio, Meesho etc by going through some relevant articles and resources. Here are some of the key findings and best UX features of each app, based on the information I found:
+
+          </span>
+        </div>
+        <div className='flex gap-10 mt-10'>
+        <div className="">
+          <img loading="lazy" src={analysisOne} className="image3" />
+        </div>
+          <div className='flex flex-col gap-2'>
+            <div className="">
+            <img loading="lazy" src={analysisTwo} className="image3" />
+          </div>
+
+          <div className="">
+            <img loading="lazy" src={analysisThree} className="image3" />
+          </div>
+          </div>
+        </div>
+        
+      </div>
+      {/* ******************************************************************************************* */}
+      <div className="container10">
+        
+        <div className="flex gap-20 flex-col lg:flex-row-reverse items-start">
+          <div className=" w-full pt-5 lg:pt-0">
+            <img
+              loading="lazy"
+              src={effectBusiness}
+              alt="image"
+              className="image10"
+            ></img>
+          </div>
+
+          <div className="w-full ">
+
+
+          <div className="container10-text font-semibold">
+        How Would FitverX affect business
+        </div>
+
+            <div className="text12">
+            Empowering customers to make more informed purchasing decisions, virtual try-on technology can alleviate many of the challenges faced by the <span className='font-semibold text-[#F58021]'>fashion industry</span> today.
+            </div>          
+            <div className="text14">
+              <span>
+              FITVERX implementation will boost <span className='font-semibold text-[#F58021]'>on-the-spot purchases</span> within the shopping app by approximately 80%. By enabling users to instantly visualize how products will look and fit, also reduces <span className='font-semibold'>struggles with getting dresesd again & again more no. of trials and sky-high returns.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ************************************************************************************************ */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+            <img loading="lazy" src={ellipse}></img> Design
+          </b>
+        </div>
+        
+        <div className="text5 py-4">
+          <span>
+          I designed the user experience by imagining the user flow, followed with a wireframe (1) and complete prototype .
+          </span>
+        </div>
+        <div className="pt-10">
+            <img loading="lazy" src={design} className="image3" />
+          </div>
+      </div>
+
+
+
+
+
+
     </div>
   )
 }
