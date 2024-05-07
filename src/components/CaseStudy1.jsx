@@ -409,7 +409,7 @@ const CaseStudy1 = () => {
         <div className="lists pb-10">
           <b className="flex items-center gap-4">FINAL SCREENS</b>
         </div>
-        <FinalScreen />
+        <FinalScreen caseStudy={'fitverx'} />
       </div>
       {/* ===================================================== */}
       <div className="container4">

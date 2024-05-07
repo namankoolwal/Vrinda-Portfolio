@@ -456,7 +456,7 @@ function CaseStudy2() {
       </div>
       {/* ===================================================== */}
       <div className="container10">
-        <FinalScreen />
+        <FinalScreen caseStudy={'eventify'}/>
       </div>
       {/* ===================================================== */}
       <div className="container15">
