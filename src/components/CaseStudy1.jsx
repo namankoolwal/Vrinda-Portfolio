@@ -17,6 +17,12 @@ import analysisTwo from "../assets/images/fitverx/analysisTwo.png";
 import analysisThree from "../assets/images/fitverx/analysisThree.png";
 import effectBusiness from "../assets/images/fitverx/effectBusiness.png";
 import design from "../assets/images/fitverx/design.png";
+import WIREFRAME from "../assets/images/fitverx/WIREFRAME.png";
+import lightning from "../assets/images/fitverx/lightning.png";
+import thankYou from "../assets/images/fitverx/thankYou.png";
+import pinterestImg from "../assets/images/fitverx/pinterestImg.png";
+import eventifyImg from "../assets/images/fitverx/eventifyImg.png";
+import FinalScreen from './FinalScreen';
 
 const CaseStudy1 = () => {
   return (
@@ -310,7 +316,7 @@ It added another layer of emotional stress when trying to choose between which c
           </b>
         </div>
         
-        <div className="text5 py-4">
+        <div className="text5 py-10">
           <span>
           I designed the user experience by imagining the user flow, followed with a wireframe (1) and complete prototype .
           </span>
@@ -319,6 +325,172 @@ It added another layer of emotional stress when trying to choose between which c
             <img loading="lazy" src={design} className="image3" />
           </div>
       </div>
+      {/* ************************************************************************************************ */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+             IDEATION
+          </b>
+        </div>
+        
+        <div className="text5 pt-5">
+          <p>
+          <p>After analyzing the features of Try on apps on the market, we tested out three potential approaches* to the and ultimately narrowed it down to one.</p>
+            <p className='pt-5'>
+              *Approaches
+            <ul>
+                <li>(1) Activity summary followed by activity feed (forum format)</li>
+                <li>(2) Activity summary followed by activity feed (image-forward social media format)</li>
+                <li>(3) Activity summary only</li>
+            </ul>
+            </p>
+          </p>
+        </div>
+       
+      </div>
+     
+      {/* ************************************************************************************************ */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+            WIREFRAME
+          </b>
+        </div>
+        <div className="pt-10">
+            <img loading="lazy" src={WIREFRAME} className="image3" />
+          </div>
+      </div>
+ {/* ===================================================== */}
+ <div className="container4">
+ <div className="lists pb-10">
+          <b className="flex items-center gap-4">
+          FINAL SCREENS
+          </b>
+        </div>
+        <FinalScreen />
+      </div>
+      {/* ===================================================== */}
+      <div className="container4">
+        <div className="lists">
+          <b className="flex items-center gap-4">
+            <img loading="lazy" src={ellipse}></img> Conculsion
+          </b>
+        </div>
+        
+        <div className="text5 pt-10">
+          <span>
+          Since I only had to design few page, it was a really fun learning experience being able to get into the nitty gritty details of every single design choice. I ran into quite a few unexpected ideas as I was nearing the end of my project such as Multiple colors of same design carousel which really helped tie it all together!
+          </span>
+        </div>   
+      </div>
+      {/* **************************************************************************** */}
+
+<div className="container4 ">
+
+      <div className="w-full">
+            <div className="flex flex-col gap-5 md:w-[60%]">
+              
+              <div className="text-xl font-semibold">WHAT I LEARNED</div>
+              <div className="text-[17px]" >
+                <p className='font-semibold'>1. Peer feedback saved my project</p>
+                <p className=''>
+                  I asked two other designer friends to look over my project and they challenged all of my design decisions, making sure there was valid support behind everything.
+                  </p>
+              </div>
+              <div className="text-[17px] " >
+                <p className='font-semibold'>2. Storytell the process</p>
+                <p className=''>
+                I put extra effort into organizing the Figma file for this challenge and had a lot of fun structuring it as a story for easier digestion. It also made referencing everything easier for this case study :)
+                  </p>
+              </div>
+              <div className="text-lg font-semibold">
+              SOME THINGS I WOULD DO DIFFERENTLY..
+              </div>
+              <div className="text-[17px] leading-5 ">
+                <ul className='list-disc pl-10 space-y-1 leading-6 '>
+                  <li className=' '>Spend more time polishing the survey, ensuring the wording is as concise and unbiased as possible</li>
+                  <li>Show my wireframe designs to the testers to get their feedback and remove some of my own assumptions</li>
+                  <li>Video interview my friends to get more candid and detailed answers from them <br />which would hopefully help form some better insights</li>
+                </ul>
+              
+              </div>
+            </div>
+          </div>
+</div>
+{/* ***************************************************************************************************** */}
+
+<div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border">
+        <div className="flex flex-col gap-6 items-center justify-center">
+          <img
+            src={lightning}
+            alt="lightning"
+            className="w-[200px]"
+            loading="lazy"
+          />
+          <img
+            src={thankYou}
+            alt="thankYou"
+            className="w-[150px]"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      {/* ***************************************************************** */}
+      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border">
+        <div>
+          <div className="flex flex-col gap-10">
+            <div className="">
+              <p
+                className="text-xs md:text-3xl font-[500] text-center"
+               
+              >
+                You've reached the end...why not take a look at my other
+                projects?
+              </p>
+            </div>
+            <div className="flex gap-9 items-start justify-center">
+            
+                <div className="flex flex-col gap-3 md:w-[40%]">
+                  <img
+                    loading="lazy"
+                    src={eventifyImg}
+                    alt="image"
+                    className="w-full"
+                  ></img>
+                  <div className="flex flex-col gap-2 items-start text-left w-full ">
+                    <span className="text-[12px] md:text-[20px] font-semibold">
+                    Eventify:Finding & Hosting Events in your locality
+                    </span>
+                    <span className="text-[#8C8C8C] text-[12px] md:text-sm">
+                    UX/UI App Design
+                    </span>
+                  </div>
+                </div>
+              
+                <div className="flex gap-3 flex-col md:w-[40%]">
+                  <img
+                    loading="lazy"
+                    src={pinterestImg}
+                    alt="image"
+                    className="w-full"
+                  ></img>
+                  <div className="flex gap-2 flex-col">
+                    <span className="text-[12px] md:text-[20px] font-semibold">
+                      Pinterest:Redesigning Pinterest
+                    </span>
+                    <span className="text-[#8C8C8C] text-[12px] md:text-sm">
+                      User Research, User Experience
+                    </span>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 
 
 

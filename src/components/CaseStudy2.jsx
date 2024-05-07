@@ -614,7 +614,7 @@ function CaseStudy2() {
             </div>
             <div className="flex gap-9 items-start justify-center">
               {/* <div className=" w-full flex p-5 pr-0 mr-0 justify-end"> */}
-                <div className="flex flex-col gap-3 md:w-2/6">
+                <div className="flex flex-col gap-3 md:w-[40%]">
                   <img
                     loading="lazy"
                     src={fitverx}
@@ -632,7 +632,7 @@ function CaseStudy2() {
                 </div>
               {/* </div> */}
               {/* <div className="  w-full p-5 pl-0"> */}
-                <div className="flex gap-3 flex-col md:w-2/6">
+                <div className="flex gap-3 flex-col md:w-[40%]">
                   <img
                     loading="lazy"
                     src={pinterestImg}

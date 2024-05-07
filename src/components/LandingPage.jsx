@@ -113,7 +113,12 @@ const LandingPage = ({scrollToRef}) => {
             </div>
           </div>
           {/* ******************************************************************** */}
-          <div className='container mx-auto my-[50px] '>
+          <div className='container mx-auto my-[50px] ' 
+          onClick={()=> ( window.open(
+            "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study/modules/1045636797", 
+            "_blank"
+        ))}
+          >
             <div className='pinterest flex items-center flex-col md:flex-row'>
                 <div className='hoverEvent image flex-1 relative' ref={refThree} onMouseOver={()=>onMouseOver(refThree)}>
                 <img src={Pinterest} alt="" className='w-full z-20 peer/pinterest'/>
