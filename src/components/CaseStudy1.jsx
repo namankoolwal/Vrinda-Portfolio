@@ -23,8 +23,18 @@ import thankYou from "../assets/images/fitverx/thankYou.png";
 import pinterestImg from "../assets/images/fitverx/pinterestImg.png";
 import eventifyImg from "../assets/images/fitverx/eventifyImg.png";
 import FinalScreen from "./FinalScreen";
+import { useNavigate } from "react-router-dom";
 
 const CaseStudy1 = () => {
+  const navigate = useNavigate()
+
+  const pageNavigate = (path) => {
+    navigate(path)
+    window.scrollTo({
+      top: 0, // Specify the y-coordinate value you want to scroll to
+      behavior: "smooth"
+  });
+  }
   return (
     <div>
       <Header />
@@ -32,7 +42,7 @@ const CaseStudy1 = () => {
       <div className="container1">
         <div className="first-text">Featured Project</div>
         <div className="eventify">
-          <b>EVENTIFY APP DESIGN</b>
+          <b>FITVERX APP DESIGN</b>
         </div>
         <div className="main-text flex gap-14 flex-col lg:flex-row-reverse items-start">
           <div className="w-full flex flex-col gap-10 pt-5 lg:pt-0">
@@ -292,7 +302,7 @@ const CaseStudy1 = () => {
           <div className="">
             <img loading="lazy" src={analysisOne} className="image3" />
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="">
               <img loading="lazy" src={analysisTwo} className="image3" />
             </div>
@@ -504,7 +514,9 @@ const CaseStudy1 = () => {
               </p>
             </div>
             <div className="flex gap-9 items-start justify-center">
-              <div className="flex flex-col gap-3 md:w-[40%]">
+              <div className="flex flex-col gap-3 md:w-[40%] cursor-pointer"
+              onClick={()=>{pageNavigate('/case-study2')}}
+              >
                 <img
                   loading="lazy"
                   src={eventifyImg}
@@ -521,7 +533,12 @@ const CaseStudy1 = () => {
                 </div>
               </div>
 
-              <div className="flex gap-3 flex-col md:w-[40%]">
+              <div className="flex gap-3 flex-col md:w-[40%] cursor-pointer" 
+              onClick={()=> ( window.open(
+                "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study/modules/1045636797", 
+                "_blank"
+            ))}
+              >
                 <img
                   loading="lazy"
                   src={pinterestImg}

@@ -25,8 +25,18 @@ import greenLightning from "../assets/images/greenLightning.png";
 import fitverx from "../assets/images/fitverx.png";
 import pinterestImg from "../assets/images/pinterestImg.png";
 import ScrollToTop from "./ScrollToTop";
+import { useNavigate } from "react-router-dom";
 
 function CaseStudy2() {
+  const navigate = useNavigate();
+
+  const pageNavigate = (path) => {
+    navigate(path)
+    window.scrollTo({
+      top: 0, // Specify the y-coordinate value you want to scroll to
+      behavior: "smooth"
+  });
+  }
   return (
     <div>
       <Header/>
@@ -614,7 +624,9 @@ function CaseStudy2() {
             </div>
             <div className="flex gap-9 items-start justify-center">
               {/* <div className=" w-full flex p-5 pr-0 mr-0 justify-end"> */}
-                <div className="flex flex-col gap-3 md:w-[40%]">
+                <div className="flex flex-col gap-3 md:w-[40%] cursor-pointer"
+                onClick={()=>{pageNavigate('/case-study1')}}
+                >
                   <img
                     loading="lazy"
                     src={fitverx}
@@ -632,7 +644,12 @@ function CaseStudy2() {
                 </div>
               {/* </div> */}
               {/* <div className="  w-full p-5 pl-0"> */}
-                <div className="flex gap-3 flex-col md:w-[40%]">
+                <div className="flex gap-3 flex-col md:w-[40%] cursor-pointer"
+                onClick={()=> ( window.open(
+                  "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study/modules/1045636797", 
+                  "_blank"
+              ))}
+                >
                   <img
                     loading="lazy"
                     src={pinterestImg}
