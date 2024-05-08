@@ -111,7 +111,7 @@ function Header() {
 
 <a
             href={VrindaResume}
-            download={"Vrinda | Resume"}
+            download
             target="_blank"
             className="nav-item text-lg"
            
