@@ -1,6 +1,6 @@
 import React, { useState, useEffect ,useRef } from "react";
 import { NavLink , useNavigate } from "react-router-dom";
-import VrindaResume from "../../public/Vrinda 2024 Resume.pdf"
+// import VrindaResume from "../../public/Vrinda 2024 Resume.pdf"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -109,8 +109,8 @@ function Header() {
             </NavLink>
           ))}
 
-<a
-            href={VrindaResume}
+          <a
+            href={'./Vrinda 2024 Resume.pdf'}
             target="_blank"
             className="nav-item text-lg"
            
