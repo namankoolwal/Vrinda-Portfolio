@@ -1,5 +1,6 @@
 import React, { useState, useEffect ,useRef } from "react";
 import { NavLink , useNavigate } from "react-router-dom";
+import VrindaResume from "../assets/Imp/VrindaResume.pdf"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,11 +60,6 @@ function Header() {
       name: "About Me",
       link: "/about-me",
     },
-    {
-      id: 2,
-      name: "Resume",
-      link: "/resume",
-    },
   ];
 
   return (
@@ -112,6 +108,16 @@ function Header() {
               {item.name}
             </NavLink>
           ))}
+
+<a
+            href={VrindaResume}
+            download={"Vrinda | Resume"}
+            target="_blank"
+            className="nav-item text-lg"
+           
+          >
+            Resume
+          </a>
 
           <NavLink
             to="https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/"

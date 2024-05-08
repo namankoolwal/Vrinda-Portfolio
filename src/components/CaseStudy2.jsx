@@ -85,7 +85,7 @@ function CaseStudy2() {
             <div className="design-role">
               <span className="text1">DESIGN ROLE</span>
               <p className="text2">Design thinking , UX/UI , Problem Solving</p>
-              <p className="text-sm italic underline mt-6"><a href="https://www.figma.com/file/s4SP9jdVvEIQCBIMMQK27w/eventify?type=design&node-id=0%3A1&mode=design&t=NcoO9INqaUQnkLFB-1">
+              <p className="text-sm italic underline mt-6"><a href="https://www.figma.com/design/s4SP9jdVvEIQCBIMMQK27w/eventify?node-id=0%3A1&t=jWXkHjbZfU9AcZT9-1" target="_blank">
                 Figma File</a></p>
             </div>
           </div>
@@ -130,11 +130,11 @@ function CaseStudy2() {
           </b>
         </div>
 
-        <div className="text4">
-          <b>
+        <div className="ultimate">
+          <span>
             "Ever felt like there's always something exciting happening nearby,
             but you're just not sure how to find it?
-          </b>
+          </span>
         </div>
 
         <div className="text5">

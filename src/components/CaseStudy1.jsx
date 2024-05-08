@@ -87,7 +87,7 @@ const CaseStudy1 = () => {
               <span className="text1">DESIGN ROLE</span>
               <p className="text2">Design thinking , UX/UI , Problem Solving</p>
               <p className="text-sm italic underline mt-6">
-                <a href="https://www.figma.com/file/s4SP9jdVvEIQCBIMMQK27w/eventify?type=design&node-id=0%3A1&mode=design&t=NcoO9INqaUQnkLFB-1">
+                <a href="https://www.figma.com/design/1gCLhhiVo0J3Gi5zsaxizE/FITVERX?node-id=0%3A1&t=1qCm4Z607grTsdGq-1" target="_blank">
                   Figma File
                 </a>
               </p>
