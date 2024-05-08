@@ -646,7 +646,7 @@ function CaseStudy2() {
               {/* <div className="  w-full p-5 pl-0"> */}
                 <div className="flex gap-3 flex-col md:w-[40%] cursor-pointer"
                 onClick={()=> ( window.open(
-                  "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study/modules/1045636797", 
+                  "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study", 
                   "_blank"
               ))}
                 >
