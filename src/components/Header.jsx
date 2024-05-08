@@ -1,6 +1,6 @@
 import React, { useState, useEffect ,useRef } from "react";
 import { NavLink , useNavigate } from "react-router-dom";
-import VrindaResume from "../assets/Imp/VrindaResume.pdf"
+import VrindaResume from "../../public/VrindaResume.pdf"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
