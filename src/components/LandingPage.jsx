@@ -119,7 +119,7 @@ const LandingPage = ({scrollToRef}) => {
           {/* ******************************************************************** */}
           <div className='container mx-auto my-[50px] ' 
           onClick={()=> ( window.open(
-            "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study/modules/1045636797", 
+            "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study", 
             "_blank"
         ))}
           >
