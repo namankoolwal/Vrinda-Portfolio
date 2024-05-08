@@ -110,7 +110,7 @@ function Header() {
           ))}
 
 <a
-            href={VrindaResume}
+            href='../../public/VrindaResume.pdf'
             target="_blank"
             className="nav-item text-lg"
            
