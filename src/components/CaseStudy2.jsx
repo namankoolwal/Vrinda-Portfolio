@@ -215,16 +215,16 @@ function CaseStudy2() {
         </div>
         <div className="flex items-center justify-evenly my-10 md:my-20">
           <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
-            1.Secondary Research
+           <a href="#interview">1.Secondary Research</a>
           </div>
           <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
-            2.Users Research
+          <a href="#mapping">2.Users Research</a>
           </div>
           <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
-            3.Competitive Research
+          <a href="#competitive">3.Competitive Analysis</a>
           </div>
         </div>
-        <div>
+        <div id="interview">
           <span className="font-semibold">Method: </span>Interview
         </div>
 
@@ -241,7 +241,7 @@ function CaseStudy2() {
       </div>
 
       <div className="container8">
-        <div className="container8-heading">COMPETITIVE ANALYSIS</div>
+        <div className="container8-heading" id="competitive">COMPETITIVE ANALYSIS</div>
 
         <div className="text10">
           The demand for event planning apps has due to the need for efficient
@@ -304,7 +304,7 @@ function CaseStudy2() {
       </div>
 
       <div className="container11">
-        <div className="container11-heading">MAPPING & SORTING</div>
+        <div className="container11-heading" id="mapping">MAPPING & SORTING</div>
 
         <div className="text15">
           <span>
