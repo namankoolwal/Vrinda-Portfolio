@@ -97,7 +97,7 @@ function Aboutme() {
               </p>
               <p className="find-me">
                 <a
-                  href="tel:91+9468734804"
+                  href="tel:9468734804"
                   target="_blank"
                   className="flex items-center gap-3"
                   title="Mobile No - 91+9468734804"
@@ -114,13 +114,12 @@ function Aboutme() {
           <div className="note mb-10">
             <h2 className="footer text-[#005323]">Made with lots of love and caffeine</h2>
             <div className="images flex ">
-              <a href="https://www.behance.net/vrindakhandel1" >
+              <a href="https://www.behance.net/vrindakhandel1"  target='_blank'>
                 {" "}
                 <img src={Behands} className="behands" alt="behands"/>
               </a>
               <a
-                href="https://dribbble.com/vrindavk
-"
+                href="https://dribbble.com/vrindavk" target='_blank'
               >
                 {" "}
                 <img src={Dribble} className="dribble" alt="dribble"/>
