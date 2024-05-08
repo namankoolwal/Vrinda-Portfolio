@@ -75,6 +75,7 @@ function Aboutme() {
                   href="mailto:vrinyk@gmail.com"
                   target="_blank"
                   className="flex items-center gap-3"
+                  title="email - vrinyk@gmail.com"
                 >
                   <FaEnvelope />{" "}
                   <span className="font-[500]">email - vrinyk@gmail.com </span>
@@ -85,6 +86,7 @@ function Aboutme() {
                   href="https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/"
                   target="_blank"
                   className="flex items-center gap-3"
+                  title="LinkedIn - Vrinda Khandelwal"
                 >
                   <FaLinkedinIn />{" "}
                   <span className="font-[500]">
@@ -98,6 +100,7 @@ function Aboutme() {
                   href="tel:91+9468734804"
                   target="_blank"
                   className="flex items-center gap-3"
+                  title="Mobile No - 91+9468734804"
                 >
                   <FaPhone />{" "}
                   <span className="font-[500]">
@@ -111,18 +114,18 @@ function Aboutme() {
           <div className="note mb-10">
             <h2 className="footer text-[#005323]">Made with lots of love and caffeine</h2>
             <div className="images flex ">
-              <a href="https://www.behance.net/vrindakhandel1">
+              <a href="https://www.behance.net/vrindakhandel1" >
                 {" "}
-                <img src={Behands} className="behands" />
+                <img src={Behands} className="behands" alt="behands"/>
               </a>
               <a
                 href="https://dribbble.com/vrindavk
 "
               >
                 {" "}
-                <img src={Dribble} className="dribble" />
+                <img src={Dribble} className="dribble" alt="dribble"/>
               </a>
-              <img src={layer1} className="layer1" />
+              <img src={layer1} className="layer1" alt="layer1"/>
             </div>
           </div>
         </div>

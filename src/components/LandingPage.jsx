@@ -146,19 +146,19 @@ const LandingPage = ({scrollToRef}) => {
           {/* ******************************************************************************************* */}
             <div className=' mx-auto my-[120px] px-4 md:px-24'>
                 <div className='text-2xl md:text-3xl font-Bree  text-[#005323]'>Made with lots of love and caffeine.</div>
-                <div className="images flex ">
+                <div className="pt-6 flex ">
               <a href="https://www.behance.net/vrindakhandel1">
                 {" "}
-                <img src={Behands} className="behands" />
+                <img src={Behands} alt='behands' className="behands" />
               </a>
               <a
                 href="https://dribbble.com/vrindavk
 "
               >
                 {" "}
-                <img src={Dribble} className="dribble" />
+                <img src={Dribble} alt='Dribble' className="dribble" />
               </a>
-              <img src={layer1} className="layer1" />
+              <img src={layer1} alt='layer1' className="layer1" />
             </div>
             </div>
             {/* ******************************************************************* */}

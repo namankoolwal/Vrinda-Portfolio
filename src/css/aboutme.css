@@ -47,8 +47,8 @@
 }
 
 .behands, .layer1, .dribble {
-  width: 60px;
-  padding-right: 24px;
+  width: 40px;
+  margin-right: 24px;
 }
 
 .images {
@@ -90,8 +90,8 @@
   }
 
   .behands, .layer1, .dribble {
-    padding-right: 15px; /* Less spacing between icons */
-    width: 45px;
+    margin-right: 15px; /* Less spacing between icons */
+    width: 35px;
   }
 }
 
