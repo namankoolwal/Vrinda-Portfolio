@@ -27,17 +27,16 @@
 
 @keyframes eyeborder{
     0%{
-        border: 3px solid #FC6D42;
+        opacity: 1;
     }
     10%{
-        border: none;
-        display: none;
+        opacity: 0;
      }
      20%{
-        border: 3px solid #FC6D42
+        opacity: 1;
      }
      100%{
-        border: 3px solid #FC6D42;
+        opacity: 1;
  }
  }
 
