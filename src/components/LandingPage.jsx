@@ -17,6 +17,7 @@ import eventifyBg from '../assets/images/landingPage/eventifyBg.png'
 import fitverxBg from '../assets/images/landingPage/fitverxBg.png'
 import pinterestBg from '../assets/images/landingPage/pinterestBg.png'
 import dogImg from '../assets/images/landingPage/dogImg.png'
+import Eye from './Eye'
 
 const LandingPage = ({scrollToRef}) => {
     
@@ -51,7 +52,7 @@ const LandingPage = ({scrollToRef}) => {
   return (
     <div >
         <Header />
-        
+        {/* <Eye/> */}
           <div className=' mx-auto mt-10 md:mt-0 py-10 px-4 md:px-24 '>
             <div className="flex items-center flex-col-reverse gap-10 md:gap-0 md:flex-row justify-center">
                 <div className='flex flex-col gap-10 md:gap-3 '>
