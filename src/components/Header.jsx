@@ -22,7 +22,7 @@ function Header() {
 
   const handleClick = () => {
     window.scrollTo({
-      top: 650, // Specify the y-coordinate value you want to scroll to
+      top: 1200, // Specify the y-coordinate value you want to scroll to
       behavior: "smooth",
     });
   };
@@ -79,7 +79,7 @@ function Header() {
           } pt-10 md:pt-2 pl-10 md:mt-0 flex md:flex flex-col md:flex-row md:justify-end md:items-center gap-12 md:gap-6 `}
         >
           <NavLink
-            to="/landingPage"
+            to="/"
             className="nav-item text-lg"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : null,

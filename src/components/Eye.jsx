@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import eyeballs from "../assets/images/landingPage/eyeballs.png";
-import eyeOuter from "../assets/images/landingPage/eyeOuter.png";
 
 const Eye = () => {
   const [eyePosition, setEyePosition] = useState({ x: 0, y: 0 });
@@ -17,21 +16,16 @@ const Eye = () => {
     };
   }, []);
 
-  const eyeStyle = {
-    // position: "relative",
-    // transform: "rotate(45deg)",
-    // borderRadius: "80% 0%",
-    // border: "3px solid #FC6D42",
-    // overflow: "hidden",
-  };
+ 
 
   const eyeBallStyle = {
     position: "absolute",
    
-    transform: `translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px) rotate(${45}deg) `, // Adjust translation and counteract rotation
-
+    transform: `translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px) rotate(${45}deg) `, 
   };
+ 
 
+// more css is imported from App.css  
 
   return (
     <>
