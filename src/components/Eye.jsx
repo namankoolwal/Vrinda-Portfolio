@@ -35,8 +35,8 @@ const Eye = () => {
 
   return (
     <>
-      <div className="flex md:gap-20 gap-20 ">
-        <div  className=" eye flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+      <div className="flex md:gap-28 gap-20 ">
+        <div  className=" eye flex items-center justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px]">
         <div className="eyelid">
                 <span></span>
             </div>
@@ -45,11 +45,11 @@ const Eye = () => {
           </div>
         </div>
 
-        <div  className="eye flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+        <div  className="eye flex items-center justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px] ">
         <div className="eyelid ">
                 <span></span>
             </div>
-        <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
+        <div  style={eyeBallStyle} className="w-[60px] h-[60px]  md:w-[80px] md:h-[80px]">
             <img src={eyeballs} alt="" className=""/>
           </div>
         </div>

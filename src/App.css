@@ -12,14 +12,12 @@
 }   
 
 .eye{
-    width: 120px;
-    height: 120px;
+   
     /* background-color: rgb(163, 163, 163); */
     border: 4px solid #FC6D42;
     display: inline-block;
-    border-radius: 90% 2%;
+    border-radius: 80% 10px;
     transform: rotate(45deg);
-    margin: 60px;
     /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) , 0 3px 6px rgba(0, 0, 0, 0.23); */
     overflow: hidden;
     animation: eyeborder 4s infinite;
