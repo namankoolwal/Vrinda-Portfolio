@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "./Header";
 import ScrollToTop from "./ScrollToTop";
 import ellipse from "../assets/images/Ellipse.png";
@@ -25,7 +25,10 @@ import eventifyImg from "../assets/images/fitverx/eventifyImg.png";
 import FinalScreen from "./FinalScreen";
 import { useNavigate } from "react-router-dom";
 
+
 const CaseStudy1 = () => {
+
+  
   const navigate = useNavigate()
 
   const pageNavigate = (path) => {
@@ -97,7 +100,7 @@ const CaseStudy1 = () => {
       </div>
       {/* ************************************************************************************************* */}
 
-      <div className="container3">
+      <div className="container3" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000" >
         <div className="lists">
           <b className="flex items-center gap-4">
             <img loading="lazy" src={ellipse}></img> Problem Statements
@@ -140,7 +143,7 @@ const CaseStudy1 = () => {
       </div>
 
       {/* ************************************************************************************************* */}
-      <div className="container5">
+      <div className="container5" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000" >
         <div className="layers2">
           <img loading="lazy" src={mobiles} className="image3" />
         </div>
@@ -148,7 +151,7 @@ const CaseStudy1 = () => {
 
       {/* ************************************************************************************************* */}
 
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000" >
         <div className="lists">
           <b className="flex items-center gap-4">
             <img loading="lazy" src={ellipse}></img> Research
@@ -178,7 +181,7 @@ const CaseStudy1 = () => {
       </div>
 
       {/* ************************************************************************************************* */}
-      <div className="container5">
+      <div className="container5" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="layers2">
           <img loading="lazy" src={researchPartOne} className="image3" />
         </div>
@@ -190,13 +193,13 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ************************************************************************************************* */}
-      <div className="container5">
+      <div className="container5" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="layers2">
           <img loading="lazy" src={findings} className="image3" />
         </div>
       </div>
       {/* ************************************************************************************************* */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="text-sm text-[#626262]">
           <span>PART 2</span>
         </div>
@@ -223,7 +226,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ********************************************************************************************** */}
-      <div className="container5">
+      <div className="container5" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="layers2">
           <img loading="lazy" src={researchPartTwo} className="image3" />
         </div>
@@ -246,7 +249,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ********************************************************************************************* */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">AFFINITY MAPPING</b>
         </div>
@@ -261,13 +264,13 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ********************************************************************************************* */}
-      <div className="container5">
+      <div className="container5" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="layers2">
           <img loading="lazy" src={findingsTwo} className="image3" />
         </div>
       </div>
       {/* ********************************************************************************************* */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">PERSONA</b>
         </div>
@@ -277,7 +280,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ******************************************************************************************* */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">COMPETITIVE ANALYSIS</b>
         </div>
@@ -314,7 +317,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ******************************************************************************************* */}
-      <div className="container10">
+      <div className="container10" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="flex gap-20 flex-col lg:flex-row-reverse items-start">
           <div className=" w-full pt-5 lg:pt-0">
             <img
@@ -358,7 +361,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ************************************************************************************************ */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">
             <img loading="lazy" src={ellipse}></img> Design
@@ -376,7 +379,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ************************************************************************************************ */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">IDEATION</b>
         </div>
@@ -406,7 +409,7 @@ const CaseStudy1 = () => {
       </div>
 
       {/* ************************************************************************************************ */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">WIREFRAME</b>
         </div>
@@ -415,14 +418,14 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ===================================================== */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists pb-10">
           <b className="flex items-center gap-4">FINAL SCREENS</b>
         </div>
         <FinalScreen caseStudy={'fitverx'} />
       </div>
       {/* ===================================================== */}
-      <div className="container4">
+      <div className="container4" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="lists">
           <b className="flex items-center gap-4">
             <img loading="lazy" src={ellipse}></img> Conculsion
@@ -441,7 +444,7 @@ const CaseStudy1 = () => {
       </div>
       {/* **************************************************************************** */}
 
-      <div className="container4 ">
+      <div className="container4 " data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="w-full">
           <div className="flex flex-col gap-5 md:w-[60%]">
             <div className="text-xl font-semibold">WHAT I LEARNED</div>
@@ -487,7 +490,7 @@ const CaseStudy1 = () => {
       </div>
       {/* ***************************************************************************************************** */}
 
-      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border">
+      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div className="flex flex-col gap-6 items-center justify-center">
           <img
             src={lightning}
@@ -504,7 +507,7 @@ const CaseStudy1 = () => {
         </div>
       </div>
       {/* ***************************************************************** */}
-      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border">
+      <div className="px-5 lg:px-[200px] my-[80px] md:my-[120px] font-Urbanist box-border" data-aos="fade-up" data-aos-delay='500' data-aos-duration="1000">
         <div>
           <div className="flex flex-col gap-10">
             <div className="">
