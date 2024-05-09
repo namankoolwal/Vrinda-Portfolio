@@ -19,15 +19,10 @@ const Eye = () => {
 
   const eyeStyle = {
     position: "relative",
-    // width: "120px",
-    // height: "120px",
     transform: "rotate(45deg)",
     borderRadius: "80% 0%",
     border: "3px solid #FC6D42",
     overflow: "hidden",
-    // display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
   };
 
   const eyeBallStyle = {
@@ -41,18 +36,27 @@ const Eye = () => {
   return (
     <>
       <div className="flex md:gap-28 gap-20 ">
-        <div style={eyeStyle} className=" flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+        <div style={eyeStyle} className="flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+        <div className="eyelid">
+                <span></span>
+            </div>
           <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] ">
             <img src={eyeballs} alt="" />
           </div>
         </div>
 
         <div style={eyeStyle} className=" flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+        <div className="eyelid ">
+                <span></span>
+            </div>
         <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
             <img src={eyeballs} alt="" className=""/>
           </div>
         </div>
       </div>
+
+
+
     </>
   );
 };

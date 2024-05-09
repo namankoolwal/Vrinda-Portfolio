@@ -49,12 +49,31 @@ export default {
           '100%' : {
             transform: 'translateY(0)',
           }
-        }
+        },
+        blinkone: {
+          '0%, 10%, 12%, 20%, 22%, 40%, 42%, 60%, 62%, 70%, 72%, 90%, 92%, 98%, 100%': {
+            width: '120px',
+          },
+          '11%, 21%, 41%, 61%, 71%, 91%, 99%': {
+            width: '0px',
+          },
+        },
+        blinkTwo: {
+          '0%, 10%, 12%, 20%, 22%, 40%, 42%, 60%, 62%, 70%, 72%, 90%, 92%, 98%, 100%': {
+            height: '80px',
+          },
+          '11%, 21%, 41%, 61%, 71%, 91%, 99%': {
+            height: '0px',
+          },
+        },
+        
       },
       animation : {
         ring : 'ring 0.4s ease-in-out infinite alternate',
         phone : 'phone 3.5s ease-in-out alternate ',
-        phoneTwo : 'phoneTwo 3.5s ease-in-out alternate'
+        phoneTwo : 'phoneTwo 3.5s ease-in-out alternate',
+        blinkone : 'blinkone 10s infinite',
+        blinkTwo : 'blinkTwo 10s infinite'
       },
       cursor: {
         'fancy': 'url(./src/assets/Imp/curserIcon.svg), wait',
