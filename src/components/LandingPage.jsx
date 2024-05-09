@@ -47,13 +47,13 @@ const LandingPage = ({ scrollToRef }) => {
     <div>
       <Header />
 
-      <div className=" mx-auto my-[120px] md:my-[100px] py-10 flex flex-col items-center gap-6 justify-center">
+      <div className=" mx-auto my-[150px] md:my-[100px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center">
         <Eye />
-        <div>
+        <div className="animate-text">
           <p className="text-[#999999] text-lg">BLINK AND YOU’ll MISS IT</p>
         </div>
-        <div className="md:w-[50%] mx-auto text-center ">
-          <p className="text-3xl md:text-5xl font-Bree md:px-20">Crafting great <br /> digital experiences</p>
+        <div className="md:w-[50%] mx-auto text-center animate-text">
+          <p className="text-4xl md:text-5xl font-Bree md:px-20">Crafting great <br /> digital experiences</p>
         </div>
       </div>
       {/* **************************************************************************************** */}

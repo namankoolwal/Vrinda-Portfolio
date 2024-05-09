@@ -34,7 +34,7 @@ const Eye = () => {
         <div className="eyelid">
                 <span></span>
             </div>
-          <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] ">
+          <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px]  animate-eyeball md:animate-none">
             <img src={eyeballs} alt="" />
           </div>
         </div>
@@ -43,7 +43,7 @@ const Eye = () => {
         <div className="eyelid ">
                 <span></span>
             </div>
-        <div  style={eyeBallStyle} className="w-[60px] h-[60px]  md:w-[80px] md:h-[80px]">
+        <div  style={eyeBallStyle} className="w-[60px] h-[60px]  md:w-[80px] md:h-[80px]  animate-eyeball md:animate-none">
             <img src={eyeballs} alt="" className=""/>
           </div>
         </div>

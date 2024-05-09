@@ -66,6 +66,53 @@ export default {
             height: '0px',
           },
         },
+        eyeball :{
+          '0%' :{
+            top : '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)'
+          },
+          '25%' :{
+            top : '50%',
+            left: '50%',
+            transform: 'translate(-100%, 0%)'
+          },
+          '50%' :{
+            top : '50%',
+            left: '50%',
+            transform: 'translate(-80%, -80%)'
+          },
+          '75%' :{
+            top : '50%',
+            left: '50%',
+            transform: 'translate(0%, -100%)'
+          },
+          '100%' :{
+            top : '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)'
+          },
+        },
+        text:{
+          '0%' : {
+            transform: 'translateY(0)',
+          },
+          '25%' : {
+            transform: 'translateY(-48%)',
+          },
+          '50%' : {
+            transform: 'translateY(0)',
+          },
+          '75%' : {
+            transform: 'translateY(-44%)',
+          },
+          '80%' : {
+            transform: 'translateY(-40%)',
+          },
+          '100%' : {
+            transform: 'translateY(0)',
+          }
+        },
         
       },
       animation : {
@@ -73,7 +120,9 @@ export default {
         phone : 'phone 3.5s ease-in-out alternate ',
         phoneTwo : 'phoneTwo 3.5s ease-in-out alternate',
         blinkone : 'blinkone 10s infinite',
-        blinkTwo : 'blinkTwo 10s infinite'
+        blinkTwo : 'blinkTwo 10s infinite',
+        text : 'text 8s ease-in-out infinite alternate',
+        eyeball : 'eyeball 10s infinite'
       },
       cursor: {
         'fancy': 'url(./src/assets/Imp/curserIcon.svg), wait',
