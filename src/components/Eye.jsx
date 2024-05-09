@@ -21,7 +21,7 @@ const Eye = () => {
   const eyeBallStyle = {
     position: "absolute",
    
-    transform: `translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px) rotate(${45}deg) `, 
+    transform: `translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px) rotate(${-45}deg) `, 
   };
  
 
