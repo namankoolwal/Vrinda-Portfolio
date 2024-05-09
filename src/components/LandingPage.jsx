@@ -33,6 +33,14 @@ const LandingPage = ({ scrollToRef }) => {
     });
   };
 
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 650, // Specify the y-coordinate value you want to scroll to
+      behavior: "smooth",
+    });
+  };
+
   const onMouseOver = async (e) => {
     if (e.current.classList.contains("animate-phone")) {
       e.current.classList.remove("animate-phone");
@@ -47,7 +55,7 @@ const LandingPage = ({ scrollToRef }) => {
     <div>
       <Header />
 
-      <div className=" mx-auto my-[150px] md:my-[100px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center">
+      <div className=" mx-auto my-[150px] md:my-[100px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center" onClick={handleClick}>
         <Eye />
         <div className="animate-text">
           <p className="text-[#999999] text-lg">BLINK AND YOU’ll MISS IT</p>
