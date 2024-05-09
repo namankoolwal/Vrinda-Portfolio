@@ -18,25 +18,25 @@ const Eye = () => {
   }, []);
 
   const eyeStyle = {
-    position: "relative",
-    transform: "rotate(45deg)",
-    borderRadius: "80% 0%",
-    border: "3px solid #FC6D42",
-    overflow: "hidden",
+    // position: "relative",
+    // transform: "rotate(45deg)",
+    // borderRadius: "80% 0%",
+    // border: "3px solid #FC6D42",
+    // overflow: "hidden",
   };
 
   const eyeBallStyle = {
     position: "absolute",
-    // width: "80px",
-    // height: "80px",
+   
     transform: `translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px) rotate(${45}deg) `, // Adjust translation and counteract rotation
 
   };
 
+
   return (
     <>
-      <div className="flex md:gap-28 gap-20 ">
-        <div style={eyeStyle} className="flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+      <div className="flex md:gap-20 gap-20 ">
+        <div  className=" eye flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
         <div className="eyelid">
                 <span></span>
             </div>
@@ -45,7 +45,7 @@ const Eye = () => {
           </div>
         </div>
 
-        <div style={eyeStyle} className=" flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+        <div  className="eye flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
         <div className="eyelid ">
                 <span></span>
             </div>

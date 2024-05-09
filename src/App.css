@@ -22,18 +22,35 @@
     margin: 60px;
     /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) , 0 3px 6px rgba(0, 0, 0, 0.23); */
     overflow: hidden;
+    animation: eyeborder 4s infinite;
 }
+
+@keyframes eyeborder{
+    0%{
+        border: 3px solid #FC6D42;
+    }
+    10%{
+        border: none;
+        display: none;
+     }
+     20%{
+        border: 3px solid #FC6D42
+     }
+     100%{
+        border: 3px solid #FC6D42;
+ }
+ }
+
 .eyeball{
     width: 80px;
     height: 80px;
-    background-color: #a1caf1;
+    /* background-color: #a1caf1; */
     border-radius: 50%;
     /* border: 10px solid #6894b9; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    
 }
 .eyelid{
     width: 200px;
@@ -50,12 +67,12 @@
     height: 20%;
     background-color: white;
     border-radius: 0 0 60% 60%;
-    animation: eyelid 3s infinite;
+    animation: eyelid 4s infinite;
 }
 
 @keyframes eyelid{
    0%{
-       height: 10%;
+       height: 0%;
    }
    10%{
     height: 100%;
