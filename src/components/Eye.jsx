@@ -19,8 +19,8 @@ const Eye = () => {
 
   const eyeStyle = {
     position: "relative",
-    width: "120px",
-    height: "120px",
+    // width: "120px",
+    // height: "120px",
     transform: "rotate(45deg)",
     borderRadius: "80% 0%",
     border: "3px solid #FC6D42",
@@ -32,23 +32,24 @@ const Eye = () => {
 
   const eyeBallStyle = {
     position: "absolute",
-    width: "80px",
-    height: "80px",
-    transform: ` translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px)`, // Adjust translation as needed
+    // width: "80px",
+    // height: "80px",
+    transform: `translate(${eyePosition.x / 20}px, ${eyePosition.y / 20}px) rotate(${45}deg) `, // Adjust translation and counteract rotation
+
   };
 
   return (
     <>
-      <div className="flex gap-28">
-        <div style={eyeStyle} className="">
-          <div className="eye-ball" style={eyeBallStyle}>
+      <div className="flex md:gap-28 gap-20 ">
+        <div style={eyeStyle} className=" flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+          <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] ">
             <img src={eyeballs} alt="" />
           </div>
         </div>
 
-        <div style={eyeStyle} className="">
-          <div className="eye-ball" style={eyeBallStyle}>
-            <img src={eyeballs} alt="" />
+        <div style={eyeStyle} className=" flex items-center justify-center md:block w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+        <div  style={eyeBallStyle} className="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
+            <img src={eyeballs} alt="" className=""/>
           </div>
         </div>
       </div>
