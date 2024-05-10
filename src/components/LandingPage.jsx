@@ -66,7 +66,7 @@ const LandingPage = ({ scrollToRef }) => {
       </div>
       {/* **************************************************************************************** */}
       <div className=" mx-auto md:my-[50px] py-10 px-4 md:px-24 ">
-        <div className="flex items-center flex-col-reverse gap-10 md:gap-0 md:flex-row justify-center">
+        <div className="flex items-center flex-col-reverse gap-10 md:gap-10 md:flex-row justify-center">
           <div className="flex flex-col gap-10 md:gap-3 ">
             <p className="flex items-center justify-center md:justify-start gap-3 mx-auto w-[80%] md:w-full">
               <img src={Hi} alt="Hi" className="w-[20%] md:w-auto" />
@@ -77,9 +77,8 @@ const LandingPage = ({ scrollToRef }) => {
               />
               <img src={Layer1} alt="Layer1" className="w-[20%] md:w-auto" />
             </p>
-            <p className="text-2xl text-justify md:pr-20">
-              Aspiring <span className="font-semibold">UI/UX wizard</span> who
-              enjoys<span className="font-semibold"> seamlessly</span> bridging
+            <p className="text-2xl">
+              Aspiring <span className="font-semibold">UI/UX wizard</span> who enjoys<span className="font-semibold"> seamlessly</span> bridging
               the gap between people and digital space by day, and a lofi loving
               artist by night.
             </p>

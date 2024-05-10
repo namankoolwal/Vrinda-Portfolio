@@ -29,7 +29,7 @@ function Aboutme() {
               ))}
             </h1>
             <p className="texts">
-              My name is Vrinda. I'm an Interaction Design student{" "}
+              My name is Vrinda. I'm an Product Design student{" "}
             </p>
             <p className="texts md:text-balance">
               My passion for design emerged as the world turned digital. I began
@@ -95,7 +95,7 @@ function Aboutme() {
                   </span>
                 </a>
               </p>
-              <p className="find-me">
+              {/* <p className="find-me">
                 <a
                   href="tel:9468734804"
                   target="_blank"
@@ -108,7 +108,7 @@ function Aboutme() {
                     Mobile No - 91+9468734804{" "}
                   </span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="note mb-10">
