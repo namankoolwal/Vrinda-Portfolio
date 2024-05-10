@@ -77,8 +77,8 @@ const LandingPage = ({ scrollToRef }) => {
               />
               <img src={Layer1} alt="Layer1" className="w-[20%] md:w-auto" />
             </p>
-            <p className="text-2xl text-justify text-balance md:pr-20">
-              Aspiring <span className="font-semibold">UI/UX wizard</span>  who
+            <p className="text-2xl text-justify md:pr-20">
+              Aspiring <span className="font-semibold">UI/UX wizard</span> who
               enjoys<span className="font-semibold"> seamlessly</span> bridging
               the gap between people and digital space by day, and a lofi loving
               artist by night.
