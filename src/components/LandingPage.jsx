@@ -319,8 +319,8 @@ const LandingPage = ({ scrollToRef }) => {
             <span ref={infoRef} className="h-14"></span>
             <div className="flex gap-3 ">
 
-                <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">Sure</button>
-                <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">No, thanks</button>
+                <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md focus:bg-white focus:text-[#EB7E23]">Sure</button>
+                <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md focus:bg-white focus:text-[#EB7E23]">No, thanks</button>
             </div>
             </div>
            
