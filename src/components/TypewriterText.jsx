@@ -27,7 +27,7 @@ const TypewriterText = () => {
             </ul>
         </div> */}
 
-        <div className='wrapper'>
+        <div className='wrapper text-sm'>
         <div className="static-text">This Website is <span className='auto-type' ref={textRef}></span></div>
         </div>
     </>

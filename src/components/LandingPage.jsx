@@ -17,6 +17,9 @@ import eventifyBg from "../assets/images/landingPage/eventifyBg.png";
 import fitverxBg from "../assets/images/landingPage/fitverxBg.png";
 import pinterestBg from "../assets/images/landingPage/pinterestBg.png";
 import dogImg from "../assets/images/landingPage/dogImg.png";
+import behanceLogo from "../assets/images/landingPage/behanceLogo.png";
+import lindinLogo from "../assets/images/landingPage/lindinLogo.png";
+import tooltip from "../assets/images/landingPage/tooltip.png";
 import Eye from "./Eye";
 import TypewriterText from "./TypewriterText";
 
@@ -61,7 +64,7 @@ const LandingPage = ({ scrollToRef }) => {
           <p className="text-[#999999] text-lg">BLINK AND YOU’ll MISS IT</p>
         </div>
         <div className="md:w-[50%] mx-auto text-center animate-text">
-          <p className="text-4xl md:text-5xl font-Bree md:px-20">Crafting great <br /> digital experiences</p>
+          <p className="text-4xl md:text-6xl font-Bree md:px-20">Crafting great <br /> digital experiences</p>
         </div>
       </div>
       {/* **************************************************************************************** */}
@@ -210,7 +213,7 @@ const LandingPage = ({ scrollToRef }) => {
         data-aos-delay="500"
         data-aos-duration="1000"
       >
-        <div className="pinterest flex items-center flex-col md:flex-row">
+        <div className="pinterest flex items-center flex-col md:flex-row ">
           <div
             className="hoverEvent image flex-1 relative"
             ref={refThree}
@@ -256,7 +259,7 @@ const LandingPage = ({ scrollToRef }) => {
         </div>
       </div>
       {/* ******************************************************************************************* */}
-      <div
+      {/* <div
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-duration="1000"
@@ -276,19 +279,61 @@ const LandingPage = ({ scrollToRef }) => {
           </a>
           <img src={layer1} alt="layer1" className="layer1" />
         </div>
-      </div>
+      </div> */}
       {/* ******************************************************************* */}
-      <div className="container mx-auto my-[50px] ">
-        <div className="flex flex-col items-center justify-center">
-          <div className=" flex items-center justify-center">
-            <img src={dogImg} alt="dogImg" className="w-3/4" />
+      <div className="container mx-auto mt-[50px] bg-[#005323] rounded-3xl p-10 pt-0">
+      <div className="pinterest flex items-center justify-around gap-10 flex-row-reverse ">
+          <div
+            className=" image flex justify-end relative "       
+          >
+            <img
+              src={dogImg}
+              alt=""
+              className="w-[80%] pt-20 pr-20 "
+            />
+            <img
+              src={tooltip}
+              alt=""
+              className="w-[60%] absolute top-5 right-0 z-10"
+            />
+            <div className="w-[50%] absolute flex flex-col gap-3 text-sm top-8 right-3 z-10 text-[#EB7E23] "> 
+            <span>I am happy you come all  the way down here. Let’s grab a virtual coffee together!</span>
+            <div className="flex gap-3">
+
+                <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">Sure</button>
+                <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">No, thanks</button>
+            </div>
+            </div>
+           
           </div>
-          <div>Let's brew up some more tales later</div>
+          <div className="">
+            <div className="details flex flex-col gap-7 px-5 md:px-0 ">
+            
+
+                <div className=" text-4xl md:text-6xl text-white font-Bree">
+                Let's get in touch!
+                </div>
+                <div className=" text-[#FFFFFF] pt-1 w-3/4">
+                I'd love to hear from you and explore collaboration, answer your questions, or simply chat.
+                </div>
+              <div className=" flex gap-4">
+                {" "}
+                <a href="https://www.behance.net/vrindakhandel1" target="_blank"><img src={behanceLogo} alt="behanceLogo" className="w-7" /></a>
+                <a href="https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/" target="_blank"><img src={lindinLogo} alt="linkdin" className="w-7" /></a>
+                <a  href="mailto:vrinyk@gmail.com"
+                  target="_blank"
+                 className="text-white border-2 rounded-full px-2 border-white hover:bg-[#EB7E23]">vrinyk@gmail.com</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* ********************** */}
-      <div>
+      <div className="container mx-auto mb-[50px] pt-2 text-center flex items-end justify-end" >
+        <div className=" w-[270px] text-left ">
+
         <TypewriterText/>
+        </div>
 
       </div>
     </div>
