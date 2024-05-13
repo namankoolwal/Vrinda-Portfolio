@@ -29,7 +29,7 @@ const TypewriterText = () => {
         </div> */}
 
         <div className='wrapper text-xs md:text-sm'>
-        <div className="static-text">This Website is <span className='auto-type' ref={textRef}></span></div>
+        <div className="static-text">This Website <span className='auto-type' ref={textRef}></span></div>
         </div>
     </>
   )

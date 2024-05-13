@@ -82,7 +82,7 @@ const LandingPage = ({ scrollToRef }) => {
         <div className="animate-text">
           <p className="text-[#999999] text-lg">BLINK AND YOU’ll MISS IT</p>
         </div>
-        <div className="md:w-[50%] mx-auto text-center animate-text">
+        <div className="md:w-[60%] mx-auto text-center animate-text">
           <p className="text-4xl md:text-6xl font-Bree md:px-20">Crafting great <br /> digital experiences</p>
         </div>
       </div>
@@ -315,7 +315,7 @@ const LandingPage = ({ scrollToRef }) => {
               alt=""
               className="w-[80%] md:w-[60%] absolute top-5 right-0 md:z-10"
             />
-            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-[#EB7E23] "> 
+            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-[#EB7E23] overflow-hidden"> 
             <span ref={infoRef} className="h-14"></span>
             <div className="flex gap-3 ">
 
@@ -348,7 +348,7 @@ const LandingPage = ({ scrollToRef }) => {
         </div>
       </div>
       {/* ********************** */}
-      <div className="container mx-auto mb-[30px] pt-2 px-6 text-center flex items-end justify-end" >
+      <div className="container mx-auto mb-[30px] pt-2 px-5 text-center flex items-end justify-end" >
         <div className="w-[200px] md:w-[250px] text-left">
 
         <TypewriterText/>
