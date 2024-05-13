@@ -56,7 +56,7 @@ function CaseStudy2() {
             />
           </div>
           <div className=" w-full">
-            <div className="main-text1 text-[20px] md:text-[35px] md:pt-5">
+            <div className="main-text1 text-[20px] md:text-[36px] md:pt-5">
               Discover, Connect, Attend. Effortlessly explore and engage with
               local events.
             </div>

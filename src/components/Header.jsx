@@ -78,12 +78,20 @@ function Header() {
             isMenuOpen ? "flex " : "hidden"
           } pt-10 md:pt-2 pl-10 md:mt-0 flex md:flex flex-col md:flex-row md:justify-end md:items-center gap-12 md:gap-6 `}
         >
-          <NavLink
+            <NavLink
             to="/"
             className="nav-item text-lg"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : null,
             })}
+            
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/"
+            className="nav-item text-lg"
+            
             onClick={handleClick}
           >
             Projects
