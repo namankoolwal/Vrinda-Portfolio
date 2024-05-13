@@ -40,7 +40,6 @@ const CaseStudy1 = () => {
   }
   return (
     <div>
-      <Header />
       <ScrollToTop />
       <div className="container1">
         <div className="first-text">Featured Project</div>

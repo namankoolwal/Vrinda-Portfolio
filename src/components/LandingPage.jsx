@@ -53,7 +53,6 @@ const LandingPage = ({ scrollToRef }) => {
 
   return (
     <div>
-      <Header />
 
       <div className=" mx-auto my-[150px] md:my-[100px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center" onClick={handleClick}>
         <Eye />

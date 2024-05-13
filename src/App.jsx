@@ -9,6 +9,7 @@ import Resume from './components/Resume';
 import LandingPage from './components/LandingPage';
 import wholeBackground from './assets/images/Background.png';
 import CaseStudy1 from './components/CaseStudy1';
+import Header from './components/Header';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -19,7 +20,7 @@ function App() {
   // })
   return (
     <div className={`  font-Urbanist  `}>
-
+      <Header/>
      <Routes>
        <Route exact path="/" element ={<LandingPage />}/>
        {/* <Route exact path='/landingPage' element={<LandingPage />}/> */}

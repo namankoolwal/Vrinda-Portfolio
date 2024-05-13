@@ -13,7 +13,6 @@ function Aboutme() {
   return (
     <>
       <ScrollToTop />
-      <Header />
       <div className="aboutme-container bg-[url('./assets/images/Background.png')] bg-cover bg-center bg-no-repeat min-h-screen">
         <div className="row">
           <div className="text-content">
