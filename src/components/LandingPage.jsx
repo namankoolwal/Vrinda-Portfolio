@@ -30,23 +30,38 @@ const LandingPage = ({ scrollToRef }) => {
   const refThree = useRef(null);
   const navigate = useNavigate();
   const infoRef = useRef(null)
-  useEffect(()=>{
-      const typed = new Typed(infoRef.current, {
-          strings: ['I am happy you come all  the way down here. Let’s grab a virtual coffee together!'],
-          typeSpeed: 40,
-          backDelay: 2000,
-          backSpeed: 0,
-          loop: true,
-          fadeOut: true,
-          showCursor: false,
-          
-        });
-        return () => {
-          // Destroy Typed instance during cleanup to stop animation
-          typed.destroy();
-        };
-      
-  }, [])
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          new Typed(infoRef.current, {
+            strings: ['I am happy you come all  the way down here. Let’s grab a virtual coffee together!'],
+            typeSpeed: 40,
+            backDelay: 2000,
+            backSpeed: 0,
+            fadeOut: true,
+            showCursor: false,
+            
+          });
+        }
+      },
+    
+    );
+
+    if (infoRef.current) {
+      observer.observe(infoRef.current);
+    }
+
+    return () => {
+      if (infoRef.current) {
+        observer.unobserve(infoRef.current);
+      }
+    };
+  }, []);
+
+
 
   const pageNavigate = (path) => {
     navigate(path);
