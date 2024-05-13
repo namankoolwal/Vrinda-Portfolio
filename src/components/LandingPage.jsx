@@ -25,17 +25,20 @@ import TypewriterText from "./TypewriterText";
 import Typed from 'typed.js';
 
 const LandingPage = ({ scrollToRef }) => {
+  
   const refOne = useRef(null);
   const refTwo = useRef(null);
   const refThree = useRef(null);
   const navigate = useNavigate();
   const infoRef = useRef(null)
-
+  const [sectionReached, setSectionReached] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !sectionReached) {
+          console.log("Hello");
+          setSectionReached(true);
           new Typed(infoRef.current, {
             strings: ['I am happy you come all  the way down here. Let’s grab a virtual coffee together!'],
             typeSpeed: 40,
@@ -47,6 +50,11 @@ const LandingPage = ({ scrollToRef }) => {
           });
         }
       },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 // Adjust as needed
+      }
     
     );
 
@@ -59,7 +67,7 @@ const LandingPage = ({ scrollToRef }) => {
         observer.unobserve(infoRef.current);
       }
     };
-  }, []);
+  }, [sectionReached]);
 
 
 
