@@ -67,7 +67,7 @@ const LandingPage = ({ scrollToRef }) => {
         observer.unobserve(infoRef.current);
       }
     };
-  }, [sectionReached]);
+  }, []);
 
 
 
