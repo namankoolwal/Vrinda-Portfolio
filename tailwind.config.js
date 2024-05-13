@@ -113,7 +113,17 @@ export default {
             transform: 'translateY(0)',
           }
         },
-        
+        typing :{
+          '100%':{
+            left : '100%',
+            margin : "0 -35px 0 35px"
+          }
+        },
+        slide :{
+          '100%':{
+            top : '-47px'
+          }
+        }
       },
       animation : {
         ring : 'ring 0.4s ease-in-out infinite alternate',
@@ -122,7 +132,9 @@ export default {
         blinkone : 'blinkone 10s infinite',
         blinkTwo : 'blinkTwo 10s infinite',
         text : 'text 8s ease-in-out infinite alternate',
-        eyeball : 'eyeball 10s infinite'
+        eyeball : 'eyeball 10s infinite',
+        typing: 'typing 2.5s  infinite',
+        slide: 'slide 5s steps(2) infinite',
       },
       cursor: {
         'fancy': 'url(./src/assets/Imp/curserIcon.svg), wait',

@@ -18,6 +18,7 @@ import fitverxBg from "../assets/images/landingPage/fitverxBg.png";
 import pinterestBg from "../assets/images/landingPage/pinterestBg.png";
 import dogImg from "../assets/images/landingPage/dogImg.png";
 import Eye from "./Eye";
+import TypewriterText from "./TypewriterText";
 
 const LandingPage = ({ scrollToRef }) => {
   const refOne = useRef(null);
@@ -282,8 +283,13 @@ const LandingPage = ({ scrollToRef }) => {
           <div className=" flex items-center justify-center">
             <img src={dogImg} alt="dogImg" className="w-3/4" />
           </div>
-          <dir>Let's brew up some more tales later</dir>
+          <div>Let's brew up some more tales later</div>
         </div>
+      </div>
+      {/* ********************** */}
+      <div>
+        <TypewriterText/>
+
       </div>
     </div>
   );
