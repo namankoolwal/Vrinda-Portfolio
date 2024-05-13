@@ -34,7 +34,12 @@ const LandingPage = ({ scrollToRef }) => {
       const typed = new Typed(infoRef.current, {
           strings: ['I am happy you come all  the way down here. Let’s grab a virtual coffee together!'],
           typeSpeed: 40,
-          cursorChar: '',
+          backDelay: 2000,
+          backSpeed: 0,
+          loop: true,
+          fadeOut: true,
+          showCursor: false,
+          
         });
         return () => {
           // Destroy Typed instance during cleanup to stop animation
@@ -170,7 +175,7 @@ const LandingPage = ({ scrollToRef }) => {
       </div>
       {/* ********************************************************************* */}
       <div
-        className="container mx-auto my-[50px]"
+        className="container mx-auto my-[50px] cursor-pointer"
         onClick={() => {
           pageNavigate("/case-study1");
         }}
@@ -216,7 +221,7 @@ const LandingPage = ({ scrollToRef }) => {
       </div>
       {/* ******************************************************************** */}
       <div
-        className="container mx-auto my-[50px] "
+        className="container mx-auto my-[50px] cursor-pointer"
         onClick={() =>
           window.open(
             "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study",
@@ -245,7 +250,7 @@ const LandingPage = ({ scrollToRef }) => {
             />
           </div>
           <div className="flex-1">
-            <div className="details flex flex-col md:gap-1 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
+            <div className="details flex flex-col md:gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
               <div className="w-2/4 ">
                 <img
                   src={pinterestLogo}
@@ -255,7 +260,7 @@ const LandingPage = ({ scrollToRef }) => {
               </div>
 
               <div className=" mt-0">
-                <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#BD081C] to-[#000000] font-Bree">
+                <div className=" text-[22px] text-transparent pt-3 bg-clip-text bg-gradient-to-b from-[#BD081C] to-[#000000] font-Bree">
                   Redesigning Pinterest
                 </div>
                 <div className=" text-[#717171] pt-1">
@@ -264,7 +269,7 @@ const LandingPage = ({ scrollToRef }) => {
                   enhancements to the user experience."
                 </div>
               </div>
-              <div className="text-[#696062] text-sm font-semibold pt-3">
+              <div className="text-[#696062] text-sm font-semibold">
                 {" "}
                 MOBILE DESIGN // UX RESEARCH // EXPERIENCE DESIGN{" "}
               </div>
@@ -295,23 +300,23 @@ const LandingPage = ({ scrollToRef }) => {
         </div>
       </div> */}
       {/* ******************************************************************* */}
-      <div className="container mx-auto mt-[50px] bg-[#005323] rounded-3xl p-10 pt-0">
-      <div className="pinterest flex items-center justify-around gap-10 flex-row-reverse ">
+      <div className="container mx-auto mt-[70px] px-2 md:px-12 ">
+      <div className="flex mx-auto mt-[50px] bg-[#005323] rounded-3xl p-5 md:p-10 md:pt-0 items-center justify-center md:justify-around  gap-10 flex-col md:flex-row-reverse ">
           <div
             className=" image flex justify-end relative "       
           >
             <img
               src={dogImg}
               alt=""
-              className="w-[80%] pt-20 pr-20 "
+              className=" md:w-[80%] pt-20 pr-20 "
             />
             <img
               src={tooltip}
               alt=""
-              className="w-[60%] absolute top-5 right-0 z-10"
+              className="w-[80%] md:w-[60%] absolute top-5 right-0 md:z-10"
             />
-            <div className="w-[50%] absolute flex flex-col gap-[8px] text-sm top-8 right-3 z-10 text-[#EB7E23] "> 
-            <span ref={infoRef} className=" h-14"></span>
+            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-[#EB7E23] "> 
+            <span ref={infoRef} className="h-14"></span>
             <div className="flex gap-3 ">
 
                 <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">Sure</button>
@@ -320,14 +325,14 @@ const LandingPage = ({ scrollToRef }) => {
             </div>
            
           </div>
-          <div className="">
-            <div className="details flex flex-col gap-7 px-5 md:px-0 ">
+          <div className="flex items-center justify-center ">
+            <div className="details flex flex-col gap-7  md:px-0 ">
             
 
-                <div className=" text-4xl md:text-6xl text-white font-Bree">
+                <div className=" text-4xl md:text-6xl text-white font-Bree ">
                 Let's get in touch!
                 </div>
-                <div className=" text-[#FFFFFF] pt-1 w-3/4">
+                <div className=" text-[#FFFFFF] pt-1 md:w-3/4">
                 I'd love to hear from you and explore collaboration, answer your questions, or simply chat.
                 </div>
               <div className=" flex gap-4">
@@ -343,13 +348,14 @@ const LandingPage = ({ scrollToRef }) => {
         </div>
       </div>
       {/* ********************** */}
-      <div className="container mx-auto mb-[30px] pt-2 text-center flex items-end justify-end" >
-        <div className=" w-[270px] text-left ">
+      <div className="container mx-auto mb-[30px] pt-2 px-6 text-center flex items-end justify-end" >
+        <div className="w-[200px] md:w-[250px] text-left">
 
         <TypewriterText/>
         </div>
 
       </div>
+      {/* ************************************* */}
     </div>
   );
 };

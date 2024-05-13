@@ -8,8 +8,9 @@ const TypewriterText = () => {
             strings: ['designed by me', 'developed by Naman'],
             typeSpeed: 80,
             backSpeed: 40,
+            backDelay: 1000,
             loop: true,
-            cursorChar: '',
+            showCursor: false,
           });
           return () => {
             // Destroy Typed instance during cleanup to stop animation
@@ -27,7 +28,7 @@ const TypewriterText = () => {
             </ul>
         </div> */}
 
-        <div className='wrapper text-sm'>
+        <div className='wrapper text-xs md:text-sm'>
         <div className="static-text">This Website is <span className='auto-type' ref={textRef}></span></div>
         </div>
     </>
