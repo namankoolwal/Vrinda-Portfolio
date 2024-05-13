@@ -7,7 +7,7 @@ const TypewriterText = () => {
         const typed = new Typed(textRef.current, {
             strings: ['designed by me', 'developed by Naman'],
             typeSpeed: 80,
-            backSpeed: 80,
+            backSpeed: 40,
             loop: true,
             cursorChar: '',
           });

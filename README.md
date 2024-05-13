@@ -140,3 +140,57 @@ export default Eye;
 
 
 ```
+
+
+
+
+
+```
+ <div className="container mx-auto mt-[50px] bg-[#005323] rounded-3xl p-10 pt-0">
+      <div className="pinterest flex items-center justify-around gap-10 flex-row-reverse ">
+          <div
+            className=" image flex justify-end relative "       
+          >
+            <img
+              src={dogImg}
+              alt=""
+              className="w-[80%] pt-10 pr-20 "
+            />
+            <img
+              src={tooltip}
+              alt=""
+              className="w-[45%] absolute top-6 right-14 z-10"
+            />
+            <div className="w-[40%] absolute flex flex-col gap-3 text-xs top-7 right-14 z-10 text-[#EB7E23] "> 
+            <span>I am happy you come all  the way down here. Let’s grab a virtual coffee together!</span>
+            <div className="flex gap-3">
+
+                <button className="bg-gray-800 py-[2px] text-xs px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">Sure</button>
+                <button className="bg-gray-800 py-[2px] text-xs px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">No, thanks</button>
+            </div>
+            </div>
+           
+          </div>
+          <div className="">
+            <div className="details flex flex-col gap-7 px-5 md:px-0 ">
+            
+
+                <div className=" text-4xl md:text-6xl text-white font-Bree">
+                Let's get in touch!
+                </div>
+                <div className=" text-[#FFFFFF] pt-1 w-3/4">
+                I'd love to hear from you and explore collaboration, answer your questions, or simply chat.
+                </div>
+              <div className=" flex gap-4">
+                {" "}
+                <a href="https://www.behance.net/vrindakhandel1" target="_blank"><img src={behanceLogo} alt="behanceLogo" className="w-7" /></a>
+                <a href="https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/" target="_blank"><img src={lindinLogo} alt="linkdin" className="w-7" /></a>
+                <a  href="mailto:vrinyk@gmail.com"
+                  target="_blank"
+                 className="text-white border-2 rounded-full px-3 border-white hover:bg-[#EB7E23]">vrinyk@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+```

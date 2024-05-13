@@ -22,12 +22,26 @@ import lindinLogo from "../assets/images/landingPage/lindinLogo.png";
 import tooltip from "../assets/images/landingPage/tooltip.png";
 import Eye from "./Eye";
 import TypewriterText from "./TypewriterText";
+import Typed from 'typed.js';
 
 const LandingPage = ({ scrollToRef }) => {
   const refOne = useRef(null);
   const refTwo = useRef(null);
   const refThree = useRef(null);
   const navigate = useNavigate();
+  const infoRef = useRef(null)
+  useEffect(()=>{
+      const typed = new Typed(infoRef.current, {
+          strings: ['I am happy you come all  the way down here. Let’s grab a virtual coffee together!'],
+          typeSpeed: 40,
+          cursorChar: '',
+        });
+        return () => {
+          // Destroy Typed instance during cleanup to stop animation
+          typed.destroy();
+        };
+      
+  }, [])
 
   const pageNavigate = (path) => {
     navigate(path);
@@ -296,9 +310,9 @@ const LandingPage = ({ scrollToRef }) => {
               alt=""
               className="w-[60%] absolute top-5 right-0 z-10"
             />
-            <div className="w-[50%] absolute flex flex-col gap-3 text-sm top-8 right-3 z-10 text-[#EB7E23] "> 
-            <span>I am happy you come all  the way down here. Let’s grab a virtual coffee together!</span>
-            <div className="flex gap-3">
+            <div className="w-[50%] absolute flex flex-col gap-[8px] text-sm top-8 right-3 z-10 text-[#EB7E23] "> 
+            <span ref={infoRef} className=" h-14"></span>
+            <div className="flex gap-3 ">
 
                 <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">Sure</button>
                 <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md hover:bg-white hover:text-[#EB7E23]">No, thanks</button>
@@ -329,7 +343,7 @@ const LandingPage = ({ scrollToRef }) => {
         </div>
       </div>
       {/* ********************** */}
-      <div className="container mx-auto mb-[50px] pt-2 text-center flex items-end justify-end" >
+      <div className="container mx-auto mb-[30px] pt-2 text-center flex items-end justify-end" >
         <div className=" w-[270px] text-left ">
 
         <TypewriterText/>
