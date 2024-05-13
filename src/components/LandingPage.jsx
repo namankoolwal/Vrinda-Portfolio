@@ -175,7 +175,7 @@ const LandingPage = ({ scrollToRef }) => {
               <div className="w-2/5 ">
                 <img
                   src={eventifyLogo}
-                  alt="pinterestLogo"
+                  alt="eventifyLogo"
                   className="w-auto "
                 />
               </div>
