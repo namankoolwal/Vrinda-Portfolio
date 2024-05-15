@@ -4,10 +4,13 @@ import Header from "./Header";
 import Hi from "../assets/images/landingPage/Hi.png";
 import imVrinda from "../assets/images/landingPage/imVrinda.png";
 import Layer1 from "../assets/images/landingPage/Layer1.svg";
-import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
-import Pinterest from "../assets/images/landingPage/Pinterest.png";
+// import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
+import fitverxImg from "../assets/images/landingPage/fitverxImg.webp";
+// import Pinterest from "../assets/images/landingPage/Pinterest.png";
+import Pinterest from "../assets/images/landingPage/Pinterest.webp";
 import pinterestLogo from "../assets/images/landingPage/pinterestLogo.png";
-import Eventify from "../assets/images/landingPage/Eventify.png";
+// import Eventify from "../assets/images/landingPage/Eventify.png";
+import Eventify from "../assets/images/landingPage/Eventify.webp";
 import eventifyLogo from "../assets/images/landingPage/eventifyLogo.png";
 import Behands from "../assets/images/Social.png";
 import Dribble from "../assets/images/Dribble.png";
@@ -338,7 +341,7 @@ const LandingPage = ({ scrollToRef }) => {
               alt=""
               className="w-[80%] md:w-[60%] absolute top-5 right-0 md:z-10"
             />
-            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-[#EB7E23] overflow-hidden"> 
+            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-white overflow-hidden"> 
             <span ref={infoRef} className="h-14"></span>
             <div className="flex gap-3 ">
 
