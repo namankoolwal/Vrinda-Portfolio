@@ -482,7 +482,7 @@ function CaseStudy2() {
             height={700}
             className="m-auto w-full"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fs4SP9jdVvEIQCBIMMQK27w%2Feventify%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D505-350%26viewport%3D2994%252C7326%252C0.5%26t%3DLZF0W1aA7ZadTabp-1%26scaling%3Dscale-down%26starting-point-node-id%3D505%253A350%26mode%3Ddesign&hotspot-hints=0&hide-ui=1"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>

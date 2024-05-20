@@ -15,8 +15,15 @@ const FinalScreen = ({caseStudy}) => {
   const [displayImg, setDisplayImg] = useState();
   const [activeButton, setActiveButton] = useState(0);
   const [heading, setHeading] = useState()
+  const [changeImg, setChangeImg] = useState(false)
 
   const handleButtonClick = (item) => {
+    if(caseStudy === 'eventify' && item.id === 1){
+        setChangeImg(!changeImg)
+      }
+      else{
+        setChangeImg(false)
+      }
     setDisplayImg(item.img);
     setActiveButton(item.id);
   };
@@ -44,7 +51,7 @@ const FinalScreen = ({caseStudy}) => {
       main: "Event Discovery",
       sub: "Event cards with thumbnails, titles, dates, and locations.",
       // img: eventDiscovery,
-      img: finalStarting,
+      img: changeImg? finalStarting : eventDiscovery,
     },
     {
       id: 2,
