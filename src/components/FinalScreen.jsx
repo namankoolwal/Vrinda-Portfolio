@@ -43,7 +43,8 @@ const FinalScreen = ({caseStudy}) => {
       id: 1,
       main: "Event Discovery",
       sub: "Event cards with thumbnails, titles, dates, and locations.",
-      img: eventDiscovery,
+      // img: eventDiscovery,
+      img: finalStarting,
     },
     {
       id: 2,
