@@ -217,14 +217,15 @@ function CaseStudy2() {
         </div>
         <div className="flex items-center justify-evenly my-10 md:my-20">
           <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
-           <a href="#interview">1.Secondary Research</a>
+           <a href="#interview">1.Primary Research</a>
           </div>
           <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
-          <a href="#mapping">2.Users Research</a>
+          <a href="#competitive">2.Competitive Analysis</a>
           </div>
           <div className="text-gray-500 text-sm md:text-lg font-semibold underline">
-          <a href="#competitive">3.Competitive Analysis</a>
+          <a href="#mapping">3.Users Research</a>
           </div>
+          
         </div>
         <div id="interview">
           <span className="font-semibold">Method: </span>Interview
