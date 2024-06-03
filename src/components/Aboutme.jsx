@@ -28,7 +28,7 @@ function Aboutme() {
               ))}
             </h1>
             <p className="texts">
-              My name is Vrinda. I'm an Product Design student{" "}
+              My name is Vrinda. I'm a Product Designer student{" "}
             </p>
             <p className="texts md:text-balance">
               My passion for design emerged as the world turned digital. I began
