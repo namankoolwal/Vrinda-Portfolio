@@ -26,6 +26,7 @@ import tooltip from "../assets/images/landingPage/tooltip.png";
 import Eye from "./Eye";
 import TypewriterText from "./TypewriterText";
 import Typed from 'typed.js';
+import Eyes from "./Eyes";
 
 const LandingPage = ({ scrollToRef }) => {
   
@@ -103,10 +104,10 @@ const LandingPage = ({ scrollToRef }) => {
   return (
     <div>
 
-      <div className=" mx-auto my-[150px] md:my-[100px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center" onClick={handleClick}>
-        <Eye />
+      <div className=" mx-auto my-[150px] md:my-[50px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center" onClick={handleClick}>
+        <Eyes/>
         <div className="animate-text">
-          <p className="text-[#999999] text-lg">BLINK AND YOU’ll MISS IT</p>
+          <p className="text-[#999999] text-lg my-3">BLINK AND YOU’ll MISS IT</p>
         </div>
         <div className="md:w-[60%] mx-auto text-center animate-text">
           <p className="text-4xl md:text-6xl font-Bree md:px-20">Crafting great <br /> digital experiences</p>
