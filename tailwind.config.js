@@ -68,29 +68,24 @@ export default {
         },
         eyeball :{
           '0%' :{
-            top : '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            
+            transform: 'translate(0%, 15%)'
           },
           '25%' :{
-            top : '50%',
-            left: '50%',
-            transform: 'translate(-100%, 0%)'
+            
+            transform: 'translate(-20%, 10%)'
           },
           '50%' :{
-            top : '50%',
-            left: '50%',
-            transform: 'translate(-80%, -80%)'
+            
+            transform: 'translate(-10%, -5%)'
           },
           '75%' :{
-            top : '50%',
-            left: '50%',
-            transform: 'translate(0%, -100%)'
+           
+            transform: 'translate(20%, 0%)'
           },
           '100%' :{
-            top : '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            
+            transform: 'translate(0%, 15%)'
           },
         },
         text:{

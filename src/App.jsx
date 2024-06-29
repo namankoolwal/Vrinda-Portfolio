@@ -10,13 +10,11 @@ import LandingPage from './components/LandingPage';
 import wholeBackground from './assets/images/Background.png';
 import CaseStudy1 from './components/CaseStudy1';
 import Header from './components/Header';
-import LocomotiveScroll from 'locomotive-scroll';
 
 
 
 function App() {
 
-  // const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className={`  font-Urbanist  `}>
       <Header />

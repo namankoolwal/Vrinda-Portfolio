@@ -26,7 +26,7 @@ const Eye = () => {
     <>
       <div className="flex relative md:gap-28 gap-20">
         <div className="relative">
-          <div className="eye relative flex items-center justify-center md:block">
+          <div className="eye relative flex items-center justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px]">
             <div className="eyelid">
               <span className=""></span>
             </div>
@@ -36,7 +36,7 @@ const Eye = () => {
                   transform: `translate(${translate.x}px, ${translate.y}px)`,
                   transition: "transform 0.1s easein",
                 }}
-                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] bg-black rounded-full"
+                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] bg-black rounded-full animate-eyeball md:animate-none"
               ></div>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Eye = () => {
                   transform: `translate(${translate.x}px, ${translate.y}px)`,
                   transition: "transform 0.1s easein",
                 }}
-                className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] bg-black rounded-full"
+                className="w-[55px] h-[55px] md:w-[80px] md:h-[80px] bg-black rounded-full animate-eyeball md:animate-none"
               ></div>
             </div>
           </div>
