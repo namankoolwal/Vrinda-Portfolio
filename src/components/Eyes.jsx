@@ -4,6 +4,9 @@ import eyeballs from "../assets/images/landingPage/eyeballs.png";
 import eyeclose from "../assets/images/landingPage/eyeclose.svg";
 import eyeopen from "../assets/images/landingPage/eyeopen.svg";
 
+import open from "../assets/images/landingPage/open.svg";
+import close from "../assets/images/landingPage/close.svg";
+
 
 const Eye = () => {
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
@@ -30,10 +33,10 @@ const Eye = () => {
     <>
       <div className="flex relative md:gap-28 gap-20">
         <div className="relative">
-        <img src={eyeopen} alt=""  className="lefteye  absolute -top-3 z-10 w-full h-full scale-[1.6] overflow-hidden "/>
-        <img src={eyeclose} className="lefteyeclose absolute top-6 left-2 z-10 w-full h-full scale-[1.5] overflow-hidden "/>
+        <img src={open} alt=""  className="lefteye  absolute -top-3 z-10 w-full h-full scale-[1.6] overflow-hidden "/>
+        <img src={close} className="lefteyeclose absolute md:top-2  z-10 w-full h-full scale-[1.6] overflow-hidden "/>
 
-          <div className="eye relative flex items-center justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px]">
+          <div className="eye relative flex items-center -top-[6px] md:-left-1 md:-top-1  justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px]">
             <div className="eyelid">
               <span className=""></span>
             </div>
@@ -53,8 +56,8 @@ const Eye = () => {
         </div>
 
         <div className="relative">
-          <img src={eyeopen} alt=""  className="absolute -top-3 z-10 w-full h-full scale-[1.6] overflow-hidden "/>
-          <div className="eyeright relative flex items-center justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px]">
+          <img src={open} alt=""  className="absolute -top-3 z-10 w-full h-full scale-[1.6] overflow-hidden "/>
+          <div className="eyeright relative flex items-center -top-[6px] md:-left-1 md:-top-1  justify-center md:block w-[80px] h-[80px] md:w-[130px] md:h-[130px]">
             <div className="relative w-full h-full -rotate-45 flex items-center justify-center ">
               <div
                 style={{
