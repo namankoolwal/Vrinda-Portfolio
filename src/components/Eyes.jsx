@@ -20,7 +20,7 @@ const Eye = () => {
       const deltaY = mouseY - window.innerHeight / 2;
 
       // Set the translation values based on mouse position
-      setTranslate({ x: deltaX * 0.05, y: deltaY * 0.04 });
+      setTranslate({ x: deltaX * 0.05, y: deltaY * 0.05 });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
