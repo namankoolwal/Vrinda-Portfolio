@@ -8,6 +8,7 @@ import Layer1 from "../assets/images/landingPage/Layer1.svg";
 import fitverxImg from "../assets/images/landingPage/fitverxImg.webp";
 // import Pinterest from "../assets/images/landingPage/Pinterest.png";
 import SwiggyImg from "../assets/images/landingPage/SwiggyImg.png"
+import SwiggyImg2 from "../assets/images/landingPage/SwiggyImg2.webp"
 import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
 import Pinterest from "../assets/images/landingPage/Pinterest.webp";
 import pinterestLogo from "../assets/images/landingPage/pinterestLogo.png";
@@ -136,7 +137,7 @@ const LandingPage = ({ scrollToRef }) => {
             </p>
           </div>
           <div className=" w-[100%] -mt-5 md:mt-0 h-full md:w-[70%]">
-            <img src={vk2} alt="illustraterGif" className="w-full h-full -translate-x-5 md:translate-x-10 md:-translate-y-4" />
+            <img src={vk2} alt="illustraterGif" className="w-full h-full -translate-x-5  md:-translate-y-4" />
           </div>
         </div>
       </div>
@@ -179,7 +180,7 @@ const LandingPage = ({ scrollToRef }) => {
             onMouseOver={() => onMouseOver(refThree)}
           >
             <img
-              src={SwiggyImg}
+              src={SwiggyImg2}
               alt=""
               className="w-full z-20 peer/pinterest"
             />
