@@ -64,6 +64,11 @@
 
  */
 
+*{
+  /* image-rendering: -webkit-optimize-contrast; */
+  /* image-rendering: pixelated; */
+}
+
 .eyeright {
   border: 4px solid none;
   border-radius: 100% 0px;

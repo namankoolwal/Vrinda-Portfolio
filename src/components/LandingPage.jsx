@@ -8,7 +8,7 @@ import Layer1 from "../assets/images/landingPage/Layer1.svg";
 import fitverxImg from "../assets/images/landingPage/fitverxImg.webp";
 // import Pinterest from "../assets/images/landingPage/Pinterest.png";
 import SwiggyImg from "../assets/images/landingPage/SwiggyImg.png"
-import SwiggyImg2 from "../assets/images/landingPage/SwiggyImg2.webp"
+import SwiggyImgt from "../assets/images/landingPage/SwiggyImgt.png"
 import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
 import Pinterest from "../assets/images/landingPage/Pinterest.webp";
 import pinterestLogo from "../assets/images/landingPage/pinterestLogo.png";
@@ -173,21 +173,21 @@ const LandingPage = ({ scrollToRef }) => {
         data-aos-delay="500"
         data-aos-duration="1000"
       >
-        <div className="pinterest flex items-center flex-col md:flex-row ">
+        <div className="swiggy flex items-center flex-col md:flex-row ">
           <div
             className="hoverEvent image flex-1 relative"
             ref={refThree}
             onMouseOver={() => onMouseOver(refThree)}
           >
             <img
-              src={SwiggyImg2}
+              src={SwiggyImgt}
               alt=""
-              className="w-full z-20 peer/pinterest"
+              className="w-full z-20 peer/swiggy"
             />
             <img
               src={eventifyBg}
               alt=""
-              className="w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/pinterest:opacity-100"
+              className="w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/swiggy:opacity-100"
             />
           </div>
           <div className="flex-1">
@@ -195,7 +195,7 @@ const LandingPage = ({ scrollToRef }) => {
               <div className="w-3/4 ">
                 <img
                   src={swiggyLogo}
-                  alt="pinterestLogo"
+                  alt="swiggyLogo"
                   className="w-auto "
                 />
               </div>
