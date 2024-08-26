@@ -7,6 +7,8 @@ import Layer1 from "../assets/images/landingPage/Layer1.svg";
 // import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
 import fitverxImg from "../assets/images/landingPage/fitverxImg.webp";
 // import Pinterest from "../assets/images/landingPage/Pinterest.png";
+import SwiggyImg from "../assets/images/landingPage/SwiggyImg.png"
+import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
 import Pinterest from "../assets/images/landingPage/Pinterest.webp";
 import pinterestLogo from "../assets/images/landingPage/pinterestLogo.png";
 // import Eventify from "../assets/images/landingPage/Eventify.png";
@@ -16,6 +18,7 @@ import Behands from "../assets/images/Social.png";
 import Dribble from "../assets/images/Dribble.png";
 import layer1 from "../assets/images/Layer_1.png";
 import vk from "../assets/images/landingPage/vk.gif";
+import vk2 from "../assets/images/landingPage/vk2.png"
 import eventifyBg from "../assets/images/landingPage/eventifyBg.png";
 import fitverxBg from "../assets/images/landingPage/fitverxBg.png";
 import pinterestBg from "../assets/images/landingPage/pinterestBg.png";
@@ -114,7 +117,7 @@ const LandingPage = ({ scrollToRef }) => {
         </div>
       </div>
       {/* **************************************************************************************** */}
-      <div className=" mx-auto md:my-[50px] py-10 px-4 md:px-24 ">
+      <div className=" mx-auto md:my-[50px] md:py-10 px-4 md:px-24">
         <div className="flex items-center flex-col-reverse gap-10 md:gap-10 md:flex-row justify-center">
           <div className="flex flex-col gap-10 md:gap-3 ">
             <p className="flex items-center justify-center md:justify-start gap-3 mx-auto w-[80%] md:w-full">
@@ -132,8 +135,8 @@ const LandingPage = ({ scrollToRef }) => {
               artist by night.
             </p>
           </div>
-          <div className=" w-[70%] md:w-auto">
-            <img src={vk} alt="illustraterGif" />
+          <div className=" w-[70%] -mt-5 md:mt-0 h-full md:w-[70%]">
+            <img src={vk2} alt="illustraterGif" className="w-full h-full" />
           </div>
         </div>
       </div>
@@ -150,7 +153,69 @@ const LandingPage = ({ scrollToRef }) => {
         </p>
         <hr className="font-bold text-black h-[2px] bg-black" />
       </div>
-      {/* ********************************************************************* */}
+
+      {/* ************************************************************************************************ */}
+      <div className="mx-auto mt-8 md:mt-0 md:pt-10 px-2 md:px-24 text-[#757575] font-bold text-lg">
+        <span>Passion Project</span>
+      </div>
+
+      {/* *******************************SWIGGY************************************************************ */}
+      <div
+        className="container mx-auto my-[50px] cursor-pointer"
+        onClick={() =>
+          window.open(
+            "https://rb.gy/x4yqn1",
+            "_blank"
+          )
+        }
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+      >
+        <div className="pinterest flex items-center flex-col md:flex-row ">
+          <div
+            className="hoverEvent image flex-1 relative"
+            ref={refThree}
+            onMouseOver={() => onMouseOver(refThree)}
+          >
+            <img
+              src={SwiggyImg}
+              alt=""
+              className="w-full z-20 peer/pinterest"
+            />
+            <img
+              src={eventifyBg}
+              alt=""
+              className="w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/pinterest:opacity-100"
+            />
+          </div>
+          <div className="flex-1">
+            <div className="details flex flex-col px-5  md:px-0 md:w-[60%] mx-auto md:mx-0">
+              <div className="w-3/4 ">
+                <img
+                  src={swiggyLogo}
+                  alt="pinterestLogo"
+                  className="w-auto "
+                />
+              </div>
+
+              <div className=" -mt-3">
+                <div className=" text-[22px] text-transparent pt-3 bg-clip-text bg-gradient-to-r from-[#271A6A] to-[#F26037] font-Bree">
+                Events Hosting and Booking Platform
+                </div>
+                <div className=" text-[#717171] pt-1">
+                Integrated platform that combines event discovery and booking into one place.
+                </div>
+              </div>
+              <div className="text-[#696062] text-sm font-semibold">
+                {" "}
+                WEB RESPONSIVE  // LANDING PAGE  // UX SOLUTION{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* **********************************EVENTIFY*********************************** */}
       <div
         className="container mx-auto md:my-[50px] cursor-pointer "
         onClick={() => {
@@ -200,7 +265,7 @@ const LandingPage = ({ scrollToRef }) => {
           </div>
         </div>
       </div>
-      {/* ********************************************************************* */}
+      {/* ***********************************FITVERX********************************** */}
       <div
         className="container mx-auto my-[50px] cursor-pointer"
         onClick={() => {
@@ -240,71 +305,14 @@ const LandingPage = ({ scrollToRef }) => {
               </div>
               <div className="text-[#696062] text-sm font-semibold">
                 {" "}
-                UI DESIGN // UX DESIGN // VIRTUAL FASHION
+                PROBLEM SOLVING // UX DESIGN // VIRTUAL FASHION
               </div>
             </div>
           </div>
         </div>
       </div>
       {/* ******************************************************************** */}
-      <div
-        className="container mx-auto my-[50px] cursor-pointer"
-        onClick={() =>
-          window.open(
-            "https://www.behance.net/gallery/185011191/Pinterest-UX-Case-Study",
-            "_blank"
-          )
-        }
-        data-aos="fade-up"
-        data-aos-delay="500"
-        data-aos-duration="1000"
-      >
-        <div className="pinterest flex items-center flex-col md:flex-row ">
-          <div
-            className="hoverEvent image flex-1 relative"
-            ref={refThree}
-            onMouseOver={() => onMouseOver(refThree)}
-          >
-            <img
-              src={Pinterest}
-              alt=""
-              className="w-full z-20 peer/pinterest"
-            />
-            <img
-              src={pinterestBg}
-              alt=""
-              className="w-auto absolute opacity-0 top-0 -z-10 transition ease-in-out duration-700 peer-hover/pinterest:opacity-100"
-            />
-          </div>
-          <div className="flex-1">
-            <div className="details flex flex-col md:gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
-              <div className="w-2/4 ">
-                <img
-                  src={pinterestLogo}
-                  alt="pinterestLogo"
-                  className="w-auto "
-                />
-              </div>
-
-              <div className=" mt-0">
-                <div className=" text-[22px] text-transparent pt-3 bg-clip-text bg-gradient-to-b from-[#BD081C] to-[#000000] font-Bree">
-                  Redesigning Pinterest
-                </div>
-                <div className=" text-[#717171] pt-1">
-                  Delve into the intricacies of Pinterest's seeking
-                  opportunities for improvement and explore potential
-                  enhancements to the user experience."
-                </div>
-              </div>
-              <div className="text-[#696062] text-sm font-semibold">
-                {" "}
-                MOBILE DESIGN // UX RESEARCH // EXPERIENCE DESIGN{" "}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* ******************************************************************************************* */}
+      
       {/* <div
         data-aos="fade-up"
         data-aos-delay="500"
