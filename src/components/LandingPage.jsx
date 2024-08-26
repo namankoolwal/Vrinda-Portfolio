@@ -135,8 +135,8 @@ const LandingPage = ({ scrollToRef }) => {
               artist by night.
             </p>
           </div>
-          <div className=" w-[70%] -mt-5 md:mt-0 h-full md:w-[70%]">
-            <img src={vk2} alt="illustraterGif" className="w-full h-full" />
+          <div className=" w-[100%] -mt-5 md:mt-0 h-full md:w-[70%]">
+            <img src={vk2} alt="illustraterGif" className="w-full h-full -translate-x-5 md:translate-x-10 md:-translate-y-4" />
           </div>
         </div>
       </div>
