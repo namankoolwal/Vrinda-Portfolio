@@ -1,33 +1,20 @@
 import React, { useRef, useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
-import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 import Hi from "../assets/images/landingPage/Hi.png";
 import imVrinda from "../assets/images/landingPage/imVrinda.png";
 import Layer1 from "../assets/images/landingPage/Layer1.svg";
-// import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
-import fitverxImg from "../assets/images/landingPage/fitverxImg.webp";
-// import Pinterest from "../assets/images/landingPage/Pinterest.png";
-import SwiggyImg from "../assets/images/landingPage/SwiggyImg.png"
+import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
 import SwiggyImgt from "../assets/images/landingPage/SwiggyImgt.png"
 import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
-import Pinterest from "../assets/images/landingPage/Pinterest.webp";
-import pinterestLogo from "../assets/images/landingPage/pinterestLogo.png";
-// import Eventify from "../assets/images/landingPage/Eventify.png";
-import Eventify from "../assets/images/landingPage/Eventify.webp";
+import Eventify from "../assets/images/landingPage/Eventify.png";
 import eventifyLogo from "../assets/images/landingPage/eventifyLogo.png";
-import Behands from "../assets/images/Social.png";
-import Dribble from "../assets/images/Dribble.png";
-import layer1 from "../assets/images/Layer_1.png";
-import vk from "../assets/images/landingPage/vk.gif";
 import vk2 from "../assets/images/landingPage/vk2.png"
 import eventifyBg from "../assets/images/landingPage/eventifyBg.png";
 import fitverxBg from "../assets/images/landingPage/fitverxBg.png";
-import pinterestBg from "../assets/images/landingPage/pinterestBg.png";
 import dogImg from "../assets/images/landingPage/dogImg.png";
 import behanceLogo from "../assets/images/landingPage/behanceLogo.png";
 import lindinLogo from "../assets/images/landingPage/lindinLogo.png";
 import tooltip from "../assets/images/landingPage/tooltip.png";
-import Eye from "./Eye";
 import TypewriterText from "./TypewriterText";
 import Typed from 'typed.js';
 import Eyes from "./Eyes";
