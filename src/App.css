@@ -172,6 +172,23 @@
   }
 }
 
+.talenetbuzztransfrom {
+  animation: talentbuzz 11s infinite;
+  image-rendering: pixelated;
+}
+
+@keyframes talentbuzz{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-90%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
 .eyelashed {
   position: absolute;
   width: 50%;

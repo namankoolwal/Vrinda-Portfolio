@@ -6,7 +6,11 @@ import Layer1 from "../assets/images/landingPage/Layer1.svg";
 import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
 import SwiggyImgt from "../assets/images/landingPage/SwiggyImgt.png"
 import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
+import TalentLogo from "../assets/images/landingPage/TalentLogo.png";
 import Eventify from "../assets/images/landingPage/Eventify.png";
+import OuterFrame from '../assets/images/landingPage/OuterFrame.png';
+import TlandingPage from '../assets/images/landingPage/TlandingPage.png';
+import blob from "../assets/images/landingPage/blob.png";
 import eventifyLogo from "../assets/images/landingPage/eventifyLogo.png";
 import vk2 from "../assets/images/landingPage/vk2.png"
 import eventifyBg from "../assets/images/landingPage/eventifyBg.png";
@@ -20,7 +24,7 @@ import Typed from 'typed.js';
 import Eyes from "./Eyes";
 
 const LandingPage = ({ scrollToRef }) => {
-  
+
   const refOne = useRef(null);
   const refTwo = useRef(null);
   const refThree = useRef(null);
@@ -41,7 +45,7 @@ const LandingPage = ({ scrollToRef }) => {
             backSpeed: 0,
             fadeOut: true,
             showCursor: false,
-            
+
           });
         }
       },
@@ -50,7 +54,7 @@ const LandingPage = ({ scrollToRef }) => {
         rootMargin: '0px',
         threshold: 0.5 // Adjust as needed
       }
-    
+
     );
 
     if (infoRef.current) {
@@ -96,7 +100,7 @@ const LandingPage = ({ scrollToRef }) => {
     <div>
 
       <div className=" mx-auto my-[150px] md:my-[50px] py-10 flex flex-col items-center gap-10 md:gap-6 justify-center" onClick={handleClick}>
-        <Eyes/>
+        <Eyes />
         <div className="animate-text">
           <p className="text-[#999999] text-lg my-3">BLINK AND YOU’ll MISS IT</p>
         </div>
@@ -144,7 +148,7 @@ const LandingPage = ({ scrollToRef }) => {
 
       {/* ************************************************************************************************ */}
       <div className="mx-auto mt-8 md:mt-0 md:pt-10 px-2 md:px-24 text-[#757575] font-bold text-lg">
-        <span>Passion Project</span>
+        <span>Mirror world Projects</span>
       </div>
 
       {/* *******************************SWIGGY************************************************************ */}
@@ -160,7 +164,7 @@ const LandingPage = ({ scrollToRef }) => {
         data-aos-delay="500"
         data-aos-duration="1000"
       >
-        <div className="swiggy flex items-center flex-col md:flex-row ">
+        <div className="swiggy flex items-center flex-col md:flex-row md:gap-10">
           <div
             className="hoverEvent image flex-1 relative"
             ref={refThree}
@@ -189,10 +193,10 @@ const LandingPage = ({ scrollToRef }) => {
 
               <div className=" -mt-3">
                 <div className=" text-[22px] text-transparent pt-3 bg-clip-text bg-gradient-to-r from-[#271A6A] to-[#F26037] font-Bree">
-                Events Hosting and Booking Platform
+                  Events Hosting and Booking Platform
                 </div>
                 <div className=" text-[#717171] pt-1">
-                Integrated platform that combines event discovery and booking into one place.
+                  Integrated platform that combines event discovery and booking into one place.
                 </div>
               </div>
               <div className="text-[#696062] text-sm font-semibold">
@@ -213,7 +217,7 @@ const LandingPage = ({ scrollToRef }) => {
         data-aos-delay="500"
         data-aos-duration="1000"
       >
-        <div className="eventi flex items-center m-0 flex-col md:flex-row">
+        <div className="eventi flex items-center m-0 flex-col md:flex-row md:gap-10">
           <div
             className="hoverEvent image flex-1 relative"
             ref={refOne}
@@ -263,9 +267,9 @@ const LandingPage = ({ scrollToRef }) => {
         data-aos-delay="500"
         data-aos-duration="1000"
       >
-        <div className="fitverx flex items-center flex-col md:flex-row">
+        <div className="fitverx flex items-center flex-col md:flex-row md:gap-10">
           <div
-            className="hoverEvent image flex-1 relative"
+            className="hoverEvent image flex-1 relative "
             ref={refTwo}
             onMouseOver={() => onMouseOver(refTwo)}
           >
@@ -282,7 +286,7 @@ const LandingPage = ({ scrollToRef }) => {
                 Fitverx
               </div>
               <div>
-                <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree">
+                <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#F43D3D] from-0% via-[#8A11BE] via-60% to-[#6D05E1] to-100% font-Bree">
                   Get a Virtual trial before you buy
                 </div>
                 <div className=" text-[#717171] pt-1">
@@ -299,34 +303,70 @@ const LandingPage = ({ scrollToRef }) => {
           </div>
         </div>
       </div>
-      {/* ******************************************************************** */}
-      
-      {/* <div
-        data-aos="fade-up"
-        data-aos-delay="500"
-        data-aos-duration="1000"
-        className=" mx-auto my-[120px] px-4 md:px-24"
+      {/* ************************************************************************************************ */}
+      <div className="mx-auto my-8 md:my-20 md:pt-10 px-2 md:px-24 text-[#757575] font-bold text-lg">
+        <span>Real world Projects</span>
+      </div>
+      {/* ****************************************TalentBuzz******************************** */}
+      <div
+        className="container mx-auto md:my-[50px] cursor-pointer "
+        onClick={() =>
+          window.open(
+            "https://talentbuzzz.in/",
+            "_blank"
+          )
+        }
       >
-        <div className="text-2xl md:text-3xl font-Bree  text-[#005323]">
-          Made with lots of love and caffeine.
-        </div>
-        <div className="pt-6 flex ">
-          <a href="https://www.behance.net/vrindakhandel1" target="_blank">
-            {" "}
-            <img src={Behands} alt="behands" className="behands" />
-          </a>
-          <a href="https://dribbble.com/vrindavk" target="_blank">
-            {" "}
-            <img src={Dribble} alt="Dribble" className="dribble" />
-          </a>
-          <img src={layer1} alt="layer1" className="layer1" />
-        </div>
-      </div> */}
-      {/* ******************************************************************* */}
-      <div className="container mx-auto mt-[70px] px-2 md:px-12 ">
-      <div className="flex mx-auto mt-[50px] bg-[#005323] rounded-3xl p-5 md:p-10 md:pt-0 items-center justify-center md:justify-around  gap-10 flex-col md:flex-row-reverse ">
+        <div className="talentBuzz flex items-center m-0 flex-col md:flex-row md:gap-10">
           <div
-            className=" image flex justify-end relative "       
+            className=" flex-1 p-3 md:p-0"
+
+          >
+          <div className="p-5 md:p-10 relative z-0">
+
+            <div className=" w-full rounded-2x h-full relative z-10 ">
+            <div className="rounded-2xl md:rounded-3xl w-full h-[54vw] md:h-[54vh] overflow-hidden bg-black">
+
+              <img src={TlandingPage} alt="" className="talenetbuzztransfrom" />
+            </div>
+            <img src={OuterFrame} alt="" className="absolute top-0 w-full h-full"/>
+            </div>
+            <img src={blob} alt="" className="absolute w-full h-full top-0.5 md:top-1 right-0 -z-10" />
+          </div>
+
+          </div>
+          <div className="flex-1">
+            <div className="details flex flex-col px-5 md:px-0 md:w-[70%] mx-auto md:mx-0">
+              <div className="w-2/5 ">
+                <img
+                  src={TalentLogo}
+                  alt="TalentLogo"
+                  className="w-full drop-shadow-lg "
+                />
+              </div>
+              <div>
+                <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#F43D3D] from-0% via-[#8A11BE] via-60% to-[#6D05E1] to-100% font-Bree">
+                Designded Application Website
+                </div>
+                <div className=" text-[#717171] pt-1">
+                Created a user-friendly and visually appealing platform that highlights the app’s features. My focus was on intuitive navigation and a responsive design to enhance the user experience and showcase TalentBuzz effectively.
+                </div>
+              </div>
+              <div className="text-[#696062] text-sm font-semibold">
+                {" "}
+                WEBSITE DESIGN  //  COMPETITVE RESEARCH // CLIENT PROJECT
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ******************************************************************** */}
+      {/* ******************************************************************* */}
+      <div className="container mx-auto mt-[120px] px-2 md:px-12 ">
+        <div className="flex mx-auto mt-[50px] bg-[#005323] rounded-3xl p-5 md:p-10 md:pt-0 items-center justify-center md:justify-around  gap-10 flex-col md:flex-row-reverse ">
+          <div
+            className=" image flex justify-end relative "
           >
             <img
               src={dogImg}
@@ -338,33 +378,33 @@ const LandingPage = ({ scrollToRef }) => {
               alt=""
               className="w-[80%] md:w-[60%] absolute top-5 right-0 md:z-10"
             />
-            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-white overflow-hidden"> 
-            <span ref={infoRef} className="h-14"></span>
-            <div className="flex gap-3 ">
+            <div className="w-[65%] md:w-[50%] absolute flex flex-col gap-2 md:gap-4 text-sm top-8 right-3 md:z-10 text-white overflow-hidden">
+              <span ref={infoRef} className="h-14"></span>
+              <div className="flex gap-3 ">
 
                 <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md focus:bg-white focus:text-[#EB7E23]">Sure</button>
                 <button className="bg-gray-800 py-[2px] px-5 text-white rounded-md focus:bg-white focus:text-[#EB7E23]">No, thanks</button>
+              </div>
             </div>
-            </div>
-           
+
           </div>
           <div className="flex items-center justify-center ">
             <div className="details flex flex-col gap-7  md:px-0 ">
-            
 
-                <div className=" text-4xl md:text-6xl text-white font-Bree ">
+
+              <div className=" text-4xl md:text-6xl text-white font-Bree ">
                 Let's get in touch!
-                </div>
-                <div className=" text-[#FFFFFF] pt-1 md:w-3/4">
+              </div>
+              <div className=" text-[#FFFFFF] pt-1 md:w-3/4">
                 I'd love to hear from you and explore collaboration, answer your questions, or simply chat.
-                </div>
+              </div>
               <div className=" flex gap-4">
                 {" "}
                 <a href="https://www.behance.net/vrindakhandel1" target="_blank"><img src={behanceLogo} alt="behanceLogo" className="w-7" /></a>
                 <a href="https://www.linkedin.com/in/vrinda-khandelwal-60bab8243/" target="_blank"><img src={lindinLogo} alt="linkdin" className="w-7" /></a>
-                <a  href="mailto:vrinyk@gmail.com"
+                <a href="mailto:vrinyk@gmail.com"
                   target="_blank"
-                 className="text-white border-2 rounded-full px-2 border-white hover:bg-[#EB7E23]">vrinyk@gmail.com</a>
+                  className="text-white border-2 rounded-full px-2 border-white hover:bg-[#EB7E23]">vrinyk@gmail.com</a>
               </div>
             </div>
           </div>
@@ -374,7 +414,7 @@ const LandingPage = ({ scrollToRef }) => {
       <div className="container mx-auto mb-[30px] pt-2 px-5 text-center flex items-end justify-end" >
         <div className="w-[200px] md:w-[250px] text-left">
 
-        <TypewriterText/>
+          <TypewriterText />
         </div>
 
       </div>

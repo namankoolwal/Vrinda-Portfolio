@@ -194,3 +194,57 @@ export default Eye;
         </div>
       </div>
 ```
+
+
+
+
+
+
+
+
+
+
+<div
+        className="container mx-auto md:my-[50px] cursor-pointer "
+      >
+        <div className="talentBuzz flex items-center m-0 flex-col md:flex-row">
+          <div
+            className=" flex-1 image p-5 md:p-12 relative bg-green-400  w-fit  h-fit  pb-6 md:pr-0"
+
+          >
+            <div className="   bg-red-400 overflow-hidden rounded-2xl relative w-full h-[30vh] md:h-[50vh] lg:w-[41.7vw] lg:h-[62vh] ">
+              <div className="  relative overflow-hidden bg-green-400">
+                <img src={TlandingPage} alt="" className="w-full h-full bg-green-400" />
+              </div>
+
+
+            </div>
+            <img src={OuterFrame} alt="" className="absolute top-5  md:top-10 md:left-12" />
+
+          </div>
+          <div className="flex-1">
+            <div className="details flex flex-col px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
+              <div className="w-2/5 ">
+                <img
+                  src={eventifyLogo}
+                  alt="eventifyLogo"
+                  className="w-auto "
+                />
+              </div>
+              <div>
+                <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#4252DD] from-0% via-[#0ABCA7] via-40% to-[#3E5AD9] to-90% font-Bree">
+                  Finding & Hosting Events in your locality
+                </div>
+                <div className=" text-[#717171] pt-1">
+                  Your go-to app for seamless event discovery and community
+                  connection in your nearby area.
+                </div>
+              </div>
+              <div className="text-[#696062] text-sm font-semibold">
+                {" "}
+                MOBILE DESIGN // UX DESIGN // FINDING EVENTS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
