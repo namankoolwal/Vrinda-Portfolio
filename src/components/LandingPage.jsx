@@ -4,7 +4,6 @@ import Layer1 from "../assets/images/landingPage/Layer1.svg";
 import fitverxImg from "../assets/images/landingPage/fitverxImg.png";
 import SwiggyImgt from "../assets/images/landingPage/SwiggyImgt.png"
 import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
-import TalentLogo from "../assets/images/landingPage/TalentLogo.png";
 import Eventify from "../assets/images/landingPage/Eventify.png";
 import OuterFrame from '../assets/images/landingPage/OuterFrame.png';
 import TlandingPage from '../assets/images/landingPage/TlandingPage.svg';
@@ -124,7 +123,7 @@ const LandingPage = ({ scrollToRef }) => {
             </p>
           </div>
           <div className=" w-[100%] -mt-5 md:mt-0 h-full md:w-[70%]">
-            {/* <img src={vk2} alt="illustraterGif" className="w-full h-full -translate-x-5  md:-translate-y-4" /> */}
+            <img src={vk2} alt="illustraterGif" className="w-full h-full -translate-x-5  md:-translate-y-4" />
           </div>
         </div>
       </div>
