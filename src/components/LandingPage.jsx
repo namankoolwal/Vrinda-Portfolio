@@ -346,7 +346,7 @@ const LandingPage = ({ scrollToRef }) => {
               </div>
               <div>
                 <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#F43D3D] from-0% via-[#8A11BE] via-60% to-[#6D05E1] to-100% font-Bree">
-                Designded Application Website
+                Designed Application Website
                 </div>
                 <div className=" text-[#717171] pt-1">
                 Created a user-friendly and visually appealing platform that highlights the app’s features. My focus was on intuitive navigation and a responsive design to enhance the user experience and showcase TalentBuzz effectively.
