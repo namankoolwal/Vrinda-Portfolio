@@ -173,19 +173,19 @@
 }
 
 .talenetbuzztransfrom {
-  animation: talentbuzz 11s infinite;
-  image-rendering: pixelated;
+  animation: talentbuzz 20s infinite;
+  /* image-rendering: pixelated; */
 }
 
 @keyframes talentbuzz{
   0%{
-    transform: translateY(0);
+    transform: translateY(0.5%);
   }
   50%{
     transform: translateY(-90%);
   }
   100%{
-    transform: translateY(0);
+    transform: translateY(0.5%);
   }
 }
 

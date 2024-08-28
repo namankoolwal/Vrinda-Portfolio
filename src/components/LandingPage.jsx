@@ -9,7 +9,7 @@ import swiggyLogo from "../assets/images/landingPage/swiggyLogo.png";
 import TalentLogo from "../assets/images/landingPage/TalentLogo.png";
 import Eventify from "../assets/images/landingPage/Eventify.png";
 import OuterFrame from '../assets/images/landingPage/OuterFrame.png';
-import TlandingPage from '../assets/images/landingPage/TlandingPage.png';
+import TlandingPage from '../assets/images/landingPage/TlandingPage.svg';
 import blob from "../assets/images/landingPage/blob.png";
 import eventifyLogo from "../assets/images/landingPage/eventifyLogo.png";
 import vk2 from "../assets/images/landingPage/vk2.png"
@@ -112,14 +112,12 @@ const LandingPage = ({ scrollToRef }) => {
       <div className=" mx-auto md:my-[50px] md:py-10 px-4 md:px-24">
         <div className="flex items-center flex-col-reverse gap-10 md:gap-10 md:flex-row justify-center">
           <div className="flex flex-col gap-10 md:gap-3 ">
-            <p className="flex items-center justify-center md:justify-start gap-3 mx-auto w-[80%] md:w-full">
-              <img src={Hi} alt="Hi" className="w-[20%] md:w-auto" />
-              <img
-                src={imVrinda}
-                alt="imVrinda"
-                className="w-[60%] md:w-auto"
-              />
-              <img src={Layer1} alt="Layer1" className="w-[20%] md:w-auto" />
+            <p className="flex items-center justify-center md:justify-start gap-3 mx-auto  md:w-full ">
+              <span className="font-[CaveatRegular] font-[500] text-5xl"> 
+
+              <span className="font-[CaveatBold]">Hi!</span> I'm Vrinda
+              </span>
+              <img src={Layer1} alt="Layer1" className="w-[15%] md:w-[10%]" />
             </p>
             <p className="text-2xl">
               Aspiring <span className="font-semibold">UI/UX wizard</span> who enjoys<span className="font-semibold"> seamlessly</span> bridging

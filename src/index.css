@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: CaveatRegular;
+    src: url(../public/Fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: CaveatBold;
+    src: url(../public/Fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: CaveatMedium;
+    src: url(../public/Fonts/Caveat-Medium.ttf);
+}
