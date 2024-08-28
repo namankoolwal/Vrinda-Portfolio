@@ -10,14 +10,9 @@ function Header() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // if (navRef.current.classList.contains("bg-gray-100")) {
-    //   console.log(navRef.current.classList.contains("bg-gray-100"));
-    //   navRef.current.classList.remove("bg-gray-100");
-    // } else {
-    //   navRef.current.classList.add("bg-gray-100");
-    // }
+   
     navRef.current.classList.toggle("bg-gray-100");
-    navRef.current.classList.toggle("-translate-x-96");
+    navRef.current.classList.toggle("translate-x-full");
   };
 
   const handleClick = () => {
@@ -58,11 +53,15 @@ function Header() {
 
   return (
     <>
+    
       <button
         id="hamburger"
-        className="md:hidden sticky top-0 peer/toggle bg-gray-100 p-2 w-full px-4 text-left z-10"
+        className="md:hidden sticky top-0 peer/toggle bg-gray-100 p-2 w-full px-4 text-left z-50 flex items-center justify-between"
         onClick={toggleMenu}
       >
+        <span className="font-Bree text-xl text-[#005323]">Vrinda</span>
+
+
         {isMenuOpen ? (
           <span className="text-2xl font-bold">&#10005;</span>
         ) : (
@@ -70,9 +69,11 @@ function Header() {
         )}
       </button>
       <nav
-        className={` md:bg-gray-100 px-4 py-2 md:py-4 md:px-10 w-1/2 h-full md:w-full fixed md:sticky z-50 transition-all duration-500 -translate-x-96 md:translate-x-0`}
+        className={` md:bg-gray-100 px-4 right-0 py-2 md:py-4 md:px-10 w-1/2 h-full md:w-full fixed md:sticky z-50 transition-all duration-500 translate-x-full md:translate-x-0`}
         ref={navRef}
       >
+      <div className="flex items-center justify-between">
+        <span className="hidden md:block font-Bree text-xl text-[#005323]">Vrinda</span>
         <div
           className={` ${
             isMenuOpen ? "flex " : "hidden"
@@ -125,6 +126,8 @@ function Header() {
             LinkedIn
           </NavLink>
         </div>
+      </div>
+
       </nav>
     </>
   );
