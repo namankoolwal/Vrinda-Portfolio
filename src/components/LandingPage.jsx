@@ -174,19 +174,19 @@ const LandingPage = ({ scrollToRef }) => {
 
           </div>
           <div className="flex-1">
-            <div className="details flex flex-col px-5 md:px-0 md:w-[70%] mx-auto md:mx-0">
+            <div className="details flex flex-col gap-4 px-5 md:px-0 md:w-[70%] mx-auto md:mx-0">
             <div className=" text-[24px] text-[#CD456D] font-Bree ">
             TalentBuzz
               </div>
               <div>
-                <div className=" text-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#F43D3D] from-0% via-[#8A11BE] via-60% to-[#6D05E1] to-100% font-Bree">
+                <div className=" text-[22px] text-black font-Bree">
                 Designed Application Website
                 </div>
                 <div className=" text-[#717171] pt-1">
                 Created a user-friendly and visually appealing platform that highlights the app’s features. My focus was on intuitive navigation and a responsive design to enhance the user experience and showcase TalentBuzz effectively.
                 </div>
               </div>
-              <div className="text-[#696062] text-sm font-semibold">
+              <div className="text-[#696062] text-xs md:text-sm font-semibold">
                 {" "}
                 WEBSITE DESIGN  //  COMPETITVE RESEARCH // CLIENT PROJECT
               </div>
@@ -235,7 +235,7 @@ const LandingPage = ({ scrollToRef }) => {
             />
           </div>
           <div className="flex-1">
-            <div className="details flex flex-col px-5  md:px-0 md:w-[60%] mx-auto md:mx-0">
+            <div className="details flex flex-col px-5 gap-4  md:px-0 md:w-[60%] mx-auto md:mx-0">
               <div className="w-[45%] ">
                 <img
                   src={swiggyLogo}
@@ -252,7 +252,7 @@ const LandingPage = ({ scrollToRef }) => {
                   Integrated platform that combines event discovery and booking into one place.
                 </div>
               </div>
-              <div className="text-[#696062] text-sm font-semibold">
+              <div className="text-[#696062] text-xs md:text-sm font-semibold">
                 {" "}
                 WEB RESPONSIVE  // LANDING PAGE  // UX SOLUTION{" "}
               </div>
@@ -285,7 +285,7 @@ const LandingPage = ({ scrollToRef }) => {
             {/* hover:-translate-y-5 transition-all duration-700 */}
           </div>
           <div className="flex-1">
-            <div className="details flex flex-col px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
+            <div className="details flex flex-col gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
               <div className="w-[25%] ">
                 <img
                   src={eventifyLogo}
@@ -302,7 +302,7 @@ const LandingPage = ({ scrollToRef }) => {
                   connection in your nearby area.
                 </div>
               </div>
-              <div className="text-[#696062] text-sm font-semibold">
+              <div className="text-[#696062] text-xs md:text-sm font-semibold">
                 {" "}
                 MOBILE DESIGN // UX DESIGN // FINDING EVENTS
               </div>
@@ -334,7 +334,7 @@ const LandingPage = ({ scrollToRef }) => {
             />
           </div>
           <div className="flex-1">
-            <div className="details flex flex-col md:gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
+            <div className="details flex flex-col gap-4 px-5 md:px-0 md:w-[60%] mx-auto md:mx-0">
               <div className=" text-[24px] text-transparent bg-clip-text bg-gradient-to-b from-[#000000] to-[#666666] font-Bree ">
                 Fitverx
               </div>
@@ -348,7 +348,7 @@ const LandingPage = ({ scrollToRef }) => {
                   real-time.
                 </div>
               </div>
-              <div className="text-[#696062] text-sm font-semibold">
+              <div className="text-[#696062] text-xs md:text-sm font-semibold">
                 {" "}
                 PROBLEM SOLVING // UX DESIGN // VIRTUAL FASHION
               </div>
